@@ -1,0 +1,54 @@
+.big_container {
+  height:500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.smiley_container {
+  height:400px; 
+  width:400px; 
+  background-color: #497e99;
+  position: absolute;
+  text-align: center;
+}
+
+.circle {
+  transform:translate(100px,100px);
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  background-color: #ffd57a;
+}
+
+.eyes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left_eye {
+  height:50px;
+  width:50px;
+  margin-top: 50px;
+  border-radius: 50%;
+  background-color:#343738;
+}
+
+.right_eye {
+  height:50px;
+  width:50px;
+  margin-top:50px;
+  border-radius: 50%;
+  background-color: #343738;
+
+}
+
+
+.mouth{
+  display: flex;
+  width: 120px;
+  height:5px;
+  align-items: center;
+  justify-content: center;
+  background-color: #343738;
+}

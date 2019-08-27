@@ -1,11 +1,26 @@
 import React from 'react';
-import Title from './Title'
+import ArtDisplay from './ArtDisplay'
+import Title from './Title';
+import SmileyFace from './SmileyFace'
 import './App.css'
+
 
 function App() {
   return (
     <div>
-      <Title />
+      {/* Heading */}
+      <Title title='Cascading Style Sheets Art Collection' />
+
+      {/* Smiley Face Art */}
+      <ArtDisplay title='Smiley Face' description='A derpy Smiley Face' />
+      <SmileyFace />
+
+
+      {/* Portrait Art */}
+      <ArtDisplay title='Self Portrait' />
+
+
+
     </div>
   )
 }
