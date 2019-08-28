@@ -1,3 +1,96 @@
+.big_container {
+  height:500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .portrait_container {
-  
+  height:400px; 
+  width:400px; 
+  display: inline;
+  background-color:#cf78a3;
+  position: absolute;
+  text-align: center;
+}
+
+.oval {
+  z-index: 1;
+  transform:translate(100px,-150px);
+  width:190px;
+  height:230px;
+  border-radius: 50%;
+  background-color: #f0d2b1;
+}
+
+.portrait_hair {
+    width: 230px;
+    height: 270px;
+    border-radius: 100px 100px 0 0;
+    transform:translate(100px,30px);
+    background-color:#302417; 
+  }
+
+
+.portrait_eyes {
+  display: flex;
+  flex-direction: row;
+  justify-content: 
+  center;
+ 
+}
+
+.portrait_brow {
+  margin:auto;
+  width: 50px;
+  height:4px;
+  background-color: #343738;
+}
+
+.portrait_left_eye {
+  height:25px;
+  width:32px;
+  margin:20px;
+  margin-top: 90px;
+  border-radius: 50%;
+  background-color:#343738;
+}
+
+.portrait_right_eye {
+  height:25px;
+  width:32px;
+  margin:20px;
+  margin-top:90px;
+  border-radius: 50%;
+  background-color: #343738;
+
+}
+.portrait_right_pupil{
+  width:12px;
+  height:12px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  transform: translate(5px, 5px)
+}
+
+.portrait_left_pupil {
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background-color:whitesmoke;
+  transform: translate(5px,5px)
+}
+
+.portrait_tiny_pupil {
+  width:4.5px;
+  height:4.5px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  transform:translate(15px, 5px)
+}
+
+.portrait_mouth{
+ margin:auto;
+  width: 100px;
+  height:4px;
+  background-color: #343738;
 }
