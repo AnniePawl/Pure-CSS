@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .portrait_container {
   height:400px; 
   width:400px; 
@@ -15,21 +16,38 @@
 
 .oval {
   z-index: 1;
-  transform:translate(100px,-150px);
-  width:190px;
+  transform:translate(105px,-250px);
+  width:180px;
   height:230px;
   border-radius: 50%;
   background-color: #f0d2b1;
 }
 
 .portrait_hair {
-    width: 230px;
+    width: 220px;
     height: 270px;
-    border-radius: 100px 100px 0 0;
-    transform:translate(100px,30px);
+    border-radius: 115px 115px 0 0;
+    transform:translate(85px,60px);
     background-color:#302417; 
   }
 
+  .fringe {
+    z-index: 1;
+    height:45px;
+    width:90px;
+    transform: translate(70px, -1200px);
+ 
+    border-radius: 0 0 90px 90px;
+    background:#302417;
+}
+
+.fringe2 {
+  height:45px;
+  width:90px;
+  transform: rotate(-15deg);
+  border-radius: 0 0 90px 90px;
+  background:#302417;
+}
 
 .portrait_eyes {
   display: flex;
@@ -39,12 +57,33 @@
  
 }
 
-.portrait_brow {
-  margin:auto;
-  width: 50px;
-  height:4px;
-  background-color: #343738;
+.brows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
 }
+
+.right_brow {
+  /* width: 40px; */
+  margin-left:15px;
+  border: 10px solid#302417;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  transform: translate(0px, 80px);
+  border-bottom:0px;
+}
+
+.left_brow {
+  /* width: 40px; */
+  margin-left:15px;
+  border: 10px solid#302417;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  transform: translate(0px, 80px);
+  border-bottom:0px;
+}
+
+
 
 .portrait_left_eye {
   height:25px;

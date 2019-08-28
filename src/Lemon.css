@@ -1,0 +1,14 @@
+.big_container {
+  height:500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lemon_container {
+  height:400px; 
+  width:400px; 
+  background-color:#327da6;
+  position: absolute;
+  text-align: center;
+}
