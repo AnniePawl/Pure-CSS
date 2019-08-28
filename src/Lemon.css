@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .lemon_container {
   height:500px; 
   width:500px; 
@@ -19,7 +20,7 @@
   height:280px;
   border-radius: 50%;
   background-color: #ffd57a;
-  box-shadow:8px 5px  rgba(186, 152, 58);
+  box-shadow:8px 3px  #d4ad42;
 }
 
 .lemon_nobs  {
@@ -32,13 +33,25 @@
   width:50px;
   height:65px;
   border-radius: 50%;
-  background-color: black
+  background-color: #ffd57a;
+  transform: translate(0, -150px)
 }
 
 .lemon_nob_bottom {
   width:50px;
   height:65px;
   border-radius: 50%;
-  background-color: black;
+  transform: translate(0, 40px);
+  background-color:#ffd57a;
+}
+
+
+.lemon_leaf {
+    width: 80px;
+    height: 130px;
+    background-color:#4e9c61;
+    transform: translate(0px, -50px) rotate(40deg);
+    border-radius: 70%  0%  70% 0%  ;
+
 }
 

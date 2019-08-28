@@ -7,7 +7,10 @@ function Lemon() {
 
       <div className='lemon_container'>
 
+
         <div className='lemon'>
+          <div className='lemon_leaf'></div>
+
 
           <div className='lemon_nobs'>
             <div className='lemon_nob_top' ></div>
