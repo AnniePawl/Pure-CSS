@@ -5,6 +5,7 @@ import SmileyFace from './SmileyFace'
 import Portrait from './Portrait'
 import Lemon from './Lemon'
 import Olive from './Olive'
+import Pickle from './Pickle'
 
 
 import './App.css'
@@ -18,29 +19,36 @@ function App() {
 
       <div className='display'>
 
+        {/* Smiley Face Art */}
         <div className='art_container'>
-          {/* Smiley Face Art */}
           <ArtDisplay title='Derpy Face' />
           <SmileyFace />
         </div>
 
+        {/* Lemon Art */}
         <div className='art_container'>
-          {/* Olive Art */}
-          <ArtDisplay title='Olive You So Much It Hurts' />
-          <Olive />
-        </div>
-
-        <div className='art_container'>
-
-          {/* Lemon Art */}
           <ArtDisplay title='Lousy Lemon' />
           <Lemon />
         </div>
 
+
+        {/* Pickle Art */}
+        <div className='art_container'>
+          <ArtDisplay title="I'm Kind of a Big Dill" />
+          <Pickle />
+        </div>
+
+        {/* Olive Art */}
+        <div className='art_container'>
+          <ArtDisplay title='Olive You So Much It Hurts' />
+          <Olive />
+        </div>
+
+
         {/* Tomato  Art */}
 
+        {/* Portrait Art */}
         <div className='art_container'>
-          {/* Portrait Art */}
           <ArtDisplay title='Self Portrait' />
           <Portrait />
         </div>
