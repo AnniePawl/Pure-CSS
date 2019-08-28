@@ -5,7 +5,7 @@ function ArtDisplay(props) {
   return (
     <div>
       <Title title={props.title} description={props.description} />
-
+      {/* {props.component} */}
     </div >
 
   )

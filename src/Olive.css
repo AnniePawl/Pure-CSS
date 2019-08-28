@@ -20,6 +20,7 @@
   height:270px;
   border-radius: 50%;
   background-color: #acc742;
+  box-shadow:7px 7px #6b7a33;
 }
 
 .olive_hole {
@@ -27,9 +28,11 @@
   height:55px;
   border-radius: 50%;
   transform: translate(80px, 20px)rotate(10deg) ;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-color:#c75642;
+  box-shadow:4px 4px #852f1e;
 }
+  
 
 .olive_eyes {
   display: flex;
@@ -43,7 +46,7 @@
   width:18px;
   border-radius: 50%; 
   background-color:#363533;
-  transform: translate(-30px, 55px)
+  transform: translate(-35px, 60px)
 }
 
 .olive_left_eye {
@@ -51,7 +54,7 @@
   width:18px;
   border-radius: 50%; 
   background-color:#363533;
-  transform: translate(30px, 55px)
+  transform: translate(35px, 60px)
 }
 
 .pick_bottom {
@@ -66,15 +69,28 @@
   width: 120px;
   height:12px;
   background-color: #363533;
-  transform: translate(340px, -60px) rotate(-20deg);
+  transform: translate(345px, -60px) rotate(-20deg);
+}
+
+.arc {
+  width: 28px;
+  height:8px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border:3px solid  #363533;
+  border-bottom:0;
+  transform: rotate(70deg) translate(73px,  11px);
+  
 }
 
 .olive_mouth {
-  width: 40px;
-  height:20px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border:1px solid #363533;
-  border-bottom:0;
-  transform: translate(85px,80px);
+  width: 45px;
+  height:35px;
+  border-radius: 50%;
+  background-color: #363533;
+  /* border-top-left-radius: 20px;
+  border-top-right-radius: 20px; */
+  /* border:3px solid #363533; */
+  /* border-bottom:0; */
+  transform: translate(90px,80px);
 }

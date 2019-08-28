@@ -17,23 +17,33 @@ function App() {
       <Title title='Cascading Style Sheets Art Collection' />
 
       <div className='display'>
-        {/* Smiley Face Art */}
-        <ArtDisplay title='Derpy Face' />
-        <SmileyFace />
 
-        {/* Olive Art */}
-        <ArtDisplay title='Olive You So Much It Hurts' />
-        <Olive />
+        <div className='art_container'>
+          {/* Smiley Face Art */}
+          <ArtDisplay title='Derpy Face' />
+          <SmileyFace />
+        </div>
 
-        {/* Lemon Art */}
-        <ArtDisplay title='Lousy Lemon' />
-        <Lemon />
+        <div className='art_container'>
+          {/* Olive Art */}
+          <ArtDisplay title='Olive You So Much It Hurts' />
+          <Olive />
+        </div>
+
+        <div className='art_container'>
+
+          {/* Lemon Art */}
+          <ArtDisplay title='Lousy Lemon' />
+          <Lemon />
+        </div>
 
         {/* Tomato  Art */}
 
-        {/* Portrait Art */}
-        <ArtDisplay title='Self Portrait' />
-        <Portrait />
+        <div className='art_container'>
+          {/* Portrait Art */}
+          <ArtDisplay title='Self Portrait' />
+          <Portrait />
+        </div>
 
 
 

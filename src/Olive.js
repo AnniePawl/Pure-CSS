@@ -17,12 +17,17 @@ function Olive() {
           </div>
 
           <div className='olive_mouth'></div>
+
+          <div className='arc'></div>
+
         </div>
 
         {/* PICK */}
 
         <div className='pick_bottom'></div>
         <div className='pick_top'></div>
+
+
 
       </div>
 
