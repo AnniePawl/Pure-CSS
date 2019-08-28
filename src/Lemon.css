@@ -4,11 +4,41 @@
   align-items: center;
   justify-content: center;
 }
-
 .lemon_container {
-  height:400px; 
-  width:400px; 
-  background-color:#327da6;
+  height:500px; 
+  width:500px; 
+  display: inline;
+  background-color: #497e99;
   position: absolute;
   text-align: center;
 }
+
+.lemon {
+  transform:translate(125px,125px);
+  width:230px;
+  height:280px;
+  border-radius: 50%;
+  background-color: #ffd57a;
+  box-shadow:8px 5px  rgba(186, 152, 58);
+}
+
+.lemon_nobs  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lemon_nob_top {
+  width:50px;
+  height:65px;
+  border-radius: 50%;
+  background-color: black
+}
+
+.lemon_nob_bottom {
+  width:50px;
+  height:65px;
+  border-radius: 50%;
+  background-color: black;
+}
+

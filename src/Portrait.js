@@ -8,8 +8,8 @@ function Portrait() {
       <div className='portrait_container'>
         <div className='portrait_hair'></div>
 
-        <div className='fringe'> </div>
-        <div className='fringe2'> </div>
+        {/* <div className='fringe'> </div>
+        <div className='fringe2'> </div> */}
         <div className='oval'>
 
           <div className='brows'>

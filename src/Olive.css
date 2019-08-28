@@ -1,0 +1,80 @@
+.big_container {
+  height:500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.olive_container {
+  height:500px; 
+  width:500px; 
+  display: inline;
+  background-color: #fff3a8;
+  position: absolute;
+  text-align: center;
+}
+
+.olive {
+  transform:translate(125px,120px);
+  width:220px;
+  height:270px;
+  border-radius: 50%;
+  background-color: #acc742;
+}
+
+.olive_hole {
+  width:75px;
+  height:55px;
+  border-radius: 50%;
+  transform: translate(80px, 20px)rotate(10deg) ;
+  border: 1px solid black;
+  background-color:#c75642;
+}
+
+.olive_eyes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.olive_right_eye {
+  height:18px;
+  width:18px;
+  border-radius: 50%; 
+  background-color:#363533;
+  transform: translate(-30px, 55px)
+}
+
+.olive_left_eye {
+  height:18px;
+  width:18px;
+  border-radius: 50%; 
+  background-color:#363533;
+  transform: translate(30px, 55px)
+}
+
+.pick_bottom {
+  width: 130px;
+  height:12px;
+  background-color: #363533;
+  transform: translate(35px, 50px) rotate(-20deg);
+
+}
+
+.pick_top {
+  width: 120px;
+  height:12px;
+  background-color: #363533;
+  transform: translate(340px, -60px) rotate(-20deg);
+}
+
+.olive_mouth {
+  width: 40px;
+  height:20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border:1px solid #363533;
+  border-bottom:0;
+  transform: translate(85px,80px);
+}

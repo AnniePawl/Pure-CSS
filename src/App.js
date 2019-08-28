@@ -4,6 +4,8 @@ import Title from './Title';
 import SmileyFace from './SmileyFace'
 import Portrait from './Portrait'
 import Lemon from './Lemon'
+import Olive from './Olive'
+
 
 import './App.css'
 
@@ -19,19 +21,26 @@ function App() {
         <ArtDisplay title='Derpy Face' />
         <SmileyFace />
 
-
-
-        {/* Portrait Art */}
-        <ArtDisplay title='Self Portrait' />
-        <Portrait />
+        {/* Olive Art */}
+        <ArtDisplay title='Olive You So Much It Hurts' />
+        <Olive />
 
         {/* Lemon Art */}
         <ArtDisplay title='Lousy Lemon' />
         <Lemon />
 
+        {/* Tomato  Art */}
+
+        {/* Portrait Art */}
+        <ArtDisplay title='Self Portrait' />
+        <Portrait />
+
+
+
+
       </div>
 
-    </div>
+    </div >
   )
 }
 
