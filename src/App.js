@@ -12,7 +12,7 @@ function App() {
       <Title title='Cascading Style Sheets Art Collection' />
 
       {/* Smiley Face Art */}
-      <ArtDisplay title='Smiley Face' description='A derpy Smiley Face' />
+      <ArtDisplay title='Derpy Face' />
       <SmileyFace />
 
 

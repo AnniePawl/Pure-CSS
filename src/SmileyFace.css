@@ -7,6 +7,7 @@
 .smiley_container {
   height:400px; 
   width:400px; 
+  display: inline;
   background-color: #497e99;
   position: absolute;
   text-align: center;
@@ -18,17 +19,19 @@
   height:200px;
   border-radius: 50%;
   background-color: #ffd57a;
+  box-shadow:8px 5px  rgba(186, 152, 58);
 }
 
 .eyes {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .left_eye {
   height:50px;
   width:50px;
+  margin:25px;
   margin-top: 50px;
   border-radius: 50%;
   background-color:#343738;
@@ -37,18 +40,54 @@
 .right_eye {
   height:50px;
   width:50px;
+  margin:25px;
   margin-top:50px;
   border-radius: 50%;
   background-color: #343738;
 
 }
+.right_pupil{
+  width:25px;
+  height:25px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  transform: translate(5px, 5px)
+}
 
+.left_pupil {
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  background-color:whitesmoke;
+  transform: translate(5px,5px)
+}
+
+.tiny_pupil {
+  width:8px;
+  height:8px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  transform:translate(25px, 5px)
+}
 
 .mouth{
-  display: flex;
-  width: 120px;
-  height:5px;
-  align-items: center;
-  justify-content: center;
+ margin:auto;
+  width: 170px;
+  height:4px;
   background-color: #343738;
+}
+
+.teeth {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transform: translate(0px, 4px)
+}
+
+.tooth {
+  height:15px;
+  width: 30px;
+  border-radius: 0 0 40px 40px;
+  background-color: whitesmoke;
+
 }
