@@ -1,0 +1,64 @@
+.tomato_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd57a;
+  height: 350px;
+}
+
+.tomato_base {
+    height:150px;
+    width:190px;
+    border-radius: 90px / 150px;
+    background-color:#ed4b45;  
+}
+
+
+.tomato_ends {
+  position: relative;
+
+}
+
+.tomato_top {
+  transform: translate(125px,25px)rotate(270deg);
+}
+
+.tomato_top_right {
+  position:relative;
+  background-color:#ed4b45;
+  height:77px;
+  width:60px;
+  border-radius: 0 90px 90px 0;
+  transform: rotate(-25deg)
+}
+
+.tomato_top_left {
+  position:relative;
+  background-color:#ed4b45;
+  height:77px;
+  width:60px;
+  border-radius: 0 90px 90px 0;
+  transform: rotate(25deg)
+}
+
+.tomato_bottom {
+  transform: translate(125px,-25px)rotate(90deg);
+}
+
+.tomato_bottom_right {
+  position:relative;
+  background-color:#ed4b45;
+  height:77px;
+  width:60px;
+  border-radius: 0 90px 90px 0;
+  transform: rotate(-25deg)
+}
+
+.tomato_bottom_left {
+  position:relative;
+  background-color:#ed4b45;
+  height:77px;
+  width:60px;
+  border-radius: 0 90px 90px 0;
+  transform: rotate(25deg)
+}
