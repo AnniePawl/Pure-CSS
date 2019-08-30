@@ -16,10 +16,25 @@ html {
 .title {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  padding: 10px;
+  padding: 0px;
 }
 
-.description {
+h1 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 0px;
+  font-weight: bolder;
+}
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: bolder;
 }

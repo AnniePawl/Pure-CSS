@@ -7,6 +7,7 @@
 .smiley_container {
   height:500px; 
   width:500px; 
+  border-radius: 10%;
   display: inline;
   background-color:#eb6c60;
   position: absolute;

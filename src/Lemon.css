@@ -1,57 +1,71 @@
-.big_container {
-  height:500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .lemon_container {
-  height:500px; 
-  width:500px; 
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #497e99;
-  position: absolute;
-  text-align: center;
+  height: 350px;
 }
 
 .lemon {
-  transform:translate(125px,125px);
-  width:230px;
-  height:280px;
-  border-radius: 50%;
+  position: relative;
+  height:200px;
+  width:160px;
+  border-radius: 50%; 
   background-color: #ffd57a;
-  box-shadow:8px 3px  #d4ad42;
+  box-shadow:6px 1px  #d4ad42;
 }
 
-.lemon_nobs  {
+.lemon_nobs {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.lemon_nob_top {
-  width:50px;
-  height:65px;
+.top_nob {
+  position: relative;
+  z-index: 0;
+  width:35px;
+  height:45px;
   border-radius: 50%;
   background-color: #ffd57a;
-  transform: translate(0, -150px)
+  transform: translate(0, -108px)
+} 
+
+.top_bud {
+  position: relative;
+  height:10px;
+  width:10px;
+  border-radius: 50%; 
+  background-color:#4d4640;
+  transform: translate(12px)
 }
 
-.lemon_nob_bottom {
-  width:50px;
-  height:65px;
+.bottom_bud {
+  position: relative;
+  height:10px;
+  width:10px;
+  border-radius: 50%; 
+  background-color:#4d4640;
+transform: translate(12px, 37px)
+}
+
+.bottom_nob {
+  position: relative;
+  width:35px;
+  height:45px;
   border-radius: 50%;
-  transform: translate(0, 40px);
-  background-color:#ffd57a;
+  background-color: #ffd57a;
+  transform: translate(0, 28px)
 }
-
 
 .lemon_leaf {
-    width: 80px;
-    height: 130px;
-    background-color:#4e9c61;
-    transform: translate(0px, -50px) rotate(40deg);
-    border-radius: 70%  0%  70% 0%  ;
-
+  position: relative;
+  z-index: 1;
+  width: 55px;
+  height: 95px;
+  background-color:#aad481;
+  transform:translate(-2px,-42px)rotate(40deg);
+  border-radius: 70%  0%  70% 0%  ;
 }
-

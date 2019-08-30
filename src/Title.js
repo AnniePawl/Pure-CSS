@@ -5,7 +5,7 @@ function Title(props) {
   return (
     <div>
       <h1 className='title'>{props.title}</h1>
-      <p className='description'>{props.description}</p>
+      <h2 className='subtitle'>{props.subtitle}</h2>
     </div>
   )
 }

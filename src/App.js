@@ -15,32 +15,51 @@ function App() {
   return (
     <div>
       {/* Heading */}
-      <Title title='Cascading Style Sheets Art Collection' />
+      <Title title='Advanced Cascading Style Sheets ' subtitle="Art Collection" />
+
 
       <div className='display'>
 
+        <div
+          className='art_container'
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
+          <ArtDisplay subtitle='Derpy Face' />
+          <div style={{
+            backgroundColor: 'red',
+            width: '130px',
+            height: '130px'
+          }}>
+
+          </div>
+        </div>
+
         {/* Smiley Face Art */}
         <div className='art_container'>
-          <ArtDisplay title='Derpy Face' />
+          <ArtDisplay subtitle='Derpy Face' />
           <SmileyFace />
         </div>
 
         {/* Lemon Art */}
         <div className='art_container'>
-          <ArtDisplay title='Lousy Lemon' />
+          <ArtDisplay subtitle='Lousy Lemon' />
           <Lemon />
         </div>
 
 
         {/* Pickle Art */}
         <div className='art_container'>
-          <ArtDisplay title="I'm Kind of a Big Dill" />
+          <ArtDisplay subtitle="I'm Kind of a Big Dill" />
           <Pickle />
         </div>
 
         {/* Olive Art */}
         <div className='art_container'>
-          <ArtDisplay title='Olive You So Much It Hurts' />
+          <ArtDisplay subtitle='Olive You So Much It Hurts' />
           <Olive />
         </div>
 
@@ -49,7 +68,7 @@ function App() {
 
         {/* Portrait Art */}
         <div className='art_container'>
-          <ArtDisplay title='Self Portrait' />
+          <ArtDisplay subtitle='Self Portrait' />
           <Portrait />
         </div>
 

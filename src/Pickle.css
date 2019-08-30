@@ -9,6 +9,7 @@
   height:500px; 
   width:500px; 
   display: inline;
+  border-radius: 10%;
   background-color: #707694;
   position: absolute;
   text-align: center;

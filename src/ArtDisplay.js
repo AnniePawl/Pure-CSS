@@ -4,7 +4,8 @@ import Title from './Title'
 function ArtDisplay(props) {
   return (
     <div>
-      <Title title={props.title} description={props.description} />
+      <Title title={props.title}
+        subtitle={props.subtitle} />
       {/* {props.component} */}
     </div >
 
