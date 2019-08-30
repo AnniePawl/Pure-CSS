@@ -2,17 +2,6 @@ html {
   height: 100%;
 }
 
-.art_container {
-  width: 500px;
-}
-
-.display {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around
-}
 .title {
   font-family: 'Roboto', sans-serif;
   text-align: center;
