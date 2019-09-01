@@ -3,6 +3,7 @@ import './App.css'
 import Lemon from './Lemon'
 import Blueberry from './Blueberry'
 import Pear from './Pear'
+import Pom from './Pom'
 
 
 
@@ -19,6 +20,8 @@ function App() {
       {/* Pear */}
       <Pear />
 
+      {/* Pomegranate */}
+      <Pom />
 
     </div >
   )
