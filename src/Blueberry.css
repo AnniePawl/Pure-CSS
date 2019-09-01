@@ -15,6 +15,35 @@
   border-radius: 50%; 
   background-color: #7a9eff;
   box-shadow: 6px 0px #6685d9;
+  /* animation: pulse 4s infinite; */
+  animation:scale  4s infinite;
+}
+
+
+@keyframes scale {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.2)
+  }
+
+  100% {
+    transform:scale(1)
+  }
+}
+
+
+@keyframes pulse {
+  0% { background-color: #7a9eff
+
+  }
+  50% {
+    background-color: #6685d9
+  }
+  100% {
+    background-color:#7a9eff
+  }
 }
 
 .blueberry_shadow {
@@ -26,13 +55,20 @@
   transform: translate(50px)
 }
 
+.blueberry_glare {
+
+  width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 red;
+}
+
 
 .blueberry_leaves {
   z-index: 1;
   transform: translate(135px, -67px) rotate(20deg);
-
-
  
+
 }
 
 
@@ -43,8 +79,11 @@
   border-right: 35px solid transparent;
   border-bottom: 65px solid#6685d9;
   position: relative;
+  animation: scale 3s infinite;
 
 }
+
+
 
 .blueberry_leaf_outer:after {
   width: 0;
@@ -85,3 +124,4 @@
   top:10px;
   left: -15px;
 }
+

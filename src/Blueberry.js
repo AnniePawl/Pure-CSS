@@ -5,7 +5,7 @@ function Blueberry() {
   return (
 
     <div className='blueberry_container'>
-
+      {/* <div className='blueberry_glare'></div> */}
 
       <div className='blueberry_leaves'>
 

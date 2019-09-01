@@ -6,6 +6,7 @@
   height: 350px;
 }
 
+
 .lemon {
   position: relative;
   height:200px;
@@ -13,7 +14,9 @@
   border-radius: 50%; 
   background-color: #ffd57a;
   box-shadow:6px 1px  #fcc95b;
+
 }
+
 
 .lemon_shading{
   position: relative;
@@ -22,8 +25,11 @@
   width:80px;
   border-radius: 0 90px 90px 0;
   background: #fcc54e;
-  transform: translate(160px)
+  transform: translate(160px);
+
 }
+
+
 
 .lemon_nobs {
   position: relative;
@@ -46,10 +52,10 @@
 .top_nob_shading {
   position: relative;
   height:35px;
-  width:15px;
+  width:16px;
   border-radius: 0 90px 90px 0;
   background-color:#fcc54e;
-  transform: translate(19px)
+  transform: translate(18px, 1px)
   
 }
 
@@ -85,10 +91,10 @@
 .bottom_nob_shading {
   position: relative;
   height:35px;
-  width:15px;
+  width:16px;
   border-radius: 0 90px 90px 0;
   background-color:#fcc54e;
-  transform: translate(19px, 10px)
+  transform: translate(18px, 10px)
 }
 
 .lemon_leaf {
@@ -99,4 +105,19 @@
   background-color:#aad481;
   transform:translate(-2px,-42px)rotate(40deg);
   border-radius: 70%  0%  70% 0%  ;
+  animation: lemon_leaf 3s infinite;
+}
+
+
+@keyframes lemon_leaf {
+  0% {
+    background-color: #aad481
+  }
+  50% {
+    background-color: #8bb562
+  }
+
+  100% {
+    background-color:#aad481
+  }
 }

@@ -1,21 +1,20 @@
 import React from 'react';
-import Title from './Title';
-import Lemon from './Lemon'
-
-
-
 import './App.css'
+import Lemon from './Lemon'
+import Blueberry from './Blueberry'
+
+
 
 
 function App() {
   return (
-    <div>
-      {/* Heading */}
-      <Title title='Advanced Cascading Style Sheets ' subtitle="Art Collection" />
+    <div className='App'>
 
-      {/* Lemon Art */}
-
+      {/* Lemon */}
       <Lemon />
+
+      {/* Blueberry */}
+      <Blueberry />
 
 
     </div >
