@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css'
 import Lemon from './Lemon'
 import Blueberry from './Blueberry'
-
+import Pear from './Pear'
 
 
 
@@ -15,6 +15,9 @@ function App() {
 
       {/* Blueberry */}
       <Blueberry />
+
+      {/* Pear */}
+      <Pear />
 
 
     </div >
