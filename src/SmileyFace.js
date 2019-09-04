@@ -20,15 +20,14 @@ function SmileyFace() {
               <div className='tiny_pupil'></div>
             </div>
           </div>
+
           <div className='mouth'>
             <div className="teeth">
               <div className="tooth"></div>
               <div className="tooth"></div>
               <div className="tooth"></div>
               <div className="tooth"></div>
-
             </div>
-
           </div>
         </div>
 

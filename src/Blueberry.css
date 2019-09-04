@@ -3,8 +3,16 @@
   justify-content: center;
   align-items: center;
   background-color: #ffd57a;
-  height: 350px;
+  height: 400px;
 }
+
+.total_blueberry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scale 3s infinite;
+}
+
 
 .blueberry_base {
  display: flex;
@@ -15,8 +23,6 @@
   border-radius: 50%; 
   background-color: #7a9eff;
   box-shadow: 6px 0px #6685d9;
-  /* animation: pulse 4s infinite; */
-  animation:scale  4s infinite;
 }
 
 
@@ -34,18 +40,6 @@
 }
 
 
-@keyframes pulse {
-  0% { background-color: #7a9eff
-
-  }
-  50% {
-    background-color: #6685d9
-  }
-  100% {
-    background-color:#7a9eff
-  }
-}
-
 .blueberry_shadow {
   position: relative;
   height:200px;
@@ -55,22 +49,13 @@
   transform: translate(50px)
 }
 
-.blueberry_glare {
-
-  width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      box-shadow: 15px 15px 0 0 red;
-}
-
 
 .blueberry_leaves {
-  z-index: 1;
-  transform: translate(135px, -67px) rotate(20deg);
+  position: relative;
+  z-index: 3;
+  transform: translate(135px, -70px) rotate(20deg);
  
-
 }
-
 
 .blueberry_leaf_outer {
   width: 0;
@@ -79,11 +64,8 @@
   border-right: 35px solid transparent;
   border-bottom: 65px solid#6685d9;
   position: relative;
-  animation: scale 3s infinite;
 
 }
-
-
 
 .blueberry_leaf_outer:after {
   width: 0;
@@ -97,7 +79,6 @@
   left: -35px;
  
 }
-
 
 .blueberry_leaf_inner {
   z-index: 1;
@@ -125,3 +106,15 @@
   left: -15px;
 }
 
+
+@keyframes pulse {
+  0% { background-color: #7a9eff
+
+  }
+  50% {
+    background-color: #6685d9
+  }
+  100% {
+    background-color:#7a9eff
+  }
+}

@@ -5,23 +5,25 @@ function Blueberry() {
   return (
 
     <div className='blueberry_container'>
-      {/* <div className='blueberry_glare'></div> */}
 
-      <div className='blueberry_leaves'>
+      <div className='total_blueberry'>
 
-        <div className='blueberry_leaf_outer'>
+        <div className='blueberry_leaves'>
+
+          <div className='blueberry_leaf_outer'>
+          </div>
+
+          <div className='blueberry_leaf_inner'> </div>
+
         </div>
 
-        <div className='blueberry_leaf_inner'> </div>
-
-      </div>
 
 
 
+        <div className='blueberry_base'>
+          <div className='blueberry_shadow'></div>
 
-      <div className='blueberry_base'>
-        <div className='blueberry_shadow'></div>
-
+        </div>
       </div>
 
     </div>
