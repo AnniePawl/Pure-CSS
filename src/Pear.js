@@ -6,33 +6,35 @@ function Pear() {
 
     <div className='pear_container'>
 
-      {/* Pear Base */}
-      <div className='pear'>
+
+      <div className='total_pear'>
+        {/* Pear Base */}
+        <div className='pear'>
 
 
 
-        <div className='pear_top'>
+          <div className='pear_top'>
 
-          <div className='pear_top_shadow'></div>
-        </div>
-
-        {/* Pear Bottom */}
-        <div className='pear_bottom'>
-          <div className='pear_bottom_shadow'>
+            <div className='pear_top_shadow'></div>
           </div>
+
+          {/* Pear Bottom */}
+          <div className='pear_bottom'>
+            <div className='pear_bottom_shadow'>
+            </div>
+          </div>
+
+
+          <div className='pear_stem'>
+
+            <div className='pear_leaf'></div>
+
+          </div>
+
+
+
         </div>
-
-
-        <div className='pear_stem'>
-
-          <div className='pear_leaf'></div>
-
-        </div>
-
-
-
       </div>
-
 
     </div>
   )

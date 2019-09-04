@@ -4,6 +4,7 @@ import Lemon from './Lemon'
 import Blueberry from './Blueberry'
 import Pear from './Pear'
 import Pom from './Pom'
+import Tomato from './Tomato'
 
 
 
@@ -22,6 +23,9 @@ function App() {
 
       {/* Pomegranate */}
       <Pom />
+
+      {/* Tomato */}
+      <Tomato />
 
     </div >
   )
