@@ -138,7 +138,7 @@
   border-radius: 50%;
   height:50px;
   width:150px;
-  transform: translate(-155px, 170px);
+ 
   animation: shadow 3s infinite;
 /* animation:shadow_size 3s infinite; */
 
@@ -163,18 +163,21 @@
   0% {
 
     opacity:.5;
-    /* transform: scale(1) */
+    
+    transform: translate(-155px, 170px) scale(1);
 
   }
   50% {
     opacity: 1.5;
-    /* transform: scale(1.2) */
+   
+    transform: translate(-155px, 170px)  scale(1.2);
     
   }
 
   100% {
     opacity:.5;
-    /* transform: scale(1) */
+   
+    transform: translate(-155px, 170px) scale(1);
 
   }
 }
