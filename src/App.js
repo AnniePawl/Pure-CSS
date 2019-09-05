@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css'
-import Lemon from './Lemon'
-import Blueberry from './Blueberry'
-import Pear from './Pear'
-import Pom from './Pom'
-import Tomato from './Tomato'
+import Lemon from './Lemon/Lemon'
+import Blueberry from './Blueberry/Blueberry'
+import Pear from './Pear/Pear'
+import Pom from './Pom/Pom'
+import Tomato from './Tomato/Tomato'
 
 
 
