@@ -1,32 +1,21 @@
 import React from 'react';
 import './App.css'
-import Lemon from './Lemon/Lemon'
-import Blueberry from './Blueberry/Blueberry'
-import Pear from './Pear/Pear'
-import Pom from './Pom/Pom'
-import Tomato from './Tomato/Tomato'
-
-
+import Display from './Display'
+import fruit_bag from './Fruits'
 
 function App() {
+  const fruit_things = fruit_bag.map((item) => {
+    console.log(item)
+    return (
+      <Display
+        component={item.component}
+      />
+    )
+  })
   return (
     <div className='App'>
-
-      {/* Lemon */}
-      <Lemon />
-
-      {/* Blueberry */}
-      <Blueberry />
-
-      {/* Pear */}
-      <Pear />
-
-      {/* Pomegranate */}
-      <Pom />
-
-      {/* Tomato */}
-      <Tomato />
-
+      <h1>Fruit Bag</h1>
+      {fruit_things}
     </div >
   )
 }
