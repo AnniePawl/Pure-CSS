@@ -9,28 +9,25 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffd57a;
-  height: 850px;
-}
-
-.blueberries {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  height: 1000px;
 }
 
 .total_blueberry {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-animation: scale 3s infinite;
           animation: scale 3s infinite;
 }
 
 .blueberry_base {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,37 +45,8 @@
           box-shadow: 6px 0px #6685d9;
 }
 
-@-webkit-keyframes scale {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes scale {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 .blueberry_shadow {
+  z-index: 1;
   position: relative;
   height: 200px;
   width: 100px;
@@ -143,27 +111,43 @@
   left: -15px;
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes scale {
   0% {
-    background-color: #7a9eff;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    background-color: #6685d9;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
-    background-color: #7a9eff;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-@keyframes pulse {
+@keyframes scale {
   0% {
-    background-color: #7a9eff;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    background-color: #6685d9;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
-    background-color: #7a9eff;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
+
+/* .bloob_shadow {
+  position: relative;
+  index:0;
+  height:90px;
+  width:180px;
+  border-radius: 50%;
+  background-color: #dbb563;
+  transform: translate(-185px, 120px)
+} */
 /*# sourceMappingURL=Blueberry.css.map */
