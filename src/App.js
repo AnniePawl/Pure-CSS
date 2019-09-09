@@ -14,7 +14,6 @@ function App() {
   })
   return (
     <div className='App'>
-      <h1>Fruit Bag</h1>
       {fruit_things}
     </div >
   )

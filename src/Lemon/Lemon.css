@@ -9,7 +9,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #497e99;
-  height: 850px;
+  height: 1000px;
 }
 
 .total_lemon {
@@ -27,44 +27,14 @@
           animation: float 3s infinite ease;
 }
 
-@-webkit-keyframes float {
-  0% {
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
-  }
-  50% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  100% {
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
-  }
-}
-
-@keyframes float {
-  0% {
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
-  }
-  50% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  100% {
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
-  }
-}
-
 .lemon {
   position: relative;
   height: 200px;
   width: 160px;
   border-radius: 50%;
   background-color: #ffd57a;
-  -webkit-box-shadow: 6px 1px  #fcc95b;
-          box-shadow: 6px 1px  #fcc95b;
+  -webkit-box-shadow: 6px 1px #fcc95b;
+          box-shadow: 6px 1px #fcc95b;
 }
 
 .lemon_shading {
@@ -73,20 +43,20 @@
   height: 200px;
   width: 80px;
   border-radius: 0 90px 90px 0;
-  background: #fcc54e;
+  background: #fcc95b;
   -webkit-transform: translate(160px);
           transform: translate(160px);
 }
 
 .lemon_nobs {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -111,7 +81,7 @@
   height: 35px;
   width: 16px;
   border-radius: 0 90px 90px 0;
-  background-color: #fcc54e;
+  background-color: #fcc95b;
   -webkit-transform: translate(18px, 1px);
           transform: translate(18px, 1px);
 }
@@ -151,7 +121,7 @@
   height: 35px;
   width: 16px;
   border-radius: 0 90px 90px 0;
-  background-color: #fcc54e;
+  background-color: #fcc95b;
   -webkit-transform: translate(18px, 10px);
           transform: translate(18px, 10px);
 }
@@ -161,7 +131,6 @@
   z-index: 1;
   width: 55px;
   height: 95px;
-  background-color: #aad481;
   -webkit-transform: translate(-2px, -42px) rotate(40deg);
           transform: translate(-2px, -42px) rotate(40deg);
   border-radius: 70%  0%  70% 0%;
@@ -177,7 +146,6 @@
   width: 150px;
   -webkit-animation: shadow 3s infinite;
           animation: shadow 3s infinite;
-  /* animation:shadow_size 3s infinite; */
 }
 
 @-webkit-keyframes lemon_leaf {
@@ -240,33 +208,33 @@
   }
 }
 
-@-webkit-keyframes shadow_size {
+@-webkit-keyframes float {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
   }
   50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
   }
 }
 
-@keyframes shadow_size {
+@keyframes float {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
   }
   50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
   }
 }
 /*# sourceMappingURL=Lemon.css.map */
