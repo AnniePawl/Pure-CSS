@@ -1,17 +1,19 @@
-.pear_container {
+@mixin center_flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pear_container {
+ @include center_flex()
   background-color: #94b2ff;
-  height: 850px;
+  height: 1000px;
 }
 
 .pear {
   position: relative;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@include center_flex()
 
 }
 
@@ -74,7 +76,6 @@
 
 .total_pear {
   animation: rotate 3s infinite;
-  
 }
 
 

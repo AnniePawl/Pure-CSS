@@ -9,18 +9,18 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #94b2ff;
-  height: 850px;
+  height: 1000px;
 }
 
 .pear {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
