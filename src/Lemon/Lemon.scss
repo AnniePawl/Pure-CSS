@@ -1,5 +1,5 @@
-$lemon: #ffd57a; 
-$lemon_shading: #fcc95b; 
+$lemon: #fed272; 
+$lemon_shading: #ffc548; 
 $lemon_bud: #4d4640;
 
 @mixin center_flex {
@@ -10,7 +10,7 @@ $lemon_bud: #4d4640;
 
 .lemon_container {
   @include center_flex();
-  background-color: #497e99;
+  background-color: #3a92b0;
   height: 1000px;
 }
 
@@ -114,7 +114,7 @@ $lemon_bud: #4d4640;
 
 .lemon_shadow {
   position: relative;
-  background-color:#33596b;
+  background-color:#2f7f99;
   border-radius: 50%;
   height:50px;
   width:150px;

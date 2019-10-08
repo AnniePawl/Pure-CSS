@@ -8,7 +8,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #497e99;
+  background-color: #3a92b0;
   height: 1000px;
 }
 
@@ -32,9 +32,9 @@
   height: 200px;
   width: 160px;
   border-radius: 50%;
-  background-color: #ffd57a;
-  -webkit-box-shadow: 6px 1px #fcc95b;
-          box-shadow: 6px 1px #fcc95b;
+  background-color: #fed272;
+  -webkit-box-shadow: 6px 1px #ffc548;
+          box-shadow: 6px 1px #ffc548;
 }
 
 .lemon_shading {
@@ -43,7 +43,7 @@
   height: 200px;
   width: 80px;
   border-radius: 0 90px 90px 0;
-  background: #fcc95b;
+  background: #ffc548;
   -webkit-transform: translate(160px);
           transform: translate(160px);
 }
@@ -71,7 +71,7 @@
   width: 35px;
   height: 45px;
   border-radius: 50%;
-  background-color: #ffd57a;
+  background-color: #fed272;
   -webkit-transform: translate(0, -108px);
           transform: translate(0, -108px);
 }
@@ -81,7 +81,7 @@
   height: 35px;
   width: 16px;
   border-radius: 0 90px 90px 0;
-  background-color: #fcc95b;
+  background-color: #ffc548;
   -webkit-transform: translate(18px, 1px);
           transform: translate(18px, 1px);
 }
@@ -111,7 +111,7 @@
   width: 35px;
   height: 45px;
   border-radius: 50%;
-  background-color: #ffd57a;
+  background-color: #fed272;
   -webkit-transform: translate(0, 25px);
           transform: translate(0, 25px);
 }
@@ -121,7 +121,7 @@
   height: 35px;
   width: 16px;
   border-radius: 0 90px 90px 0;
-  background-color: #fcc95b;
+  background-color: #ffc548;
   -webkit-transform: translate(18px, 10px);
           transform: translate(18px, 10px);
 }
@@ -140,7 +140,7 @@
 
 .lemon_shadow {
   position: relative;
-  background-color: #33596b;
+  background-color: #2f7f99;
   border-radius: 50%;
   height: 50px;
   width: 150px;
