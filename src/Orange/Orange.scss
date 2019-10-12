@@ -1,0 +1,36 @@
+$orange: #fcb15b; 
+$orange_shading: #f7943e; 
+$orange_leaves: #64bd8a;
+
+
+@mixin center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.orange_container {
+  @include center_flex();
+  background-color: #ffcce0;
+  height: 500px;
+
+}
+
+.orange_base {
+  height:200px;
+  width:200px;
+  background-color: $orange;
+  border-radius: 50%;
+  
+}
+
+.orange_shadow {
+  z-index: 1;
+  position: relative;
+  height:200px;
+  width:100px;
+  border-radius: 0 90px 90px 0;
+  background-color: $orange_shading;
+  transform: translate(50px)
+}
