@@ -1,10 +1,4 @@
-html {
-  height: 100%;
-}
-
-.title {
-  font-family: 'Roboto', sans-serif;
+.App {
   text-align: center;
-  padding: 0px;
 }
 

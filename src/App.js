@@ -1,22 +1,35 @@
-import React from 'react';
-import './App.css'
-import Display from './Display'
-import fruit_bag from './Fruits'
+import React, { Component } from 'react';
+import './App.css';
+import { BrowserRouter, Route, Router, Link } from 'react-router-dom'
+import Display from './Display/Display'
+import FruitBag from './Fruits/FruitItems'
+import NavBar from './NavBar/Navbar'
+
+
 
 function App() {
-  const fruit_things = fruit_bag.map((item) => {
-    console.log(item)
+
+  const fruit_things = FruitBag.map((item) => {
     return (
+
+
       <Display
-        component={item.component}
-      />
-    )
+        title={item.title}
+        desc={item.desc}
+        comp={item.comp}
+      />)
   })
+
   return (
-    <div className='App'>
-      {fruit_things}
-    </div >
-  )
+    <BrowserRouter>
+      <div className="App">
+        <NavBar />
+
+        {fruit_things}
+
+      </div >
+    </BrowserRouter>
+  );
 }
 
 export default App;

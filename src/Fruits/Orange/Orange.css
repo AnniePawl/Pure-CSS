@@ -1,0 +1,32 @@
+.orange_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffcce0;
+  height: 500px;
+}
+
+.orange_base {
+  height: 200px;
+  width: 200px;
+  background-color: #fcb15b;
+  border-radius: 50%;
+}
+
+.orange_shadow {
+  z-index: 1;
+  position: relative;
+  height: 200px;
+  width: 100px;
+  border-radius: 0 90px 90px 0;
+  background-color: #f7943e;
+  -webkit-transform: translate(50px);
+          transform: translate(50px);
+}
+/*# sourceMappingURL=Orange.css.map */
