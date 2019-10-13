@@ -13,6 +13,11 @@ function NavBar() {
             <Link className="navbar__link" to="/">Bugs</Link>
           </li>
 
+          {/* Candy Link */}
+          <li>
+            <Link className="navbar__link" to="/">Candy</Link>
+          </li>
+
           {/* Fruit Link */}
           <li>
             <Link className="navbar__link" to="/" >Fruits</Link>
