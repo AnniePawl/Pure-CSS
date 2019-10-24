@@ -1,3 +1,9 @@
+
+![GitHub repo size](https://img.shields.io/github/repo-size/AnniePawl/Pure-CSS-Animations?color=%23acc767&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/AnniePawl/Pure-CSS-Animations?color=%23acc767&style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/AnniePawl/Pure-CSS-Animations?color=%23acc767&style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/AnniePawl/Pure-CSS-Animations?color=%23acc767&style=for-the-badge)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -40,6 +46,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
