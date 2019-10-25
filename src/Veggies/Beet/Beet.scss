@@ -1,0 +1,54 @@
+$beet: #ff6198; 
+$beet_shading: #bf4576; 
+$beet_bud: #2f3333;
+
+@mixin center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.beet_container {
+  @include center_flex();
+  background-color: #fbffab;
+  height: 500px;
+}
+
+.total_beet {
+ @include center_flex();
+  position: relative;
+  // animation: float 3s infinite ease;
+}
+
+.beet {
+  position: relative;
+  z-index:2;
+  height:161px;
+  width:180px;
+  border-radius: 50%; 
+  background-color:$beet;
+  box-shadow:3px 1px  $beet_shading;
+}
+
+.beet_shading{
+  position: relative;
+  z-index:4;
+  height:161px;
+  width:95px;
+  border-radius: 0 100px 100px 0;
+  background:$beet_shading;
+  transform: translate(180px, 0px);
+}
+
+
+.beet_root {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 75px solid $beet_shading;
+  transform: translate(-105px, 100px);
+}
+

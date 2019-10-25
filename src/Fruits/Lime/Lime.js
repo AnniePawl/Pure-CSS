@@ -18,11 +18,11 @@ function Lime() {
             <div className='lime_leaf'></div>
             <div className='lime_top_nob'>
               <div className='lime_top_nob_shading'></div>
-              <div className='top_bud'></div>
+              <div className='lime_top_bud'></div>
             </div>
             <div className='lime_bottom_nob'>
               <div className='lime_bottom_nob_shading'></div>
-              <div className='bottom_bud'></div>
+              <div className='lime_bottom_bud'></div>
             </div>
           </div>
 
