@@ -8,7 +8,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #2b5c63;
+  background-color: #214054;
   height: 500px;
 }
 
@@ -106,22 +106,22 @@
           transform: translate(18px, 10px);
 }
 
-.top_bud {
+.lime_top_bud {
   position: relative;
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #4a4846;
+  background-color: #2f3333;
   -webkit-transform: translate(13px, -35px);
           transform: translate(13px, -35px);
 }
 
-.bottom_bud {
+.lime_bottom_bud {
   position: relative;
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #4a4846;
+  background-color: #2f3333;
   -webkit-transform: translate(12px, 4px);
           transform: translate(12px, 4px);
 }
@@ -131,17 +131,17 @@
   z-index: 1;
   width: 55px;
   height: 95px;
-  -webkit-transform: translate(-55px, -40px) rotate(40deg);
-          transform: translate(-55px, -40px) rotate(40deg);
-  border-radius: 70%  0%  70% 0%;
+  -webkit-transform: translate(-52px, -43px) rotate(40deg);
+          transform: translate(-52px, -43px) rotate(40deg);
+  border-radius: 80%  0%  90% 0%;
   -webkit-animation: lime_leaf 3s infinite;
           animation: lime_leaf 3s infinite;
-  background-color: #70b59c;
+  background-color: #77bfb3;
 }
 
 .lime_shadow {
   position: relative;
-  background-color: #14363b;
+  background-color: #122836;
   border-radius: 50%;
   height: 50px;
   width: 150px;

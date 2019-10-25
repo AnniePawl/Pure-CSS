@@ -14,6 +14,11 @@ const FruitBag = [
     comp: < Lime />
   },
   {
+    title: "Pomegranate",
+    desc: "Don't Take Me For Pomefranate",
+    comp: <Pom />
+  },
+  {
     title: "Lemon",
     desc: "I cannot stop crying. There is lemon in my eyes. Juicy",
     comp: < Lemon />
@@ -33,11 +38,7 @@ const FruitBag = [
     desc: "Hello there my perfect pear! You're a fruit beyond compare ",
     comp: <Pear />
   },
-  {
-    title: "Pomegranate",
-    desc: "Don't Take Me For Pomefranate",
-    comp: <Pom />
-  },
+
 
 ]
 

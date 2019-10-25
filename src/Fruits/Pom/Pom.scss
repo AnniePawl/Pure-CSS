@@ -1,9 +1,18 @@
+$pom: #d63e64; 
+$pom_inner: #ffe6ea; 
+$pom_bud: #2f3333;
+
+@mixin pom_top {
+  
+}
+
+
 .pom_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #bae391;
-  height: 850px;
+  background-color: #fbffab;
+  height: 500px;
 }
 
 .pom_base {
@@ -14,7 +23,7 @@
   height:200px;
   width:200px;
   border-radius: 50%; 
-  background-color:#de4094;
+  background-color:$pom;
 }
 
 .pom_inner {
@@ -24,7 +33,7 @@
    height:180px;
    width:180px;
    border-radius: 50%; 
-   background-color: #ffebf5;
+   background-color: $pom_inner;
 }
 
 
@@ -43,7 +52,7 @@
   width:10px;
  height:180px;
  transform: translate(10px);
-  background-color: #de4094;
+  background-color: $pom;
 
 }
 
@@ -53,7 +62,7 @@
   z-index: 1;
   width:10px;
  height:110px;
-  background-color: #de4094;
+  background-color:$pom;
   transform:translate(-35px, 20px) rotate(40deg)
 }
 
@@ -62,7 +71,7 @@
   z-index: 1;
   width:10px;
  height:110px;
-  background-color: #de4094;
+  background-color: $pom;
   transform:translate(25px, 20px) rotate(-40deg);
 }
 
@@ -77,12 +86,19 @@
   transform: translate(160px, -110px)
 }
 
+.pom_top_base {
+  background:$pom;
+  height:12px;
+  width:25px;
+}
+
+
 .pom_top1 {
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 30px solid #de4094;
+  border-bottom: 30px solid $pom;
 
 }
 
@@ -91,7 +107,7 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 30px solid #de4094;
+  border-bottom: 30px solid $pom;
   
 
 }
@@ -101,16 +117,35 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 30px solid #de4094;
+  border-bottom: 30px solid $pom;
 
 }
 
 .pom_seeds {
-  height:25px;
-  width:25px;
+  height:20px;
+  width:20px;
   border-radius:50%;
-  background-color:#de4094;
+
 }
+
+.pom_seed1 {
+  background-color: #822445;
+
+}
+
+.pom_seed2 {
+  background-color:$pom;
+}
+
+
+.pom_seed3 {
+  background-color:#ff8092
+
+}
+
+
+
+
 /* 
 .pom_seeds 
 } */

@@ -1,0 +1,60 @@
+.beet_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fbffab;
+  height: 500px;
+}
+
+.total_beet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.beet {
+  position: relative;
+  z-index: 2;
+  height: 161px;
+  width: 180px;
+  border-radius: 50%;
+  background-color: #ff6198;
+  -webkit-box-shadow: 3px 1px #bf4576;
+          box-shadow: 3px 1px #bf4576;
+}
+
+.beet_shading {
+  position: relative;
+  z-index: 4;
+  height: 161px;
+  width: 95px;
+  border-radius: 0 100px 100px 0;
+  background: #bf4576;
+  -webkit-transform: translate(180px, 0px);
+          transform: translate(180px, 0px);
+}
+
+.beet_root {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 75px solid #bf4576;
+  -webkit-transform: translate(-105px, 100px);
+          transform: translate(-105px, 100px);
+}
+/*# sourceMappingURL=Beet.css.map */
