@@ -1,5 +1,6 @@
 import React from 'react'
 import Lemon from './Lemon/Lemon'
+import Lime from './Lime/Lime'
 import Orange from './Orange/Orange'
 import Blueberry from './Blueberry/Blueberry'
 import Pear from './Pear/Pear'
@@ -7,6 +8,11 @@ import Pom from './Pom/Pom'
 
 
 const FruitBag = [
+  {
+    title: "Lime",
+    desc: "Lime Lime Lime eyes. Juicy",
+    comp: < Lime />
+  },
   {
     title: "Lemon",
     desc: "I cannot stop crying. There is lemon in my eyes. Juicy",
