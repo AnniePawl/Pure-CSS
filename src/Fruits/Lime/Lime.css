@@ -12,6 +12,11 @@
   height: 500px;
 }
 
+.total {
+  -webkit-transform: translate(27px);
+          transform: translate(27px);
+}
+
 .total_lime {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,7 +146,7 @@
 
 .lime_shadow {
   position: relative;
-  background-color: #122836;
+  background-color: #0e202b;
   border-radius: 50%;
   height: 50px;
   width: 150px;

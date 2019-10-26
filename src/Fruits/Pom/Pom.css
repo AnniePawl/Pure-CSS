@@ -12,6 +12,11 @@
   height: 500px;
 }
 
+.total_pom {
+  -webkit-transform: translate(-50px, 10px);
+          transform: translate(-50px, 10px);
+}
+
 .pom_base {
   position: relative;
   z-index: 1;
@@ -35,6 +40,18 @@
   width: 220px;
   border-radius: 50%;
   background-color: #ffe6ea;
+}
+
+.total_pom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pom_inner_line {

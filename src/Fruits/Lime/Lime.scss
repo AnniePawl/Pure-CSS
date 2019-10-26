@@ -15,6 +15,11 @@ $lime_bud: #2f3333;
   height: 500px;
 }
 
+.total{
+  transform: translate(27px)
+
+}
+
 .total_lime {
  @include center_flex();
   position: relative;
@@ -116,7 +121,7 @@ $lime_bud: #2f3333;
 
 .lime_shadow {
   position: relative;
-  background-color:#122836;
+  background-color:#0e202b;
   border-radius: 50%;
   height:50px;
   width:150px;
@@ -138,43 +143,30 @@ $lime_bud: #2f3333;
 //   }
 // }
 
-// Realistic dynamic shadow
+
 @keyframes shadow {
   0% {
-
     opacity:.5;
-    
     transform: translate(-155px, 170px) scale(1);
-
   }
   50% {
     opacity: 1.5;
-   
     transform: translate(-155px, 170px)  scale(1.2);
-    
   }
-
   100% {
     opacity:.5;
-   
     transform: translate(-155px, 170px) scale(1);
-
   }
 }
 
-
-
-// Make lime float
 @keyframes float {
   0% {
     transform: translateY(-60px);
   }
-
   50% {
     transform: translateY(0px);
   }
-
   100% {
     transform: translateY(-60px);
   }
-}
+} 

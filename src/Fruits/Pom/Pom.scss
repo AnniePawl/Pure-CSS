@@ -10,12 +10,22 @@ $pom_bud: #2f3333;
   border-bottom: 30px solid $pom; 
 }
 
+@mixin center_flex {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pom_container {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fbffab;
   height: 500px;
+}
+
+.total_pom {
+  transform: translate(-50px, 10px)
 }
 
 .pom_base {
@@ -37,6 +47,9 @@ $pom_bud: #2f3333;
    background-color: $pom_inner;
 }
 
+.total_pom {
+  @include center_flex;
+}
 
 // .pom_lines {
 //   position: relative;
