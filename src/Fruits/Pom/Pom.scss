@@ -3,9 +3,12 @@ $pom_inner: #ffe6ea;
 $pom_bud: #2f3333;
 
 @mixin pom_top {
-  
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid $pom; 
 }
-
 
 .pom_container {
   display: flex;
@@ -17,135 +20,224 @@ $pom_bud: #2f3333;
 
 .pom_base {
   position: relative;
+  z-index:1;
   display: flex;
   justify-content: center; 
   align-items: center;
-  height:200px;
-  width:200px;
+  height:240px;
+  width:245px;
   border-radius: 50%; 
   background-color:$pom;
 }
 
 .pom_inner {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-   height:180px;
-   width:180px;
+   height:215px;
+   width:220px;
    border-radius: 50%; 
    background-color: $pom_inner;
 }
 
 
-.pom_lines {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// .pom_lines {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 
-
-}
+// }
 
 .pom_inner_line {
-  position: relative;
   z-index: 1;
-  width:10px;
- height:180px;
- transform: translate(10px);
+  position: relative;
+  width:15px;
+  height:230px;
+  transform: translate(102px, -50px);
   background-color: $pom;
-
 }
 
 
-.pom_inner_line2 {
-  position: relative;
+// .pom_inner_line2 {
+//   position: relative;
+//   z-index: 1;
+//   width:10px;
+//  height:110px;
+//   background-color:$pom;
+//   transform:translate(-35px, 20px) rotate(40deg)
+// }
+
+// .pom_inner_line3 {
+//   position: relative;
+//   z-index: 1;
+//   width:10px;
+//  height:110px;
+//   background-color: $pom;
+//   transform:translate(25px, 20px) rotate(-40deg);
+// }
+
+
+.pom_top {
   z-index: 1;
-  width:10px;
- height:110px;
-  background-color:$pom;
-  transform:translate(-35px, 20px) rotate(40deg)
-}
-
-.pom_inner_line3 {
   position: relative;
-  z-index: 1;
-  width:10px;
- height:110px;
-  background-color: $pom;
-  transform:translate(25px, 20px) rotate(-40deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(169px, -132px)
 }
 
-
-.pom_tops {
-  z-index: 2;
+.tops {
+  z-index: 1;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  transform: translate(160px, -110px)
 }
 
 .pom_top_base {
   background:$pom;
-  height:12px;
-  width:25px;
+  height:25px;
+  width:50px;
 }
 
 
 .pom_top1 {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 30px solid $pom;
-
+  @include pom_top();
+  transform: rotate(-35deg)translate(6px, 7px);
 }
 
 .pom_top2 {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 30px solid $pom;
-  
+  @include pom_top();
+  transform: translate(0, 1px)
 
 }
 
 .pom_top3 {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 30px solid $pom;
-
+  @include pom_top();
+  transform: rotate(35deg)translate(-6px,7px);
 }
 
+// POM SEEDS
+
+// See Container
+.all_pom_seeds {
+  position: relative;
+  z-index: 2;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transform: translate(0,3px);
+}
+
+// Universal pom seed style 
 .pom_seeds {
-  height:20px;
-  width:20px;
-  border-radius:50%;
 
+  height:25px;
+  width:25px;
+  border-radius:50%;
+  margin:5.5px;
 }
 
+// Seed color Assignments
+// Seed One Color
 .pom_seed1 {
-  background-color: #822445;
-
+  animation: seed_color 5s infinite, scale_up 3s infinite;
 }
 
 .pom_seed2 {
-  background-color:$pom;
+  animation: seed_color 5s infinite, scale_down 3s infinite;
+  animation-delay: 1s;
 }
-
 
 .pom_seed3 {
-  background-color:#ff8092
+  animation: seed_color 5s infinite, scale_down 3s infinite;
+  animation-delay: 1s;
+}
 
+
+// Left outer Set
+.pom_seeds1 {
+  transform: translate(2px, 35px)
+
+}
+
+
+// Set 2
+.pom_seeds2{
+  transform: translate(-12px, 5px)
+
+
+}
+
+
+// Center Set
+.pom_seeds3{
+  transform: translate(-5px, -10px);
+}
+
+
+// Set 4
+.pom_seeds4{
+  transform: translate(0px, 5px)
+
+}
+
+
+.pom_seeds5 {
+  transform: translate(-13px, 35px)
+  
 }
 
 
 
 
-/* 
-.pom_seeds 
-} */
+// KEYFRAMES
+@keyframes scale_up {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.2)
+  }
+
+  100% {
+    transform: scale(1)
+  }
+  
+}
+
+@keyframes scale_down {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(.6)
+  }
+
+  100% {
+    transform: scale(1)
+  }
+  
+}
+
+
+// Change Seed Color
+@keyframes seed_color {
+  0% {
+    background-color: #ff8092
+  }
+  25% {
+    background-color: $pom
+  }
+
+  50% {
+    background-color:#822445
+  }
+
+  75% {
+    background-color:$pom
+  }
+  100% {
+    background-color:#ff8092
+  }
+}
