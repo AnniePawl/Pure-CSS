@@ -1,0 +1,80 @@
+.avocado_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffe6ea;
+  height: 500px;
+}
+
+.avocado_top {
+  position: relative;
+  height: 135px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #d8ffa3;
+  -webkit-transform: translate(0px, 65px);
+          transform: translate(0px, 65px);
+}
+
+.avocado_outer_top {
+  position: relative;
+  height: 150px;
+  width: 135px;
+  border-radius: 50%;
+  background-color: brown;
+  -webkit-transform: translate(0px, 65px);
+          transform: translate(0px, 65px);
+}
+
+.avocado_outer_bottom {
+  position: relative;
+  height: 175px;
+  width: 185px;
+  border-radius: 50%;
+  background-color: brown;
+}
+
+.avocado_bottom {
+  position: relative;
+  height: 160px;
+  width: 170px;
+  border-radius: 50%;
+  background-color: #d8ffa3;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=Avocado.css.map */

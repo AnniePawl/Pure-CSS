@@ -1,0 +1,75 @@
+$avocado_outer:brown;
+$avocado: #d8ffa3; 
+$avocado_shading: #b3db79;
+$avocado_leaf:#81a34e;
+
+
+
+@mixin center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avocado_container {
+ @include center_flex()
+  background-color: #ffe6ea;
+  height: 500px;
+}
+
+.inner_avocado {
+
+}
+
+.avocado_top {
+  position: relative;
+  height:135px;
+  width:120px;
+  border-radius: 50%;
+  background-color:$avocado;
+  transform: translate(0px, 65px)
+}
+
+// Outer Avocado
+.avocado_outer_top {
+  position: relative;
+  height:150px;
+  width:135px;
+  border-radius: 50%;
+  background-color:$avocado_outer;
+  transform: translate(0px, 65px)
+}
+
+.avocado_outer_bottom {
+  position: relative;
+  height:175px;
+  width:185px;
+  border-radius: 50%; 
+  background-color:$avocado_outer;
+
+}
+
+
+.avocado_bottom {
+  position: relative;
+  height:160px;
+  width:170px;
+  border-radius: 50%; 
+  background-color:$avocado;
+}
+
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(180deg)
+  }
+
+  100% {
+    transform:rotate(360deg)
+  }
+ 
+}
