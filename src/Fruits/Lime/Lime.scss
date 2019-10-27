@@ -1,6 +1,7 @@
-$lime: #fbffab; 
-$lime_shading: #eaf788; 
+$lime: #f4ffab; 
+$lime_shading: #e8f587; 
 $lime_bud: #2f3333;
+$lime_leaf: #7ebfb6;
 
 @mixin center_flex {
   display: flex;
@@ -12,11 +13,12 @@ $lime_bud: #2f3333;
 .lime_container {
   @include center_flex();
   background-color: #214054;
-  height: 500px;
+  height: 600px;
 }
 
 .total{
-  transform: translate(27px)
+  transform: translate(27px);
+  @include center_flex()
 
 }
 
@@ -116,7 +118,7 @@ $lime_bud: #2f3333;
   transform:translate(-52px,-43px)rotate(40deg);
   border-radius: 80%  0%  90% 0%  ;
   animation: lime_leaf 3s infinite;
-  background-color: #77bfb3;
+  background-color: $lime_leaf;
 }
 
 .lime_shadow {

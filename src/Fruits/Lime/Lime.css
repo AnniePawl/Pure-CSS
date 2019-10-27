@@ -9,12 +9,21 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #214054;
-  height: 500px;
+  height: 600px;
 }
 
 .total {
   -webkit-transform: translate(27px);
           transform: translate(27px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .total_lime {
@@ -37,9 +46,9 @@
   height: 180px;
   width: 160px;
   border-radius: 50%;
-  background-color: #fbffab;
-  -webkit-box-shadow: 6px 1px #eaf788;
-          box-shadow: 6px 1px #eaf788;
+  background-color: #f4ffab;
+  -webkit-box-shadow: 6px 1px #e8f587;
+          box-shadow: 6px 1px #e8f587;
 }
 
 .lime_shading {
@@ -48,7 +57,7 @@
   height: 180px;
   width: 80px;
   border-radius: 0 90px 90px 0;
-  background: #eaf788;
+  background: #e8f587;
   -webkit-transform: translate(160px);
           transform: translate(160px);
 }
@@ -76,7 +85,7 @@
   width: 35px;
   height: 45px;
   border-radius: 50%;
-  background-color: #fbffab;
+  background-color: #f4ffab;
   -webkit-transform: translate(0, -110px);
           transform: translate(0, -110px);
 }
@@ -86,7 +95,7 @@
   width: 35px;
   height: 45px;
   border-radius: 50%;
-  background-color: #fbffab;
+  background-color: #f4ffab;
   -webkit-transform: translate(0, 5px);
           transform: translate(0, 5px);
 }
@@ -96,7 +105,7 @@
   height: 35px;
   width: 16px;
   border-radius: 0 90px 90px 0;
-  background-color: #eaf788;
+  background-color: #e8f587;
   -webkit-transform: translate(18px, 1px);
           transform: translate(18px, 1px);
 }
@@ -106,7 +115,7 @@
   height: 35px;
   width: 16px;
   border-radius: 0 90px 90px 0;
-  background-color: #eaf788;
+  background-color: #e8f587;
   -webkit-transform: translate(18px, 10px);
           transform: translate(18px, 10px);
 }
@@ -141,7 +150,7 @@
   border-radius: 80%  0%  90% 0%;
   -webkit-animation: lime_leaf 3s infinite;
           animation: lime_leaf 3s infinite;
-  background-color: #77bfb3;
+  background-color: #7ebfb6;
 }
 
 .lime_shadow {

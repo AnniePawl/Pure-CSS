@@ -28,8 +28,8 @@ function Lime() {
 
           </div>
 
-          <div className='lime_shadow'></div>
         </div>
+        <div className='lime_shadow'></div>
       </div>
 
 

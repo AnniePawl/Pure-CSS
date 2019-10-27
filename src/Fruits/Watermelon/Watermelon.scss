@@ -1,0 +1,48 @@
+$watermelon: #f4ffab; 
+$watermelon_shading: #e8f587; 
+$watermelon_bud: #2f3333;
+$watermelon_leaf: #7ebfb6;
+
+@mixin center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watermelon_container {
+  @include center_flex();
+  background-color: #6fb1dd;
+  height: 550px;
+}
+
+.total{
+  transform: translate(27px);
+  // @include center_flex()
+
+}
+
+.total_watermelon {
+ flex-direction: column;
+  position: relative;
+  // animation: float 3s infinite ease;
+}
+
+.outer_watermelon {
+  position: relative;
+  z-index: 1;
+  height:160px;
+  width:330px;
+  border-radius: 0 0 300px 300px;
+  background-color:green;
+}
+
+.inner_watermelon {
+  position: relative;
+  z-index: 2;
+  height:130px;
+  width:300px;
+  border-radius: 0 0 310px 310px;
+  background-color:pink;
+  transform: translate(0px, -160px)
+
+}

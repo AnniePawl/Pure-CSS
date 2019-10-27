@@ -27,7 +27,7 @@
   height: 150px;
   width: 135px;
   border-radius: 50%;
-  background-color: brown;
+  background-color: #423c39;
   -webkit-transform: translate(0px, 65px);
           transform: translate(0px, 65px);
 }
@@ -37,7 +37,7 @@
   height: 175px;
   width: 185px;
   border-radius: 50%;
-  background-color: brown;
+  background-color: #423c39;
 }
 
 .avocado_bottom {
