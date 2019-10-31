@@ -13,10 +13,12 @@
 .navbar > ul {
   display: flex;
   flex-direction: row;
+  
 }
 
 .navbar > ul >li {
 list-style-type: none;
+font-family: 'Oswald', sans-serif;
 }
 
 .navbar > ul > li >a  {

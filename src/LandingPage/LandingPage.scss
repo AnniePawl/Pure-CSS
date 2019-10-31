@@ -5,21 +5,21 @@
   align-items: center;
 }
 
-
 html {
   background-color: #214054;
 }
+
 
 .landing_container {
 margin-top:10vh;
 @include center_flex();
 flex-direction: row;
-
 }
 
 .landing_lime {
   margin-top:30px;
 }
+
 
 .landing_page_heading {
   font-family: 'Oswald', sans-serif;
@@ -27,7 +27,7 @@ flex-direction: row;
   color:#f4ffab;
   font-weight: 200;
   font-size: 4em;
-  // text-align: center;
+  text-align: left;
 }
 
 .landing_page_text {
@@ -37,4 +37,25 @@ flex-direction: row;
   font-weight: 200;
   font-size: 1.2em;
   margin-top:-25px;
+  text-align: left;
 }
+
+a.name {
+  text-decoration: none;
+  color:#7ebfb6;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+}
+
+a:hover {
+  color:gray;
+}
+
+.landing_page_name {  
+  text-align: left;
+  margin-top:-25px;
+
+}
+
+
+

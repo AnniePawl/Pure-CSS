@@ -1,6 +1,8 @@
 import React from 'react'
 import './LandingPage.scss'
 import Lime from '../Fruits/Lime/Lime'
+import { withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function LandingPage() {
@@ -9,8 +11,13 @@ function LandingPage() {
 
       <div className='heading'>
         <h1 className='landing_page_heading'>Pure CSS<br /> Animations</h1>
+
         <h4 className='landing_page_text'>Made With
-        ♥  By<br /> ANNA PAWL</h4>
+        ♥  By</h4>
+
+        <h4 className='landing_page_name'>
+          <Link className='name' to='/Profile'>ANNA PAWL</Link>
+        </h4>
 
       </div>
       {/* Lime Component */}
@@ -23,7 +30,6 @@ function LandingPage() {
   )
 }
 
-export default LandingPage
-
+export default withRouter(LandingPage)
 
 

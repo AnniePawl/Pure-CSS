@@ -1,41 +1,50 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Router, Link } from 'react-router-dom'
-import Display from './Display/Display'
-import FruitBag from './Fruits/FruitItems'
-import NavBar from './NavBar/Navbar'
-import ReactGA from 'react-ga'
+import { BrowserRouter as Router, Route } from "react-router-dom";
+// import bag from './Fruits'
+// import Display from './Display/Display'
+import Navbar from './Navbar/Navbar'
+import LandingPage from './LandingPage/LandingPage'
+import Profile from './Profile/Profile'
 
-const trackingId = "UA-150726179-1"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId);
-ReactGA.set({
-  // userId: auth.currentUserId(),
-  // // any data that is relevant to the user session
-  // // that you would like to track with google analytics
-})
 
 function App() {
 
-  const fruit_things = FruitBag.map((item) => {
-    return (
+  // const things = bag.map((item) => {
+  //   return (
 
 
-      <Display
-        title={item.title}
-        desc={item.desc}
-        comp={item.comp}
-      />)
-  })
+  //     <Display
+  //       title={item.title}
+  //       desc={item.desc}
+  //       comp={item.comp}
+  //     />)
+  // })
 
   return (
-    <BrowserRouter>
-      <div className="App">
-        <NavBar />
+    <div className="App">
 
-        {fruit_things}
+      <Router>
+        <Navbar />
+        {/* <LandingPage /> */}
 
-      </div >
-    </BrowserRouter>
+        {/* 
+        {things}
+        */}
+
+        <Route exact path="/profile" >
+          <Profile />
+        </Route>
+
+        <Route path="/" >
+          <LandingPage />
+        </Route>
+
+
+      </Router>
+
+
+    </div>
   );
 }
 
