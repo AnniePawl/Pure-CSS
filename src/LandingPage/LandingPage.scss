@@ -1,0 +1,40 @@
+
+@mixin center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+html {
+  background-color: #214054;
+}
+
+.landing_container {
+margin-top:10vh;
+@include center_flex();
+flex-direction: row;
+
+}
+
+.landing_lime {
+  margin-top:30px;
+}
+
+.landing_page_heading {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color:#f4ffab;
+  font-weight: 200;
+  font-size: 4em;
+  // text-align: center;
+}
+
+.landing_page_text {
+  font-family: 'Oswald', sans-serif;
+  // text-transform: uppercase;
+  color:#f4ffab;
+  font-weight: 200;
+  font-size: 1.2em;
+  margin-top:-25px;
+}
