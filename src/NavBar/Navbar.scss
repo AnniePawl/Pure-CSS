@@ -18,7 +18,9 @@
 
 .navbar > ul >li {
 list-style-type: none;
-font-family: 'Oswald', sans-serif;
+
+font-weight: 400;
+
 }
 
 .navbar > ul > li >a  {
@@ -28,9 +30,12 @@ font-family: 'Oswald', sans-serif;
   padding: 0.6em;
   color: #3e3f40;
   margin-right:50px;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar > ul > li > a:hover {
   color: #80d4ff;
   text-decoration: none; 
+
 }
