@@ -5,29 +5,71 @@ function Blueberry() {
   return (
 
     <div className='blueberry_container'>
+      {/* Blueberry Leaves */}
+      <div className='blueberry_leaves'>
+        <div className='blueberry_leaf leaf1'></div>
+        <div className='blueberry_leaf leaf2'></div>
+        <div className='blueberry_leaf leaf3 '></div>
+        <div className='blueberry_leaf leaf4'></div>
+        <div className='blueberry_leaf leaf5'></div>
+      </div>
 
-      <div className='total_blueberry'>
+      <div className='bloobs'>
 
-        <div className='blueberry_leaves'>
 
-          <div className='blueberry_leaf_outer'>
+        {/* Blueberry 1 */}
+        <div className='total_blueberry'>
+
+          {/* stars*/}
+          <div className='blueberry_stars'>
+            <div className='blueberry_star_outer'>
+            </div>
+            <div className='blueberry_star_inner'> </div>
           </div>
 
-          <div className='blueberry_leaf_inner'> </div>
+          {/* Blueberry Base */}
+          <div className='blueberry_base'>
+            <div className='blueberry_shadow'></div>
+          </div>
 
         </div>
 
+        {/* Blueberry 2 */}
+        <div className='total_blueberry2'>
+
+          {/* stars*/}
+          <div className='blueberry_stars'>
+            <div className='blueberry_star_outer'>
+            </div>
+            <div className='blueberry_star_inner'> </div>
+          </div>
+
+          {/* Blueberry Base */}
+          <div className='blueberry_base'>
+            <div className='blueberry_shadow'></div>
+          </div>
+
+        </div>
+
+        {/* Blueberry 3 */}
+        <div className='total_blueberry3'>
+
+          {/* stars*/}
+          <div className='blueberry_stars'>
+            <div className='blueberry_star_outer'>
+            </div>
+            <div className='blueberry_star_inner'> </div>
+          </div>
 
 
-
-        <div className='blueberry_base'>
-          <div className='blueberry_shadow'></div>
+          {/* Blueberry Base */}
+          <div className='blueberry_base'>
+            <div className='blueberry_shadow'></div>
+          </div>
 
         </div>
 
       </div>
-
-      <div className='bloob_shadow'></div>
 
     </div>
 

@@ -1,5 +1,5 @@
-$blueberry:#7a9eff;
-$blueberry_shadow: #6685d9;
+$blueberry:#82aaff;
+$blueberry_shadow: #688ede;
 
 @mixin center_flex {
   display: flex;
@@ -8,15 +8,39 @@ $blueberry_shadow: #6685d9;
 }
 
 .blueberry_container {
-  @include center_flex()
-  background-color: #ffd57a;
-  height: 1000px;
+  // @include center_flex();
+  background-color: #d5ff9c;
+  height: 500px;
 }
 
-.total_blueberry {
- @include center_flex()
-  animation: scale 3s infinite;
+// WHOLE BLOOB STYLES
+// Scaled 1/2 size
+.bloobs {
+display: flex;
+position: relative;
+z-index: 2;
+transform: translate(0px,-500px)scale(.5);
+
 }
+
+// Left Blueberry Style
+.total_blueberry {
+ @include center_flex();
+ transform: translate(190px,350px)rotate(-22deg)
+}
+
+// Center Blueberry Style
+.total_blueberry2 {
+  z-index: 1;
+  @include center_flex();
+  transform: translate(0,430px)
+ }
+
+// Right Blueberry Style
+ .total_blueberry3 {
+  @include center_flex();
+  transform: translate(-180px,320px) rotate(22deg);
+ }
 
 .blueberry_base {
   z-index: 1;
@@ -26,27 +50,28 @@ $blueberry_shadow: #6685d9;
   border-radius: 50%; 
   background-color: $blueberry;
   box-shadow: 6px 0px $blueberry_shadow;
+  border: 5px solid $blueberry_shadow;
 }
 
 
 .blueberry_shadow {
   z-index: 1;
   position: relative;
-  height:200px;
+  height:205px;
   width:100px;
   border-radius: 0 90px 90px 0;
   background-color: $blueberry_shadow;
-  transform: translate(50px)
+  transform: translate(55px,0px)
 }
 
 
-.blueberry_leaves {
+.blueberry_stars {
   position: relative;
   z-index: 3;
-  transform: translate(135px, -70px) rotate(20deg);
+  transform: translate(138px, -75px) rotate(20deg);
 }
 
-.blueberry_leaf_outer {
+.blueberry_star_outer {
   width: 0;
   height: 0;
   border-left: 35px solid transparent;
@@ -56,7 +81,7 @@ $blueberry_shadow: #6685d9;
 
 }
 
-.blueberry_leaf_outer:after {
+.blueberry_star_outer:after {
   width: 0;
   height: 0;
   border-left: 35px solid transparent;
@@ -69,8 +94,8 @@ $blueberry_shadow: #6685d9;
  
 }
 
-.blueberry_leaf_inner {
-  z-index: 1;
+.blueberry_star_inner {
+  z-index: 2;
   position: relative;
   width: 0;
   height: 0;
@@ -81,7 +106,7 @@ $blueberry_shadow: #6685d9;
   transform: translate(20px, -45px)
 }
 
-.blueberry_leaf_inner:after {
+.blueberry_star_inner:after {
   z-index: 1;
   position: relative;
   width: 0;
@@ -95,6 +120,48 @@ $blueberry_shadow: #6685d9;
   left: -15px;
 }
 
+
+.blueberry_leaves {
+  position: relative;
+  z-index: 1;
+  transform: translate(400px)
+}
+
+.blueberry_leaf {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 90px;
+  border-radius: 80%  0%  80% 0%  ;
+  animation: lime_leaf 3s infinite;
+  background-color: #52ba6e;
+}
+// Top Right
+.leaf1 {
+  transform: translate(50px,110px)rotate(10deg)
+
+}
+// Top Left
+.leaf2{
+  transform: translate(15px,25px)rotate(-50deg)
+
+}
+
+// Middle Right
+.leaf3 {
+  transform: translate(75px,50px)rotate(110deg)
+
+}
+
+.leaf4{
+  transform: translate(-25px,-35px)rotate(20deg)
+
+}
+
+.leaf5{
+
+  transform: translate(20px,-20px)
+}
 
 @keyframes scale {
   0% {
