@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Navbar.scss'
+import { withRouter } from 'react-router-dom'
+import './Navbar.css'
 
 function Navbar() {
   return (
+
     <div className="nav">
       <nav className='navbar'>
         <ul>
@@ -20,7 +22,7 @@ function Navbar() {
 
           {/* Fruit Link */}
           <li>
-            <Link className="navbar__link" to="/" >Fruits</Link>
+            <Link className="navbar__link" to="/FruitPage" >Fruits</Link>
           </li>
 
           {/* Plant Link */}
@@ -42,5 +44,5 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default withRouter(Navbar)
 
