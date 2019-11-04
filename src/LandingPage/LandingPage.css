@@ -1,0 +1,59 @@
+html {
+  background-color: #214054;
+}
+
+.landing_container {
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landing_lime {
+  margin-top: 30px;
+}
+
+.landing_page_heading {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #f4ffab;
+  font-weight: 200;
+  font-size: 4em;
+  text-align: left;
+}
+
+.landing_page_text {
+  font-family: 'Oswald', sans-serif;
+  color: #f4ffab;
+  font-weight: 200;
+  font-size: 1.2em;
+  margin-top: -25px;
+  text-align: left;
+}
+
+a.name {
+  text-decoration: none;
+  color: #7ebfb6;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+}
+
+a:hover {
+  color: gray;
+}
+
+.landing_page_name {
+  text-align: left;
+  margin-top: -25px;
+}
+/*# sourceMappingURL=LandingPage.css.map */

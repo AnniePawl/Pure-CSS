@@ -1,15 +1,16 @@
 .blueberry_container {
+  background-color: #d5ff9c;
+  height: 500px;
+}
+
+.bloobs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffd57a;
-  height: 1000px;
+  position: relative;
+  z-index: 2;
+  -webkit-transform: translate(0px, -500px) scale(0.5);
+          transform: translate(0px, -500px) scale(0.5);
 }
 
 .total_blueberry {
@@ -22,8 +23,37 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: scale 3s infinite;
-          animation: scale 3s infinite;
+  -webkit-transform: translate(190px, 350px) rotate(-22deg);
+          transform: translate(190px, 350px) rotate(-22deg);
+}
+
+.total_blueberry2 {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(0, 430px);
+          transform: translate(0, 430px);
+}
+
+.total_blueberry3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-180px, 320px) rotate(22deg);
+          transform: translate(-180px, 320px) rotate(22deg);
 }
 
 .blueberry_base {
@@ -40,75 +70,119 @@
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-color: #7a9eff;
-  -webkit-box-shadow: 6px 0px #6685d9;
-          box-shadow: 6px 0px #6685d9;
+  background-color: #82aaff;
+  -webkit-box-shadow: 6px 0px #688ede;
+          box-shadow: 6px 0px #688ede;
+  border: 5px solid #688ede;
 }
 
 .blueberry_shadow {
   z-index: 1;
   position: relative;
-  height: 200px;
+  height: 205px;
   width: 100px;
   border-radius: 0 90px 90px 0;
-  background-color: #6685d9;
-  -webkit-transform: translate(50px);
-          transform: translate(50px);
+  background-color: #688ede;
+  -webkit-transform: translate(55px, 0px);
+          transform: translate(55px, 0px);
 }
 
-.blueberry_leaves {
+.blueberry_stars {
   position: relative;
   z-index: 3;
-  -webkit-transform: translate(135px, -70px) rotate(20deg);
-          transform: translate(135px, -70px) rotate(20deg);
+  -webkit-transform: translate(138px, -75px) rotate(20deg);
+          transform: translate(138px, -75px) rotate(20deg);
 }
 
-.blueberry_leaf_outer {
+.blueberry_star_outer {
   width: 0;
   height: 0;
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
-  border-bottom: 65px solid #6685d9;
+  border-bottom: 65px solid #688ede;
   position: relative;
 }
 
-.blueberry_leaf_outer:after {
+.blueberry_star_outer:after {
   width: 0;
   height: 0;
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
-  border-top: 65px solid #6685d9;
+  border-top: 65px solid #688ede;
   position: absolute;
   content: "";
   top: 20px;
   left: -35px;
 }
 
-.blueberry_leaf_inner {
-  z-index: 1;
+.blueberry_star_inner {
+  z-index: 2;
   position: relative;
   width: 0;
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 35px solid #7a9eff;
+  border-bottom: 35px solid #82aaff;
   position: relative;
   -webkit-transform: translate(20px, -45px);
           transform: translate(20px, -45px);
 }
 
-.blueberry_leaf_inner:after {
+.blueberry_star_inner:after {
   z-index: 1;
   position: relative;
   width: 0;
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 35px solid #7a9eff;
+  border-top: 35px solid #82aaff;
   position: absolute;
   content: "";
   top: 10px;
   left: -15px;
+}
+
+.blueberry_leaves {
+  position: relative;
+  z-index: 1;
+  -webkit-transform: translate(400px);
+          transform: translate(400px);
+}
+
+.blueberry_leaf {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 90px;
+  border-radius: 80%  0%  80% 0%;
+  -webkit-animation: lime_leaf 3s infinite;
+          animation: lime_leaf 3s infinite;
+  background-color: #52ba6e;
+}
+
+.leaf1 {
+  -webkit-transform: translate(50px, 110px) rotate(10deg);
+          transform: translate(50px, 110px) rotate(10deg);
+}
+
+.leaf2 {
+  -webkit-transform: translate(15px, 25px) rotate(-50deg);
+          transform: translate(15px, 25px) rotate(-50deg);
+}
+
+.leaf3 {
+  -webkit-transform: translate(75px, 50px) rotate(110deg);
+          transform: translate(75px, 50px) rotate(110deg);
+}
+
+.leaf4 {
+  -webkit-transform: translate(-25px, -35px) rotate(20deg);
+          transform: translate(-25px, -35px) rotate(20deg);
+}
+
+.leaf5 {
+  -webkit-transform: translate(20px, -20px);
+          transform: translate(20px, -20px);
 }
 
 @-webkit-keyframes scale {
