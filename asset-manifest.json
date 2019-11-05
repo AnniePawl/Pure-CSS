@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Pure-CSS-Animations/static/css/main.6af84c64.chunk.css",
-    "main.js": "/Pure-CSS-Animations/static/js/main.8f31639d.chunk.js",
-    "main.js.map": "/Pure-CSS-Animations/static/js/main.8f31639d.chunk.js.map",
+    "main.css": "/Pure-CSS-Animations/static/css/main.37ed54c4.chunk.css",
+    "main.js": "/Pure-CSS-Animations/static/js/main.fc711675.chunk.js",
+    "main.js.map": "/Pure-CSS-Animations/static/js/main.fc711675.chunk.js.map",
     "runtime~main.js": "/Pure-CSS-Animations/static/js/runtime~main.a57741dc.js",
     "runtime~main.js.map": "/Pure-CSS-Animations/static/js/runtime~main.a57741dc.js.map",
-    "static/js/2.c473acfa.chunk.js": "/Pure-CSS-Animations/static/js/2.c473acfa.chunk.js",
-    "static/js/2.c473acfa.chunk.js.map": "/Pure-CSS-Animations/static/js/2.c473acfa.chunk.js.map",
+    "static/js/2.74c52a09.chunk.js": "/Pure-CSS-Animations/static/js/2.74c52a09.chunk.js",
+    "static/js/2.74c52a09.chunk.js.map": "/Pure-CSS-Animations/static/js/2.74c52a09.chunk.js.map",
     "index.html": "/Pure-CSS-Animations/index.html",
-    "precache-manifest.3343e9d5c9e6854e5735d5bb361929db.js": "/Pure-CSS-Animations/precache-manifest.3343e9d5c9e6854e5735d5bb361929db.js",
+    "precache-manifest.df8a606aeb78b5cc682d6e83176352a3.js": "/Pure-CSS-Animations/precache-manifest.df8a606aeb78b5cc682d6e83176352a3.js",
     "service-worker.js": "/Pure-CSS-Animations/service-worker.js",
-    "static/css/main.6af84c64.chunk.css.map": "/Pure-CSS-Animations/static/css/main.6af84c64.chunk.css.map"
+    "static/css/main.37ed54c4.chunk.css.map": "/Pure-CSS-Animations/static/css/main.37ed54c4.chunk.css.map"
   }
 }
