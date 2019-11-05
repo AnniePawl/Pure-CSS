@@ -1,4 +1,3 @@
-
 @mixin center_flex {
   display: flex;
   justify-content: center;
@@ -11,9 +10,9 @@ html {
 
 
 .landing_container {
-margin-top:10vh;
-@include center_flex();
-flex-direction: row;
+  margin-top:20vh;
+  @include center_flex();
+  flex-direction: row;
 }
 
 .landing_lime {
@@ -48,7 +47,7 @@ a.name {
 }
 
 a:hover {
-  color:gray;
+  color:#f4ffab;
 }
 
 .landing_page_name {  
