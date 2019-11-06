@@ -1,11 +1,11 @@
 body {
   font-family: 'Oswald', sans-serif;
-  color: white;
+  color: gray;
 }
 
 h1 {
   text-transform: uppercase;
-  color: white;
+  color: gray;
   font-weight: 300;
 }
 /*# sourceMappingURL=Display.css.map */

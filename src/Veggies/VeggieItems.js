@@ -1,12 +1,12 @@
 const bag = [
   {
-    name: 'Veggie One',
-    desc: 'Try to Eat Veggies',
+    name: 'Veggies Coming Soon',
+    // desc: 'Try to Eat Veggies',
     // comp:
   },
   {
-    name: 'Veggie One',
-    desc: 'Try to Eat Veggies',
+    // name: 'Veggie One',
+    // desc: 'Try to Eat Veggies',
     // comp:
   },
 

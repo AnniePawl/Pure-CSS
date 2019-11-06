@@ -1,6 +1,7 @@
 import React from 'react'
 import Display from '../Display/Display'
 import bag from './VeggieItems'
+import './VeggiePage.scss'
 
 
 
@@ -16,8 +17,8 @@ function VeggiePage() {
   })
 
   return (
-    <div>
-      <h1>Veggie Page!</h1>
+    <div className='veggie_page'>
+      <h1 className='veggie_page_heading'>Veggie Page!</h1>
       {things}
     </div>
 

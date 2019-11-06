@@ -1,9 +1,6 @@
-html {
-  background-color: #214054;
-}
-
 .landing_container {
-  margin-top: 20vh;
+  height: 100vh;
+  background-color: #214054;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,12 +45,42 @@ a.name {
   font-family: 'Oswald', sans-serif;
 }
 
-a:hover {
+a.name:hover {
   color: #f4ffab;
 }
 
 .landing_page_name {
   text-align: left;
   margin-top: -25px;
+}
+
+@-webkit-keyframes name_scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes name_scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 /*# sourceMappingURL=LandingPage.css.map */

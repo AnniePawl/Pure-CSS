@@ -4,6 +4,9 @@ function Profile() {
   return (
     <div>
       <h1>Anna's Profile</h1>
+      <h1>Anna's Profile</h1>
+      <h1>Anna's Profile</h1>
+      <h1>Anna's Profile</h1>
     </div>
   )
 }

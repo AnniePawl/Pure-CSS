@@ -1,6 +1,7 @@
 import React from 'react'
 import Display from '../Display/Display'
 import bag from './PlantItems'
+import './PlantPage.scss'
 
 
 function PlantPage() {
@@ -16,9 +17,13 @@ function PlantPage() {
 
   return (
     <div>
-      <h1>Plant Page!</h1>
+      <div className='plant_page'>
 
-      {things}
+
+        <h1 className='plant_heading'>Plant Page!</h1>
+
+        {things}
+      </div>
     </div>
   )
 }

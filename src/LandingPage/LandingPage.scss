@@ -4,13 +4,9 @@
   align-items: center;
 }
 
-html {
-  background-color: #214054;
-}
-
-
 .landing_container {
-  margin-top:20vh;
+  height:100vh;
+  background-color: #214054;
   @include center_flex();
   flex-direction: row;
 }
@@ -18,7 +14,6 @@ html {
 .landing_lime {
   margin-top:30px;
 }
-
 
 .landing_page_heading {
   font-family: 'Oswald', sans-serif;
@@ -31,7 +26,6 @@ html {
 
 .landing_page_text {
   font-family: 'Oswald', sans-serif;
-  // text-transform: uppercase;
   color:#f4ffab;
   font-weight: 200;
   font-size: 1.2em;
@@ -46,15 +40,26 @@ a.name {
   font-family: 'Oswald', sans-serif;
 }
 
-a:hover {
-  color:#f4ffab;
+a.name:hover {
+  color: #f4ffab;
 }
 
 .landing_page_name {  
   text-align: left;
   margin-top:-25px;
-
 }
 
 
+
+@keyframes name_scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} 
 

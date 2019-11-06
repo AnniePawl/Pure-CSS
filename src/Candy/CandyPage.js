@@ -1,6 +1,7 @@
 import React from 'react'
 import bag from './CandyItems'
 import Display from '../Display/Display'
+import './CandyPage.scss'
 
 function CandyPage() {
   const things = bag.map((item) => {
@@ -13,8 +14,8 @@ function CandyPage() {
   })
 
   return (
-    <div>
-      <h1>Candy CORN CANDY CORN</h1>
+    <div className='candy_page'>
+      <h1 className='candy_page_heading'>Welcome to Candy Page</h1>
 
       {things}
 
