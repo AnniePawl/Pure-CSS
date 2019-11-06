@@ -8,7 +8,9 @@ import LandingPage from './LandingPage/LandingPage'
 import Profile from './Profile/Profile'
 import FruitPage from './Fruits/FruitPage'
 import BugPage from './Bugs/BugPage'
-
+import CandyPage from './Candy/CandyPage'
+import PlantPage from './Plants/PlantPage'
+import VeggiePage from './Veggies/VeggiePage'
 
 function App() {
 
@@ -18,26 +20,29 @@ function App() {
       <Router>
         <Navbar />
 
-
         <Route exact path="/" >
           <LandingPage />
         </Route>
 
-        <Route exact path="/Profile" exact component={Profile}>
+        <Route path="/Profile" component={Profile}>
         </Route>
 
-        <Route exact path="/BugPage" exact component={BugPage}>
+        <Route path="/BugPage" component={BugPage}>
         </Route>
 
-        <Route exact path="/FruitPage" exact component={FruitPage}>
+        <Route path='/CandyPage' component={CandyPage}>
         </Route>
 
+        <Route path="/FruitPage" component={FruitPage}>
+        </Route>
 
+        <Route path='/PlantPage' component={PlantPage}>
+        </Route>
 
-
+        <Route path='/VeggiePage' component={VeggiePage}>
+        </Route>
 
       </Router>
-
 
     </div>
   );
