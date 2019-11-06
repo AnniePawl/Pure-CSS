@@ -10,14 +10,19 @@ function Navbar() {
       <nav className='navbar'>
         <ul>
 
+          {/* Anna Link */}
+          <li>
+            <Link className="navbar__link" to="/Profile">Anna</Link>
+          </li>
+
           {/* Bug Link */}
           <li>
-            <Link className="navbar__link" to="/">Bugs</Link>
+            <Link className="navbar__link" to="/BugPage">Bugs</Link>
           </li>
 
           {/* Candy Link */}
           <li>
-            <Link className="navbar__link" to="/">Candy</Link>
+            <Link className="navbar__link" to="/CandyPage">Candy</Link>
           </li>
 
           {/* Fruit Link */}
@@ -27,12 +32,12 @@ function Navbar() {
 
           {/* Plant Link */}
           <li>
-            <Link className="navbar__link" to="/">Plants</Link>
+            <Link className="navbar__link" to="/PlantPage">Plants</Link>
           </li>
 
           {/* Veggie Link */}
           <li>
-            <Link className="navbar__link" to="/">Vegetables</Link>
+            <Link className="navbar__link" to="/VeggiePage">Vegetables</Link>
           </li>
 
 

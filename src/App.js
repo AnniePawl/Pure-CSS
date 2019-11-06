@@ -7,20 +7,10 @@ import Navbar from './Navbar/Navbar'
 import LandingPage from './LandingPage/LandingPage'
 import Profile from './Profile/Profile'
 import FruitPage from './Fruits/FruitPage'
+import BugPage from './Bugs/BugPage'
 
 
 function App() {
-
-  // const things = bag.map((item) => {
-  //   return (
-
-
-  //     <Display
-  //       title={item.title}
-  //       desc={item.desc}
-  //       comp={item.comp}
-  //     />)
-  // })
 
   return (
     <div className="App">
@@ -29,20 +19,20 @@ function App() {
         <Navbar />
 
 
-        <Route path="/" >
+        <Route exact path="/" >
           <LandingPage />
         </Route>
-
-
-        {/* 
-        {things}
-        */}
 
         <Route exact path="/Profile" exact component={Profile}>
         </Route>
 
+        <Route exact path="/BugPage" exact component={BugPage}>
+        </Route>
+
         <Route exact path="/FruitPage" exact component={FruitPage}>
         </Route>
+
+
 
 
 
