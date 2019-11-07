@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/Pure-CSS-Animations/static/css/main.094f53cb.chunk.css",
-    "main.js": "/Pure-CSS-Animations/static/js/main.d9165132.chunk.js",
-    "main.js.map": "/Pure-CSS-Animations/static/js/main.d9165132.chunk.js.map",
+    "main.css": "/Pure-CSS-Animations/static/css/main.d577db0f.chunk.css",
+    "main.js": "/Pure-CSS-Animations/static/js/main.b0b8dd09.chunk.js",
+    "main.js.map": "/Pure-CSS-Animations/static/js/main.b0b8dd09.chunk.js.map",
     "runtime~main.js": "/Pure-CSS-Animations/static/js/runtime~main.a57741dc.js",
     "runtime~main.js.map": "/Pure-CSS-Animations/static/js/runtime~main.a57741dc.js.map",
-    "static/js/2.23908e9e.chunk.js": "/Pure-CSS-Animations/static/js/2.23908e9e.chunk.js",
-    "static/js/2.23908e9e.chunk.js.map": "/Pure-CSS-Animations/static/js/2.23908e9e.chunk.js.map",
+    "static/js/2.85c92544.chunk.js": "/Pure-CSS-Animations/static/js/2.85c92544.chunk.js",
+    "static/js/2.85c92544.chunk.js.map": "/Pure-CSS-Animations/static/js/2.85c92544.chunk.js.map",
     "index.html": "/Pure-CSS-Animations/index.html",
-    "precache-manifest.37b6f028be1723a0f70fd421e4cf982c.js": "/Pure-CSS-Animations/precache-manifest.37b6f028be1723a0f70fd421e4cf982c.js",
+    "precache-manifest.129ebbd2237529b092596e57ba1d0065.js": "/Pure-CSS-Animations/precache-manifest.129ebbd2237529b092596e57ba1d0065.js",
     "service-worker.js": "/Pure-CSS-Animations/service-worker.js",
-    "static/css/main.094f53cb.chunk.css.map": "/Pure-CSS-Animations/static/css/main.094f53cb.chunk.css.map"
+    "static/css/main.d577db0f.chunk.css.map": "/Pure-CSS-Animations/static/css/main.d577db0f.chunk.css.map",
+    "static/media/behance_button1.svg": "/Pure-CSS-Animations/static/media/behance_button1.ef5f31d8.svg",
+    "static/media/codepen_button1.svg": "/Pure-CSS-Animations/static/media/codepen_button1.039681f6.svg",
+    "static/media/dribble_button1.svg": "/Pure-CSS-Animations/static/media/dribble_button1.f5506e39.svg",
+    "static/media/github_button1.svg": "/Pure-CSS-Animations/static/media/github_button1.e553a9c0.svg",
+    "static/media/insta_button1.svg": "/Pure-CSS-Animations/static/media/insta_button1.ddc801e5.svg",
+    "static/media/linkedin_button1.svg": "/Pure-CSS-Animations/static/media/linkedin_button1.5aefa988.svg",
+    "static/media/medium_button1.svg": "/Pure-CSS-Animations/static/media/medium_button1.a60848ab.svg",
+    "static/media/profile_banner.svg": "/Pure-CSS-Animations/static/media/profile_banner.42b4d635.svg",
+    "static/media/profile_wave.svg": "/Pure-CSS-Animations/static/media/profile_wave.33cffa44.svg"
   }
 }
