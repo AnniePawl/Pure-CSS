@@ -1,6 +1,6 @@
 const bag = [
   {
-    name: 'Plants Coming Soon',
+    // name: 'Plants Coming Soon',
     // desc: 'Tnalp',
     // comp: <Plant />
   },

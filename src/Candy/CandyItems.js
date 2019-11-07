@@ -1,7 +1,7 @@
 
 const bag = [
   {
-    title: "Candy Coming Soon!",
+    // title: "Candy Coming Soon!",
     // desc: "https://codepen.io/annampawl/pen/BaaZYjM",
     // comp: < Lime />
   },

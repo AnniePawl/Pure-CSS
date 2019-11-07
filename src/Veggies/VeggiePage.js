@@ -18,7 +18,7 @@ function VeggiePage() {
 
   return (
     <div className='veggie_page'>
-      <h1 className='veggie_page_heading'>Veggie Page!</h1>
+      <h1 className='veggie_page_heading'>Veggies Coming Soon</h1>
       {things}
     </div>
 

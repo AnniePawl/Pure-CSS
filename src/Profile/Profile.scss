@@ -36,10 +36,9 @@ img.profile_banner {
 }
 
 img.profile_wave {
-  margin-top:30px;
+  // margin-top:-px;
   width:100%;
 }
-
 
 @keyframes scale1 {
   0% {
@@ -53,32 +52,3 @@ img.profile_wave {
   }
 } 
 
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(8px, 8px, 8px);
-  }
-  
-  20%, 80% {
-    transform: translate3d(-2px, -8px, -2px);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-8px, -8px, -8px);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-
-@keyframes move_wave {
-  0% {
-      transform: translateX(0) translateZ(0) scaleY(1)
-  }
-  50% {
-      transform: translateX(-25%) translateZ(0) scaleY(0.55)
-  }
-  100% {
-      transform: translateX(-50%) translateZ(0) scaleY(1)
-  }
-}

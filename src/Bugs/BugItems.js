@@ -1,6 +1,6 @@
 const bag = [
   {
-    title: 'Bugs Coming Soon!',
+    // title: 'Bugs Coming Soon!',
     // desc: 'Bugs are Friends',
     // comp: <Bug />
   },

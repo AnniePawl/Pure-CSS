@@ -20,7 +20,7 @@ function PlantPage() {
       <div className='plant_page'>
 
 
-        <h1 className='plant_heading'>Plant Page!</h1>
+        <h1 className='plant_heading'>Plants Coming Soon </h1>
 
         {things}
       </div>

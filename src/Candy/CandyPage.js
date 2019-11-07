@@ -15,7 +15,7 @@ function CandyPage() {
 
   return (
     <div className='candy_page'>
-      <h1 className='candy_page_heading'>Welcome to Candy Page</h1>
+      <h1 className='candy_page_heading'>Candy Coming Soon</h1>
 
       {things}
 

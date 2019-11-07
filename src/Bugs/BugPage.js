@@ -15,7 +15,7 @@ function BugPage() {
 
   return (
     <div className='bug_page'>
-      <h1 className='bug_page_heading'>BUG Page OMG u buggin me</h1>
+      <h1 className='bug_page_heading'>Bugs Coming Soon</h1>
 
       {things}
 

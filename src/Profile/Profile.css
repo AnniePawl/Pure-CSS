@@ -50,7 +50,6 @@ img.profile_banner {
 }
 
 img.profile_wave {
-  margin-top: 30px;
   width: 100%;
 }
 
@@ -81,74 +80,6 @@ img.profile_wave {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-  }
-}
-
-@-webkit-keyframes shake {
-  10%, 90% {
-    -webkit-transform: translate3d(8px, 8px, 8px);
-            transform: translate3d(8px, 8px, 8px);
-  }
-  20%, 80% {
-    -webkit-transform: translate3d(-2px, -8px, -2px);
-            transform: translate3d(-2px, -8px, -2px);
-  }
-  30%, 50%, 70% {
-    -webkit-transform: translate3d(-8px, -8px, -8px);
-            transform: translate3d(-8px, -8px, -8px);
-  }
-  40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0);
-  }
-}
-
-@keyframes shake {
-  10%, 90% {
-    -webkit-transform: translate3d(8px, 8px, 8px);
-            transform: translate3d(8px, 8px, 8px);
-  }
-  20%, 80% {
-    -webkit-transform: translate3d(-2px, -8px, -2px);
-            transform: translate3d(-2px, -8px, -2px);
-  }
-  30%, 50%, 70% {
-    -webkit-transform: translate3d(-8px, -8px, -8px);
-            transform: translate3d(-8px, -8px, -8px);
-  }
-  40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0);
-  }
-}
-
-@-webkit-keyframes move_wave {
-  0% {
-    -webkit-transform: translateX(0) translateZ(0) scaleY(1);
-            transform: translateX(0) translateZ(0) scaleY(1);
-  }
-  50% {
-    -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
-            transform: translateX(-25%) translateZ(0) scaleY(0.55);
-  }
-  100% {
-    -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
-            transform: translateX(-50%) translateZ(0) scaleY(1);
-  }
-}
-
-@keyframes move_wave {
-  0% {
-    -webkit-transform: translateX(0) translateZ(0) scaleY(1);
-            transform: translateX(0) translateZ(0) scaleY(1);
-  }
-  50% {
-    -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
-            transform: translateX(-25%) translateZ(0) scaleY(0.55);
-  }
-  100% {
-    -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
-            transform: translateX(-50%) translateZ(0) scaleY(1);
   }
 }
 /*# sourceMappingURL=Profile.css.map */
