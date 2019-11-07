@@ -4,6 +4,8 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/AnniePawl/Pure-CSS-Animations?color=%23acc767&style=for-the-badge)
 ![GitHub stars](https://img.shields.io/github/stars/AnniePawl/Pure-CSS-Animations?color=%23acc767&style=for-the-badge)
 
+![Animation Banner](https://github.com/AnniePawl/Pure-CSS-Animations/tree/master/src/animation-banner.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
