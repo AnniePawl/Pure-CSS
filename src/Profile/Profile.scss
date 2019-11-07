@@ -1,16 +1,13 @@
-
-.profile_container{
-  margin-top:100px;
+.profile_container {
+  background-color:white;
+  height:100vh;
+  width:100%;
 }
 
-img {
+img.profile_button {
   height:100px;
   width:100px;
-  margin:10px;
-}
-
-.profile_header {
-  color:gray;
+  margin:15px;
 }
 
 .profile_buttons {
@@ -18,6 +15,70 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top:25px;
   width:100%;
   height:100px;
+}
+
+.profile_button:hover {
+  animation: scale1 3s infinite ;
+}
+
+img.profile_banner {
+  position:fixed;
+  display: flex;
+  align-content: flex-end;
+  bottom:0;
+  justify-content: flex-end;
+  width:100%;
+  margin-bottom:-50px;
+ 
+}
+
+img.profile_wave {
+  margin-top:30px;
+  width:100%;
+}
+
+
+@keyframes scale1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+} 
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(8px, 8px, 8px);
+  }
+  
+  20%, 80% {
+    transform: translate3d(-2px, -8px, -2px);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-8px, -8px, -8px);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes move_wave {
+  0% {
+      transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
 }

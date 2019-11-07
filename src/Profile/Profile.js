@@ -7,24 +7,32 @@ import linkedin from './Buttons/linkedin_button1.svg'
 import medium from './Buttons/medium_button1.svg'
 import behance from './Buttons/behance_button1.svg'
 import dribbble from './Buttons/dribble_button1.svg'
+import banner from './Buttons/profile_banner.svg'
+import wave from './Buttons/profile_wave.svg'
+
 
 function Profile() {
 
   return (
     <div className='profile_container'>
-      <h1 className='profile_header'>Anna's Profile</h1>
+      <img className='profile_wave' src={wave} />
 
       {/* Buttons */}
       <div className='profile_buttons'>
-        <img src={behance} />
-        <img src={dribbble} />
-        <img src={medium} />
-        <img src={linkedin} />
-        <img src={instagram} />
-        <img src={github} />
-        <img src={codepen} />
+        <img className='profile_button' src={behance} />
+        <img className='profile_button' src={dribbble} />
+        <img className='profile_button' src={medium} />
+        <img className='profile_button' src={linkedin} />
+        <img className='profile_button' src={instagram} />
+        <img className='profile_button' src={github} />
+        <img className='profile_button' src={codepen} />
       </div>
 
+
+      <img className='profile_banner' src={banner} />
+
+
+      <div className='wave'></div>
     </div>
 
   )
