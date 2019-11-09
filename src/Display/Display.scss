@@ -1,16 +1,27 @@
 
-// html{
-//   background-color: white;
-// }
-
 body {
   font-family: 'Oswald', sans-serif;
-  // background-color:white;
-  color:gray;
+  color:#214054;
 }
 
-h1 {
+h1.title {
   text-transform: uppercase;
-  color:gray;
+  color:#214054;
   font-weight: 300;
+}
+
+// h1.title:hover {
+//   color: gray;
+//   transform: scale(1.15)
+// }
+
+.fruit_page {
+  margin-top:90px;
+}
+
+.title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:125px;
 }

@@ -1,16 +1,22 @@
 .blueberry_container {
-  background-color: #d5ff9c;
-  height: 500px;
+  background-color: #ffe6ea;
+  height: 600px;
 }
 
 .bloobs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
-  z-index: 2;
-  -webkit-transform: translate(0px, -500px) scale(0.5);
-          transform: translate(0px, -500px) scale(0.5);
+  z-index: 1;
+  -webkit-transform: scale(0.6) translate(-90px);
+          transform: scale(0.6) translate(-90px);
 }
 
 .total_blueberry {
@@ -23,12 +29,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translate(190px, 350px) rotate(-22deg);
-          transform: translate(190px, 350px) rotate(-22deg);
+  margin-top: 150px;
+  -webkit-animation: bloob_float 3s ease infinite;
+          animation: bloob_float 3s ease infinite;
 }
 
 .total_blueberry2 {
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,8 +44,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translate(0, 430px);
-          transform: translate(0, 430px);
+  margin-top: 150px;
+  -webkit-animation: bloob_float 3s ease infinite;
+          animation: bloob_float 3s ease infinite;
 }
 
 .total_blueberry3 {
@@ -52,8 +59,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translate(-180px, 320px) rotate(22deg);
-          transform: translate(-180px, 320px) rotate(22deg);
+  margin-top: 150px;
+  -webkit-animation: bloob_float 3s ease infinite;
+          animation: bloob_float 3s ease infinite;
 }
 
 .blueberry_base {
@@ -70,10 +78,10 @@
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-color: #82aaff;
-  -webkit-box-shadow: 6px 0px #688ede;
-          box-shadow: 6px 0px #688ede;
-  border: 5px solid #688ede;
+  background-color: #91b4ff;
+  -webkit-box-shadow: 6px 0px #759cf0;
+          box-shadow: 6px 0px #759cf0;
+  border: 5px solid #759cf0;
 }
 
 .blueberry_shadow {
@@ -82,7 +90,7 @@
   height: 205px;
   width: 100px;
   border-radius: 0 90px 90px 0;
-  background-color: #688ede;
+  background-color: #759cf0;
   -webkit-transform: translate(55px, 0px);
           transform: translate(55px, 0px);
 }
@@ -99,7 +107,7 @@
   height: 0;
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
-  border-bottom: 65px solid #688ede;
+  border-bottom: 65px solid #759cf0;
   position: relative;
 }
 
@@ -108,7 +116,7 @@
   height: 0;
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
-  border-top: 65px solid #688ede;
+  border-top: 65px solid #759cf0;
   position: absolute;
   content: "";
   top: 20px;
@@ -122,7 +130,7 @@
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 35px solid #82aaff;
+  border-bottom: 35px solid #91b4ff;
   position: relative;
   -webkit-transform: translate(20px, -45px);
           transform: translate(20px, -45px);
@@ -135,54 +143,141 @@
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 35px solid #82aaff;
+  border-top: 35px solid #91b4ff;
   position: absolute;
   content: "";
   top: 10px;
   left: -15px;
 }
 
-.blueberry_leaves {
-  position: relative;
-  z-index: 1;
-  -webkit-transform: translate(400px);
-          transform: translate(400px);
-}
-
 .blueberry_leaf {
   position: relative;
   z-index: 1;
-  width: 60px;
-  height: 90px;
+  width: 90px;
+  height: 110px;
   border-radius: 80%  0%  80% 0%;
   -webkit-animation: lime_leaf 3s infinite;
           animation: lime_leaf 3s infinite;
-  background-color: #52ba6e;
+  background-color: #79d19c;
 }
 
 .leaf1 {
-  -webkit-transform: translate(50px, 110px) rotate(10deg);
-          transform: translate(50px, 110px) rotate(10deg);
+  -webkit-transform: translate(140px, -50px) rotate(55deg);
+          transform: translate(140px, -50px) rotate(55deg);
 }
 
 .leaf2 {
-  -webkit-transform: translate(15px, 25px) rotate(-50deg);
-          transform: translate(15px, 25px) rotate(-50deg);
+  background-color: #79d19c;
+  -webkit-transform: translate(300px, -160px) rotate(-125deg);
+          transform: translate(300px, -160px) rotate(-125deg);
 }
 
-.leaf3 {
-  -webkit-transform: translate(75px, 50px) rotate(110deg);
-          transform: translate(75px, 50px) rotate(110deg);
+.blueberry_shadows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.leaf4 {
-  -webkit-transform: translate(-25px, -35px) rotate(20deg);
-          transform: translate(-25px, -35px) rotate(20deg);
+.blueberry_shadow1 {
+  background-color: #d9b2b8;
+  border-radius: 50%;
+  height: 60px;
+  width: 120px;
+  -webkit-animation: bloob_shadow 3s infinite;
+          animation: bloob_shadow 3s infinite;
 }
 
-.leaf5 {
-  -webkit-transform: translate(20px, -20px);
-          transform: translate(20px, -20px);
+.blueberry_shadow2 {
+  background-color: #d9b2b8;
+  border-radius: 50%;
+  height: 60px;
+  width: 120px;
+  -webkit-animation: bloob_shadow 3s infinite;
+          animation: bloob_shadow 3s infinite;
+}
+
+.blueberry_shadow3 {
+  background-color: #d9b2b8;
+  border-radius: 50%;
+  height: 60px;
+  width: 120px;
+  -webkit-animation: bloob_shadow 3s infinite;
+          animation: bloob_shadow 3s infinite;
+}
+
+@-webkit-keyframes bloob_shadow {
+  0% {
+    opacity: .5;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    opacity: 1.5;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    opacity: .5;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes bloob_shadow {
+  0% {
+    opacity: .5;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    opacity: 1.5;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    opacity: .5;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes bloob_float {
+  0% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+}
+
+@keyframes bloob_float {
+  0% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
 }
 
 @-webkit-keyframes scale {
@@ -214,14 +309,4 @@
             transform: scale(1);
   }
 }
-
-/* .bloob_shadow {
-  position: relative;
-  index:0;
-  height:90px;
-  width:180px;
-  border-radius: 50%;
-  background-color: #dbb563;
-  transform: translate(-185px, 120px)
-} */
 /*# sourceMappingURL=Blueberry.css.map */

@@ -12,14 +12,20 @@ import Orange from './Orange/Orange'
 
 const bag = [
   {
-    title: "Lime",
+    title: "Lively Lime",
     desc: "https://codepen.io/annampawl/pen/BaaZYjM",
     comp: < Lime />
   },
   {
-    title: "Pomegranate",
+    title: "Playful Pomegranate",
     desc: '<Link to="https://codepen.io/annampawl/pen/rNNwpRO">CodePen</Link>',
     comp: <Pom />
+  },
+
+  {
+    title: "Bouncing Bloobs",
+    desc: "Roses are red, blueberries are blue-ish",
+    comp: <Blueberry />
   },
   {
     title: "Pear",
@@ -44,11 +50,6 @@ const bag = [
     comp: < Orange />
   },
 
-  {
-    title: "Blueberry",
-    desc: "Roses are red, blueberries are blue-ish",
-    comp: <Blueberry />
-  },
 
 
 ]

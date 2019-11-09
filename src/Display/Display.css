@@ -1,11 +1,28 @@
 body {
   font-family: 'Oswald', sans-serif;
-  color: gray;
+  color: #214054;
 }
 
-h1 {
+h1.title {
   text-transform: uppercase;
-  color: gray;
+  color: #214054;
   font-weight: 300;
+}
+
+.fruit_page {
+  margin-top: 90px;
+}
+
+.title_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 125px;
 }
 /*# sourceMappingURL=Display.css.map */

@@ -25,16 +25,19 @@
   text-transform: uppercase;
   color: #f4ffab;
   font-weight: 200;
-  font-size: 4em;
+  line-height: 1.2em;
+  font-size: 4.7em;
   text-align: left;
+  margin: 0;
+  margin-top: 60px;
 }
 
 .landing_page_text {
   font-family: 'Oswald', sans-serif;
   color: #f4ffab;
   font-weight: 200;
-  font-size: 1.2em;
-  margin-top: -25px;
+  font-size: 1.5em;
+  margin-top: 5px;
   text-align: left;
 }
 
@@ -51,17 +54,63 @@ a.name:hover {
 
 .landing_page_name {
   text-align: left;
-  margin-top: -25px;
+  margin-top: -30px;
+}
+
+img.profile_button {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+}
+
+.profile_buttons {
+  margin-top: 25px;
+  margin-left: -5px;
+}
+
+.profile_button:hover {
+  -webkit-animation: scale1 2s ease infinite;
+          animation: scale1 2s ease infinite;
 }
 
 @-webkit-keyframes name_scale {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes name_scale {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes scale1 {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   100% {
     -webkit-transform: scale(1);
@@ -69,14 +118,14 @@ a.name:hover {
   }
 }
 
-@keyframes name_scale {
+@keyframes scale1 {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
   100% {
     -webkit-transform: scale(1);

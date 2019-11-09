@@ -4,12 +4,11 @@ import './Display.scss'
 function Display(props) {
   return (
 
-
-    <div className='display'>
-      <h1 className='title'>{props.title}</h1>
-      <p className='description'>{props.desc}</p>
+    <div className='display_container'>
+      <div className='title_container'>
+        <h1 className='title'>{props.title}</h1>
+      </div>
       {props.comp}
-
     </div>
   )
 }

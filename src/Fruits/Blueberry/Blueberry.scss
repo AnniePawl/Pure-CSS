@@ -1,5 +1,14 @@
-$blueberry:#82aaff;
-$blueberry_shadow: #688ede;
+$blueberry:#91b4ff;
+$blueberry_shadow: #759cf0;
+$blueberry_leaves: #79d19c;
+$blueberry_ground_shadow:#d9b2b8;
+
+@mixin bloob_shadow {
+  background-color:$blueberry_ground_shadow;
+  border-radius: 50%;
+  height:60px;
+  width:120px;
+}
 
 @mixin center_flex {
   display: flex;
@@ -8,43 +17,47 @@ $blueberry_shadow: #688ede;
 }
 
 .blueberry_container {
+  background-color: #ffe6ea;
   // @include center_flex();
-  background-color: #d5ff9c;
-  height: 500px;
+  // // align-items: center;
+  // // justify-content: center;
+  height: 600px;
 }
 
 // WHOLE BLOOB STYLES
 // Scaled 1/2 size
 .bloobs {
 display: flex;
+align-items: center;
+justify-content: center;
 position: relative;
-z-index: 2;
-transform: translate(0px,-500px)scale(.5);
+z-index: 1;
+transform: scale(.6) translate(-90px);
 
 }
 
 // Left Blueberry Style
 .total_blueberry {
  @include center_flex();
- transform: translate(190px,350px)rotate(-22deg)
+ margin-top:150px;
+ animation: bloob_float 3s ease infinite;
 }
 
-// Center Blueberry Style
 .total_blueberry2 {
-  z-index: 1;
   @include center_flex();
-  transform: translate(0,430px)
+  margin-top:150px;
+  animation: bloob_float 3s ease infinite;
  }
 
-// Right Blueberry Style
  .total_blueberry3 {
   @include center_flex();
-  transform: translate(-180px,320px) rotate(22deg);
+  margin-top:150px;
+  animation: bloob_float 3s ease infinite;
  }
 
 .blueberry_base {
   z-index: 1;
-  @include center_flex()
+  @include center_flex();
   height:200px;
   width:200px;
   border-radius: 50%; 
@@ -52,7 +65,6 @@ transform: translate(0px,-500px)scale(.5);
   box-shadow: 6px 0px $blueberry_shadow;
   border: 5px solid $blueberry_shadow;
 }
-
 
 .blueberry_shadow {
   z-index: 1;
@@ -63,7 +75,6 @@ transform: translate(0px,-500px)scale(.5);
   background-color: $blueberry_shadow;
   transform: translate(55px,0px)
 }
-
 
 .blueberry_stars {
   position: relative;
@@ -78,7 +89,6 @@ transform: translate(0px,-500px)scale(.5);
   border-right: 35px solid transparent;
   border-bottom: 65px solid $blueberry_shadow;
   position: relative;
-
 }
 
 .blueberry_star_outer:after {
@@ -91,7 +101,6 @@ transform: translate(0px,-500px)scale(.5);
   content: "";
   top: 20px;
   left: -35px;
- 
 }
 
 .blueberry_star_inner {
@@ -120,48 +129,76 @@ transform: translate(0px,-500px)scale(.5);
   left: -15px;
 }
 
-
-.blueberry_leaves {
-  position: relative;
-  z-index: 1;
-  transform: translate(400px)
-}
-
 .blueberry_leaf {
   position: relative;
   z-index: 1;
-  width: 60px;
-  height: 90px;
+  width: 90px;
+  height: 110px;
   border-radius: 80%  0%  80% 0%  ;
   animation: lime_leaf 3s infinite;
-  background-color: #52ba6e;
+  background-color:$blueberry_leaves;
 }
 // Top Right
 .leaf1 {
-  transform: translate(50px,110px)rotate(10deg)
-
+  transform: translate(140px,-50px)rotate(55deg)
 }
 // Top Left
 .leaf2{
-  transform: translate(15px,25px)rotate(-50deg)
-
+  background-color:$blueberry_leaves;
+  transform: translate(300px,-160px)rotate(-125deg);
 }
 
-// Middle Right
-.leaf3 {
-  transform: translate(75px,50px)rotate(110deg)
-
+// GROUND SHADOWS
+.blueberry_shadows {
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-direction: row;
 }
 
-.leaf4{
-  transform: translate(-25px,-35px)rotate(20deg)
-
+.blueberry_shadow1 {
+  @include bloob_shadow();
+  animation: bloob_shadow 3s infinite;
 }
 
-.leaf5{
-
-  transform: translate(20px,-20px)
+.blueberry_shadow2 {
+@include bloob_shadow();
+  animation: bloob_shadow 3s infinite;
 }
+
+.blueberry_shadow3 {
+@include bloob_shadow();
+animation: bloob_shadow 3s infinite;
+}
+
+
+// KEYFRAMES 
+@keyframes bloob_shadow {
+  0% {
+    opacity:.5;
+    transform: scale(.9);
+  }
+  50% {
+    opacity: 1.5;
+    transform:scale(1.1);
+  }
+  100% {
+    opacity:.5;
+    transform: scale(.9);
+  }
+}
+
+@keyframes bloob_float {
+  0% {
+    transform: translateY(-60px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-60px);
+  }
+} 
 
 @keyframes scale {
   0% {
@@ -177,12 +214,3 @@ transform: translate(0px,-500px)scale(.5);
 }
 
 
-/* .bloob_shadow {
-  position: relative;
-  index:0;
-  height:90px;
-  width:180px;
-  border-radius: 50%;
-  background-color: #dbb563;
-  transform: translate(-185px, 120px)
-} */

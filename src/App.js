@@ -23,6 +23,10 @@ function App() {
           <LandingPage />
         </Route>
 
+        <Route exact path="/Pure-CSS-Animations" >
+          <LandingPage />
+        </Route>
+
         <Route path="/BugPage" component={BugPage}>
         </Route>
 
