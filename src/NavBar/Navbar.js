@@ -12,7 +12,7 @@ function Navbar() {
 
           {/* Anna Link */}
           <li>
-            <Link className="navbar__link" to="/Profile">Anna</Link>
+            <Link className="navbar__link" to="/">Anna</Link>
           </li>
 
           {/* Bug Link */}

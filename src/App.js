@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 // import Display from './Display/Display'
 import Navbar from './Navbar/Navbar'
 import LandingPage from './LandingPage/LandingPage'
-import Profile from './Profile/Profile'
 import FruitPage from './Fruits/FruitPage'
 import BugPage from './Bugs/BugPage'
 import CandyPage from './Candy/CandyPage'
@@ -22,9 +21,6 @@ function App() {
 
         <Route exact path="/" >
           <LandingPage />
-        </Route>
-
-        <Route path="/Profile" component={Profile}>
         </Route>
 
         <Route path="/BugPage" component={BugPage}>
