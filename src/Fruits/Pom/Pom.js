@@ -89,6 +89,8 @@ function Pom() {
         </div>
       </div>
 
+      <div className='pom_shadow'></div>
+
     </div>
 
 

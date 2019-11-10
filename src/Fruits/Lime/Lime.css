@@ -161,6 +161,8 @@
   width: 150px;
   -webkit-animation: shadow 3s infinite;
           animation: shadow 3s infinite;
+  -webkit-box-shadow: 0 0 2px 5px #0e202b;
+          box-shadow: 0 0 2px 5px #0e202b;
 }
 
 @-webkit-keyframes shadow {

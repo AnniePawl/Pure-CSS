@@ -23,20 +23,20 @@ const bag = [
   },
 
   {
-    title: "Bouncing Bloobs",
+    title: "Bouncing  Bloobs",
     desc: "Roses are red, blueberries are blue-ish",
     comp: <Blueberry />
   },
   {
-    title: "Pear",
+    title: "Percolating Pear",
     desc: "Hello there my perfect pear! You're a fruit beyond compare ",
     comp: <Pear />
   },
-  {
-    title: "Watermelon",
-    desc: "So watery and not very good",
-    comp: <Watermelon />
-  },
+  // {
+  //   title: "Watermelon",
+  //   desc: "So watery and not very good",
+  //   comp: <Watermelon />
+  // },
 
 
   {
@@ -44,11 +44,11 @@ const bag = [
     desc: "I cannot stop crying. There is lemon in my eyes. Juicy",
     comp: < Lemon />
   },
-  {
-    title: "Orange",
-    desc: "Orange You Glad Blah Blah",
-    comp: < Orange />
-  },
+  // {
+  //   title: "Orange",
+  //   desc: "Orange You Glad Blah Blah",
+  //   comp: < Orange />
+  // },
 
 
 

@@ -8,6 +8,7 @@ $blueberry_ground_shadow:#d9b2b8;
   border-radius: 50%;
   height:60px;
   width:120px;
+  box-shadow: 0 0 2px 5px $blueberry_ground_shadow;
 }
 
 @mixin center_flex {
@@ -18,41 +19,37 @@ $blueberry_ground_shadow:#d9b2b8;
 
 .blueberry_container {
   background-color: #ffe6ea;
-  // @include center_flex();
-  // // align-items: center;
-  // // justify-content: center;
   height: 600px;
 }
 
 // WHOLE BLOOB STYLES
-// Scaled 1/2 size
+// Scaled size
 .bloobs {
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-z-index: 1;
-transform: scale(.6) translate(-90px);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  transform: scale(.6) translate(-90px);
 }
 
 // Left Blueberry Style
 .total_blueberry {
  @include center_flex();
- margin-top:150px;
- animation: bloob_float 3s ease infinite;
+ margin-top:220px;
+ animation: bloob_float 3s 1s ease infinite;
 }
 
 .total_blueberry2 {
   @include center_flex();
-  margin-top:150px;
-  animation: bloob_float 3s ease infinite;
+  margin-top:220px;
+  animation: bloob_float 3s infinite;
  }
 
  .total_blueberry3 {
   @include center_flex();
-  margin-top:150px;
-  animation: bloob_float 3s ease infinite;
+  margin-top:220px;
+  animation: bloob_float 3s 1s ease infinite;
  }
 
 .blueberry_base {
@@ -63,14 +60,14 @@ transform: scale(.6) translate(-90px);
   border-radius: 50%; 
   background-color: $blueberry;
   box-shadow: 6px 0px $blueberry_shadow;
-  border: 5px solid $blueberry_shadow;
+  // border: 5px solid $blueberry_shadow;
 }
 
 .blueberry_shadow {
   z-index: 1;
   position: relative;
-  height:205px;
-  width:100px;
+  height:200px;
+  width:95px;
   border-radius: 0 90px 90px 0;
   background-color: $blueberry_shadow;
   transform: translate(55px,0px)
@@ -151,52 +148,54 @@ transform: scale(.6) translate(-90px);
 // GROUND SHADOWS
 .blueberry_shadows {
   display:flex;
-  justify-content: space-around;
   align-items:center;
+  justify-content: center;
   flex-direction: row;
 }
 
 .blueberry_shadow1 {
   @include bloob_shadow();
-  animation: bloob_shadow 3s infinite;
+  animation: bloob_shadow 3s 1s infinite;
 }
 
 .blueberry_shadow2 {
 @include bloob_shadow();
   animation: bloob_shadow 3s infinite;
+  margin-right:105px;
+  margin-left:105px
 }
 
 .blueberry_shadow3 {
 @include bloob_shadow();
-animation: bloob_shadow 3s infinite;
+animation: bloob_shadow 3s 1s infinite;
 }
 
 
 // KEYFRAMES 
 @keyframes bloob_shadow {
   0% {
-    opacity:.5;
-    transform: scale(.9);
+    opacity:.4;
+    transform: scale(.8);
   }
   50% {
-    opacity: 1.5;
-    transform:scale(1.1);
+    opacity: 1;
+    transform:scale(1.2);
   }
   100% {
-    opacity:.5;
-    transform: scale(.9);
+    opacity:.4;
+    transform: scale(.8);
   }
 }
 
 @keyframes bloob_float {
   0% {
-    transform: translateY(-60px);
+    transform: translateY(-120px);
   }
   50% {
-    transform: translateY(0px);
+    transform: translateY(20px);
   }
   100% {
-    transform: translateY(-60px);
+    transform: translateY(-120px);
   }
 } 
 
