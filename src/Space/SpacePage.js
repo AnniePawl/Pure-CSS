@@ -5,6 +5,9 @@ function Space() {
   return (
     <div className='space_container'>
 
+      {/* SMALL STARS */}
+      <div className='stars'></div>
+
     </div>
   )
 }

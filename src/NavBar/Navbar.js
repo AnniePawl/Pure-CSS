@@ -29,7 +29,7 @@ function Navbar() {
 
           {/* Space Link */}
           <li>
-            <Link className="navbar__link" to="/VeggiePage">Scene From Space</Link>
+            <Link className="navbar__link" to="/SpacePage">Scene From Space</Link>
           </li>
 
 
