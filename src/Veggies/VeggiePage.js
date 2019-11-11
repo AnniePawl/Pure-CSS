@@ -1,27 +1,19 @@
 import React from 'react'
-import Display from '../Display/Display'
-import bag from './VeggieItems'
 import './VeggiePage.scss'
 
-
-
 function VeggiePage() {
-  const things = bag.map((item) => {
-    return (
-      <Display
-        title={item.name}
-        desc={item.desc}
-        comp={item.comp}
-      />
-    )
-  })
 
   return (
-    <div className='veggie_page'>
-      <h1 className='veggie_page_heading'>Veggies Coming Soon</h1>
-      {things}
-    </div>
+    <div>
+      <div className='soil_container'>
+        <div className='soil'></div>
+      </div>
 
+      {/* SOIL BUMPS */}
+      <div className='soil_mounds'>
+        <div className='soil_mound soil_mound1'></div>
+      </div>
+    </div>
   )
 }
 

@@ -15,30 +15,39 @@ function Navbar() {
             <Link className="navbar__link" to="/">Anna</Link>
           </li>
 
-          {/* Bug Link */}
-          <li>
-            <Link className="navbar__link" to="/BugPage">Bugs</Link>
-          </li>
-
-          {/* Candy Link */}
-          <li>
-            <Link className="navbar__link" to="/CandyPage">Candy</Link>
-          </li>
 
           {/* Fruit Link */}
           <li>
-            <Link className="navbar__link" to="/FruitPage" >Fruits</Link>
-          </li>
-
-          {/* Plant Link */}
-          <li>
-            <Link className="navbar__link" to="/PlantPage">Plants</Link>
+            <Link className="navbar__link" to="/FruitPage" >Funky Fruits</Link>
           </li>
 
           {/* Veggie Link */}
           <li>
-            <Link className="navbar__link" to="/VeggiePage">Vegetables</Link>
+            <Link className="navbar__link" to="/VeggiePage">Veggie Garden</Link>
           </li>
+
+
+          {/* Space Link */}
+          <li>
+            <Link className="navbar__link" to="/VeggiePage">Scene From Space</Link>
+          </li>
+
+
+          {/* Bug Link */}
+          {/* <li>
+            <Link className="navbar__link" to="/BugPage">Bugs</Link>
+          </li> */}
+
+          {/* Candy Link */}
+          {/* <li>
+            <Link className="navbar__link" to="/CandyPage">Candy</Link>
+          </li> */}
+
+          {/* Plant Link */}
+          {/* <li>
+            <Link className="navbar__link" to="/PlantPage">Plants</Link>
+          </li> */}
+
 
 
         </ul>

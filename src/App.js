@@ -10,6 +10,7 @@ import BugPage from './Bugs/BugPage'
 import CandyPage from './Candy/CandyPage'
 import PlantPage from './Plants/PlantPage'
 import VeggiePage from './Veggies/VeggiePage'
+import SpacePage from './Space/SpacePage'
 
 function App() {
 
@@ -40,6 +41,9 @@ function App() {
         </Route>
 
         <Route path='/VeggiePage' component={VeggiePage}>
+        </Route>
+
+        <Route path='/SpacePage' component={SpacePage}>
         </Route>
 
       </Router>
