@@ -58,9 +58,9 @@ a.name:hover {
 }
 
 img.profile_button {
-  height: 40px;
-  width: 40px;
-  margin: 15px;
+  height: 45px;
+  width: 45px;
+  margin: 12px;
 }
 
 .profile_buttons {
@@ -109,8 +109,8 @@ img.profile_button {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);
@@ -124,8 +124,8 @@ img.profile_button {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);

@@ -16,23 +16,25 @@ function Navbar() {
             <Link className="navbar__link" to="/">My Portfolio</Link>
           </li>
 
-
           {/* Fruit Link */}
           <li>
-            <Link className="navbar__link" to="/FruitPage" >Funky Fruits</Link>
+            <Link className="navbar__link" to="/FruitPage" >This Project</Link>
+          </li>
+
+          {/* Contact Link*/}
+          <li>
+            <Link className="navbar__link" to="/FruitPage">Contact Me</Link>
           </li>
 
           {/* Veggie Link */}
-          <li>
+          {/* <li>
             <Link className="navbar__link" to="/VeggiePage">Veggie Garden</Link>
-          </li>
-
+          </li> */}
 
           {/* Space Link */}
-          <li>
+          {/* <li>
             <Link className="navbar__link" to="/SpacePage">Space Scene</Link>
-          </li>
-
+          </li> */}
 
           {/* Bug Link */}
           {/* <li>

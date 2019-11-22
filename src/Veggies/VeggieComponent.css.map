@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,KAAK;EACZ,UAAU,EAAE,KAAK;EACjB,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAC,GAAG;EACV,MAAM,EAAC,KAAK;CACb",
+    "sources": [
+        "VeggieComponent.scss"
+    ],
+    "names": [],
+    "file": "VeggieComponent.css"
+}
