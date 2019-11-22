@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,UAAU,EAAC,KAAK;CACjB",
-    "sources": [
-        "CandyPage.scss"
-    ],
-    "names": [],
-    "file": "CandyPage.css"
-}
