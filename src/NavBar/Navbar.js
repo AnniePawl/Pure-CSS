@@ -11,8 +11,9 @@ function Navbar() {
         <ul>
 
           {/* Anna Link */}
+          {/* Open in New Page */}
           <li>
-            <Link className="navbar__link" to="/">Anna</Link>
+            <Link className="navbar__link" to="/">My Portfolio</Link>
           </li>
 
 

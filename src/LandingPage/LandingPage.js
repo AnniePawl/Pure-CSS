@@ -50,9 +50,9 @@ function LandingPage() {
             </a>
 
             {/* Behance Button */}
-            <a className="profile__link" href='https://www.behance.net/annapawl'>
+            {/* <a className="profile__link" href='https://www.behance.net/annapawl'>
               <img alt='behance' className='profile_button' src={behance} />
-            </a>
+            </a> */}
 
             {/* CodePen Button */}
             <a className="profile__link" href='https://codepen.io/annampawl'>
@@ -60,9 +60,9 @@ function LandingPage() {
             </a>
 
             {/* Instagram Button */}
-            <a className="profile__link" href='https://www.instagram.com/feltthing/'>
+            {/* <a className="profile__link" href='https://www.instagram.com/feltthing/'>
               <img alt='instagram' className='profile_button' src={instagram} />
-            </a>
+            </a> */}
 
           </div>
 

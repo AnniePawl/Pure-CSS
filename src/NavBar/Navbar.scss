@@ -1,5 +1,6 @@
 // Nav Bar Styles
 .nav {
+  z-index:2;
   position:fixed;
   top:0;
   background-color:#fbffab;
@@ -16,6 +17,7 @@
 
 .navbar > ul >li {
 list-style-type: none;
+font-size:20px;
 }
 
 .navbar > ul > li > a  {
