@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/Pure-CSS-Animations/static/css/main.02df4c25.chunk.css",
-    "main.js": "/Pure-CSS-Animations/static/js/main.e25ee054.chunk.js",
-    "main.js.map": "/Pure-CSS-Animations/static/js/main.e25ee054.chunk.js.map",
+    "main.css": "/Pure-CSS-Animations/static/css/main.9d683a2a.chunk.css",
+    "main.js": "/Pure-CSS-Animations/static/js/main.5009b435.chunk.js",
+    "main.js.map": "/Pure-CSS-Animations/static/js/main.5009b435.chunk.js.map",
     "runtime~main.js": "/Pure-CSS-Animations/static/js/runtime~main.a57741dc.js",
     "runtime~main.js.map": "/Pure-CSS-Animations/static/js/runtime~main.a57741dc.js.map",
-    "static/js/2.fbe89053.chunk.js": "/Pure-CSS-Animations/static/js/2.fbe89053.chunk.js",
-    "static/js/2.fbe89053.chunk.js.map": "/Pure-CSS-Animations/static/js/2.fbe89053.chunk.js.map",
+    "static/js/2.4b437c37.chunk.js": "/Pure-CSS-Animations/static/js/2.4b437c37.chunk.js",
+    "static/js/2.4b437c37.chunk.js.map": "/Pure-CSS-Animations/static/js/2.4b437c37.chunk.js.map",
     "index.html": "/Pure-CSS-Animations/index.html",
-    "precache-manifest.38a35af4636ab248532cd4a79a170bf6.js": "/Pure-CSS-Animations/precache-manifest.38a35af4636ab248532cd4a79a170bf6.js",
+    "precache-manifest.8ae6bbd8c02fa55f11574aba38956e6e.js": "/Pure-CSS-Animations/precache-manifest.8ae6bbd8c02fa55f11574aba38956e6e.js",
     "service-worker.js": "/Pure-CSS-Animations/service-worker.js",
-    "static/css/main.02df4c25.chunk.css.map": "/Pure-CSS-Animations/static/css/main.02df4c25.chunk.css.map",
-    "static/media/behance.svg": "/Pure-CSS-Animations/static/media/behance.1042a0dc.svg",
+    "static/css/main.9d683a2a.chunk.css.map": "/Pure-CSS-Animations/static/css/main.9d683a2a.chunk.css.map",
     "static/media/codepen.svg": "/Pure-CSS-Animations/static/media/codepen.891cf13b.svg",
     "static/media/dribbble.svg": "/Pure-CSS-Animations/static/media/dribbble.2946195e.svg",
     "static/media/github.svg": "/Pure-CSS-Animations/static/media/github.a4dfa125.svg",
-    "static/media/insta.svg": "/Pure-CSS-Animations/static/media/insta.ff22cfcf.svg",
     "static/media/linkedin.svg": "/Pure-CSS-Animations/static/media/linkedin.506ced1b.svg",
     "static/media/medium.svg": "/Pure-CSS-Animations/static/media/medium.c5f92355.svg"
   }
