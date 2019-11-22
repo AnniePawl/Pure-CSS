@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import Display from './Display/Display'
-import Navbar from './Navbar/Navbar'
-import LandingPage from './LandingPage/LandingPage'
-import FruitPage from './Fruits/FruitPage'
-import VeggiePage from './Veggies/VeggiePage'
-import SpacePage from './Space/SpacePage'
+import Navbar from '../src/components/Navbar/Navbar'
+import LandingPage from '../src/components/LandingPage/LandingPage'
+import FruitPage from '../src/components/Fruits/FruitPage'
+import VeggiePage from '../src/components/Veggies/VeggiePage'
+import SpacePage from '../src/components/Space/SpacePage'
 
 function App() {
 

@@ -67,6 +67,7 @@ img.profile_button {
 .profile_button:hover {
   animation: scale1 2s ease infinite ;
 }
+
 // KEYFRAMES 
 @keyframes name_scale {
   0% {
@@ -85,7 +86,7 @@ img.profile_button {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(.7);
   }
   100% {
     transform: scale(1);

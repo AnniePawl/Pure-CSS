@@ -1,11 +1,10 @@
 import React from 'react'
-import './LandingPage.scss'
+import './styles/LandingPage.scss'
 import Lime from '../Fruits/Lime/Lime'
 import { withRouter } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import VeggieComponent from '../Veggies/VeggieComponent'
-import ButtonComponent from './ButtonComponent/ButtonComponent';
-
+import Buttons from './Buttons/Buttons'
 
 function LandingPage() {
   return (
@@ -23,7 +22,7 @@ function LandingPage() {
 
             {/* Profile Buttons */}
             <div className='profile_buttons'>
-              <ButtonComponent />
+              <Buttons />
             </div>
 
             <h4 className='landing_page_text'>Made With

@@ -109,8 +109,8 @@ img.profile_button {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   100% {
     -webkit-transform: scale(1);
@@ -124,8 +124,8 @@ img.profile_button {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   100% {
     -webkit-transform: scale(1);
