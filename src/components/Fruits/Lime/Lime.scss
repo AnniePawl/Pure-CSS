@@ -25,7 +25,7 @@ $lime_leaf: #7ebfb6;
 .total_lime {
  @include center_flex();
   position: relative;
-  animation: float 3s infinite ease;
+  animation: lime_float 3s infinite ease;
 }
 
 .lime {
@@ -50,7 +50,7 @@ $lime_leaf: #7ebfb6;
 .lime_nobs {
   position: relative;
   flex-direction: column;
-@include center_flex();
+  @include center_flex();
 }
 
 .lime_top_nob {
@@ -108,8 +108,6 @@ $lime_leaf: #7ebfb6;
   transform: translate(12px, 4px)
 }
 
-
-
 .lime_leaf {
   position: relative;
   z-index: 1;
@@ -125,44 +123,44 @@ $lime_leaf: #7ebfb6;
   position: relative;
   background-color:#0e202b;
   border-radius: 50%;
-  height:50px;
-  width:150px;
-  animation: shadow 3s infinite;
+  height:45px;
+  width:140px;
+  animation: lime_shadow 3s infinite;
   box-shadow: 0 0 2px 5px #0e202b;
 }
 
 
 // Chage leaf color
-// @keyframes lime_leaf {
-//   0% {
-//     background-color: #3b8777
-//   }
-//   50% {
-//     background-color: #bef26f
-//   }
-
-//   100% {
-//     background-color:#3b8777
-//   }
-// }
-
-
-@keyframes shadow {
+@keyframes lime_leaf {
   0% {
-    opacity:.5;
-    transform: translate(-155px, 170px) scale(1);
+    background-color: $lime_leaf
   }
   50% {
-    opacity: 1.5;
-    transform: translate(-155px, 170px)  scale(1.2);
+    background-color: #59968e
   }
+
   100% {
-    opacity:.5;
-    transform: translate(-155px, 170px) scale(1);
+    background-color:$lime_leaf
   }
 }
 
-@keyframes float {
+
+@keyframes lime_shadow {
+  0% {
+    opacity:.5;
+    transform: translate(-150px, 170px) scale(1);
+  }
+  50% {
+    opacity: 1.5;
+    transform: translate(-150px, 170px)  scale(1.15);
+  }
+  100% {
+    opacity:.5;
+    transform: translate(-150px, 170px) scale(1);
+  }
+}
+
+@keyframes lime_float {
   0% {
     transform: translateY(-60px);
   }
