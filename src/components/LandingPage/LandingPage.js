@@ -1,43 +1,27 @@
 import React from 'react'
 import './styles/LandingPage.scss'
 import Lime from '../Fruits/Lime/Lime'
+import Hero from './Hero/Hero'
 import { withRouter } from 'react-router-dom'
-import { Link } from 'react-router-dom'
-import VeggieComponent from '../Veggies/VeggieComponent'
-import Buttons from './Buttons/Buttons'
 
 function LandingPage() {
   return (
     <div>
       <div>
-
         {/* Star Animation */}
         <div className='landing_stars'></div>
 
+        {/* Hero and Lime*/}
         <div className='landing_container'>
-
-          <div className='heading'>
-            <h1 className='landing_page_heading'>Pure CSS<br /> Animations</h1>
-
-
-            {/* Profile Buttons */}
-            <div className='profile_buttons'>
-              <Buttons />
-            </div>
-
-            <h4 className='landing_page_text'>Made With
-        ♥  By</h4>
-
-            <h4 className='landing_page_name'>
-              <Link className='name' to='/'>ANNA PAWL</Link>
-            </h4>
-
+          {/* Hero Text Component */}
+          <div className='hero'>
+            <Hero />
           </div>
+
           {/* Lime Component */}
           <div className='landing_lime'>
             <Lime />
           </div>
-
         </div>
 
 
@@ -45,7 +29,6 @@ function LandingPage() {
         {/* <div className='veggie_garden'>
           <VeggieComponent />
         </div> */}
-
 
       </div>
 
