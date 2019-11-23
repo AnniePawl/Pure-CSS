@@ -5,12 +5,15 @@ import Pom from '../Fruits/Pom/Pom'
 
 function Project() {
   return (
-    <div className='project__container'>
-      <h1 className='project__title'>About This Project</h1>
+    <div className='about__container'>
+
+      <div className='about__content'>
+        <h1 className='about__title'>What is This?</h1>
+        <p></p>
+      </div>
 
       <div>
         <Pom />
-
       </div>
 
     </div>

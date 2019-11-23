@@ -18,12 +18,12 @@ $pom_shadow:#e4e890;
 }
 
 .pom_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fbffab;
-  height: 550px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // background-color: #fbffab;
+  // height: 550px;
 }
 
 .total_pom {
@@ -124,16 +124,16 @@ $pom_shadow:#e4e890;
 }
 
 // Pom Shadow
-.pom_shadow {
-  position: relative;
-  z-index:2;
-  height:40px;
-  width:200px;
-  border-radius:50%;
-  background-color: $pom_shadow;
- transform: translate(0px, 30px);
-  box-shadow: 0 0 4px 8px $pom_shadow;
-}
+// .pom_shadow {
+//   position: relative;
+//   z-index:2;
+//   height:40px;
+//   width:200px;
+//   border-radius:50%;
+//   background-color: $pom_shadow;
+//  transform: translate(0px, 30px);
+//   box-shadow: 0 0 4px 8px $pom_shadow;
+// }
 
 
 // Seed color Assignments
