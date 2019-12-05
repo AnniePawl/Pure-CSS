@@ -1,0 +1,121 @@
+$blueberry:#7a9eff;
+$blueberry_shadow: #6685d9;
+
+@mixin center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueberry_container {
+  @include center_flex()
+  background-color: #ffd57a;
+  height: 1000px;
+}
+
+.total_blueberry {
+ @include center_flex()
+  animation: scale 3s infinite;
+}
+
+.blueberry_base {
+  z-index: 1;
+  @include center_flex()
+  height:200px;
+  width:200px;
+  border-radius: 50%; 
+  background-color: $blueberry;
+  box-shadow: 6px 0px $blueberry_shadow;
+}
+
+
+.blueberry_shadow {
+  z-index: 1;
+  position: relative;
+  height:200px;
+  width:100px;
+  border-radius: 0 90px 90px 0;
+  background-color: $blueberry_shadow;
+  transform: translate(50px)
+}
+
+
+.blueberry_leaves {
+  position: relative;
+  z-index: 3;
+  transform: translate(135px, -70px) rotate(20deg);
+}
+
+.blueberry_leaf_outer {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 65px solid $blueberry_shadow;
+  position: relative;
+
+}
+
+.blueberry_leaf_outer:after {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-top: 65px solid $blueberry_shadow;
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: -35px;
+ 
+}
+
+.blueberry_leaf_inner {
+  z-index: 1;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 35px solid $blueberry;
+  position: relative;
+  transform: translate(20px, -45px)
+}
+
+.blueberry_leaf_inner:after {
+  z-index: 1;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 35px solid $blueberry;
+  position: absolute;
+  content: "";
+  top:10px;
+  left: -15px;
+}
+
+
+@keyframes scale {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.2)
+  }
+
+  100% {
+    transform:scale(1)
+  }
+}
+
+
+/* .bloob_shadow {
+  position: relative;
+  index:0;
+  height:90px;
+  width:180px;
+  border-radius: 50%;
+  background-color: #dbb563;
+  transform: translate(-185px, 120px)
+} */

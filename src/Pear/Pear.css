@@ -1,0 +1,123 @@
+.pear_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #94b2ff;
+  height: 1000px;
+}
+
+.pear {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pear_top {
+  position: relative;
+  height: 125px;
+  width: 110px;
+  border-radius: 50%;
+  background-color: #bae391;
+  -webkit-transform: translate(0px, 65px);
+          transform: translate(0px, 65px);
+}
+
+.pear_top_shadow {
+  position: relative;
+  height: 125px;
+  width: 58px;
+  border-radius: 0 90px 90px 0;
+  background-color: #8fb867;
+  -webkit-transform: translate(54px, 0px);
+          transform: translate(54px, 0px);
+}
+
+.pear_bottom {
+  position: relative;
+  height: 150px;
+  width: 160px;
+  border-radius: 50%;
+  background-color: #bae391;
+}
+
+.pear_bottom_shadow {
+  position: relative;
+  height: 155px;
+  width: 82px;
+  border-radius: 0 90px 90px 0;
+  background-color: #8fb867;
+  -webkit-transform: translate(79.5px, -4px);
+          transform: translate(79.5px, -4px);
+}
+
+.pear_stem {
+  position: relative;
+  height: 40px;
+  width: 8px;
+  background-color: #6b6763;
+  -webkit-transform: translate(0, -250px);
+          transform: translate(0, -250px);
+}
+
+.pear_leaf {
+  position: relative;
+  width: 30px;
+  height: 55px;
+  background-color: #67854a;
+  border-radius: 30px 0px;
+  -webkit-transform: translate(-38px, -10px) rotate(25deg);
+          transform: translate(-38px, -10px) rotate(25deg);
+}
+
+.total_pear {
+  -webkit-animation: rotate 3s infinite;
+          animation: rotate 3s infinite;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=Pear.css.map */

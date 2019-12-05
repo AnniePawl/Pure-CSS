@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "Hero.scss"
+        "Profile.scss"
     ],
     "names": [],
-    "file": "Hero.css"
+    "file": "Profile.css"
 }

@@ -1,0 +1,178 @@
+$lemon: #fed272; 
+$lemon_shading: #ffc548; 
+$lemon_bud: #4d4640;
+
+@mixin center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lemon_container {
+  @include center_flex();
+  background-color: #3a92b0;
+  height: 1000px;
+}
+
+.total_lemon {
+ @include center_flex()
+  position: relative;
+  animation: float 3s infinite ease;
+}
+
+
+.lemon {
+  position: relative;
+  height:200px;
+  width:160px;
+  border-radius: 50%; 
+  background-color:$lemon;
+  box-shadow:6px 1px  $lemon_shading;
+ 
+}
+
+.lemon_shading{
+  position: relative;
+  z-index:4;
+  height:200px;
+  width:80px;
+  border-radius: 0 90px 90px 0;
+  background:$lemon_shading;
+  transform: translate(160px);
+}
+
+.lemon_nobs {
+  position: relative;
+  flex-direction: column;
+@include center_flex();
+}
+
+.top_nob {
+  position: relative;
+  z-index: 0;
+  width:35px;
+  height:45px;
+  border-radius: 50%;
+  background-color: $lemon;
+  transform: translate(0, -108px)
+} 
+
+.top_nob_shading {
+  position: relative;
+  height:35px;
+  width:16px;
+  border-radius: 0 90px 90px 0;
+  background-color:$lemon_shading;
+  transform: translate(18px, 1px)
+}
+
+.top_bud {
+  position: relative;
+  height:10px;
+  width:10px;
+  border-radius: 50%; 
+  background-color:$lemon_bud;
+  transform: translate(13px, -35px)
+}
+
+.bottom_bud {
+  position: relative;
+  height:10px;
+  width:10px;
+  border-radius: 50%; 
+  background-color:$lemon_bud;
+  transform: translate(12px, 4px)
+}
+
+.bottom_nob {
+  position: relative;
+  width:35px;
+  height:45px;
+  border-radius: 50%;
+  background-color: $lemon;
+  transform: translate(0, 25px)
+}
+
+.bottom_nob_shading {
+  position: relative;
+  height:35px;
+  width:16px;
+  border-radius: 0 90px 90px 0;
+  background-color:$lemon_shading;
+  transform: translate(18px, 10px)
+}
+
+.lemon_leaf {
+  position: relative;
+  z-index: 1;
+  width: 55px;
+  height: 95px;
+  transform:translate(-2px,-42px)rotate(40deg);
+  border-radius: 70%  0%  70% 0%  ;
+  animation: lemon_leaf 3s infinite;
+}
+
+.lemon_shadow {
+  position: relative;
+  background-color:#2f7f99;
+  border-radius: 50%;
+  height:50px;
+  width:150px;
+  animation: shadow 3s infinite;
+}
+
+
+// Chage leaf color
+@keyframes lemon_leaf {
+  0% {
+    background-color: #aad481
+  }
+  50% {
+    background-color: #8bb562
+  }
+
+  100% {
+    background-color:#aad481
+  }
+}
+
+// Realistic dynamic shadow
+@keyframes shadow {
+  0% {
+
+    opacity:.5;
+    
+    transform: translate(-155px, 170px) scale(1);
+
+  }
+  50% {
+    opacity: 1.5;
+   
+    transform: translate(-155px, 170px)  scale(1.2);
+    
+  }
+
+  100% {
+    opacity:.5;
+   
+    transform: translate(-155px, 170px) scale(1);
+
+  }
+}
+
+
+
+// Make lemon float
+@keyframes float {
+  0% {
+    transform: translateY(-60px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-60px);
+  }
+}

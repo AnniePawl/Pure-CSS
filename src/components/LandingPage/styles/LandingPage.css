@@ -1,6 +1,10 @@
+html {
+  background: -webkit-gradient(linear, left top, left bottom, from(#214054), to(#ffdbe1));
+  background: linear-gradient(#214054, #ffdbe1);
+}
+
 .landing_container {
   height: 100vh;
-  background-color: #214054;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

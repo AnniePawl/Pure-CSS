@@ -1,3 +1,7 @@
+html {
+  background: linear-gradient( #214054,#ffdbe1 );
+}
+
 @mixin center_flex {
   display: flex;
   justify-content: center;
@@ -6,8 +10,6 @@
 
 .landing_container {
   height:100vh;
-  background-color: #214054;
-  // background: linear-gradient( #141414 ,#18394f, #214054);
   @include center_flex();
   flex-direction: row;
 }

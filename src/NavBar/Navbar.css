@@ -1,0 +1,46 @@
+.nav {
+  background-color: #fbffab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.navbar > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar > ul > li {
+  list-style-type: none;
+}
+
+.navbar > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.6em;
+  color: #3e3f40;
+  margin-right: 50px;
+}
+
+.navbar > ul > li > a:hover {
+  color: #80d4ff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=Navbar.css.map */
