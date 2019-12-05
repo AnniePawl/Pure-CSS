@@ -2,6 +2,13 @@
   height: 100vh;
 }
 
+.about_p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+}
+
 .about_top_section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,8 +25,9 @@
 h1 {
   text-transform: uppercase;
   color: #ffe6ea;
-  font-weight: 200;
+  font-weight: 400;
   font-family: 'Oswald', sans-serif;
-  font-size: 70px;
+  font-size: 50px;
+  margin: 0;
 }
 /*# sourceMappingURL=About.css.map */

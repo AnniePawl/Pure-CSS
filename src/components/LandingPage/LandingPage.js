@@ -3,6 +3,8 @@ import './styles/LandingPage.scss'
 import Lime from '../Fruits/Lime/Lime'
 import Hero from './Hero/Hero'
 import About from '../About/About'
+import * as Scroll from 'react-scroll'
+// import Arrows from './Arrows/Arrows'
 import { withRouter } from 'react-router-dom'
 
 function LandingPage() {
@@ -25,8 +27,13 @@ function LandingPage() {
           </div>
         </div>
 
+        {/* Arrows Component
+        <Arrows /> */}
+
         {/* About Section */}
-        <About />
+        <div className='about_section'>
+          <About />
+        </div>
 
       </div>
 

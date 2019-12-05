@@ -16,9 +16,12 @@ function Navbar() {
             <Link className="navbar__link" to="/">My Portfolio</Link>
           </li>
 
-          {/* Fruit Link */}
+          {/* This Project */}
           <li>
-            <Link className="navbar__link" to="/FruitPage" >This Project</Link>
+            <Link
+              className="navbar__link"
+              to="about_section"
+            >This Project</Link>
           </li>
 
           {/* Contact Link*/}

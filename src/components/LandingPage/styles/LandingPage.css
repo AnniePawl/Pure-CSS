@@ -18,6 +18,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-bottom: 50px;
 }
 
 .landing_lime {
@@ -75,6 +76,82 @@ img.profile_button {
 .profile_button:hover {
   -webkit-animation: scale1 2s ease infinite;
           animation: scale1 2s ease infinite;
+}
+
+.arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -100px;
+  margin-bottom: 200px;
+}
+
+.arrow1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.arrow1_left {
+  height: 10px;
+  width: 150px;
+  background-color: #f4ffab;
+  -webkit-transform: rotate(20deg) translate(7px);
+          transform: rotate(20deg) translate(7px);
+}
+
+.arrow1_right {
+  height: 10px;
+  width: 150px;
+  background-color: #f4ffab;
+  -webkit-transform: rotate(-20deg) translate(-7px);
+          transform: rotate(-20deg) translate(-7px);
+}
+
+.arrow2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.arrow2_left {
+  height: 6px;
+  width: 100px;
+  background-color: #f4ffab;
+  -webkit-transform: rotate(20deg) translate(5px);
+          transform: rotate(20deg) translate(5px);
+}
+
+.arrow2_right {
+  height: 6px;
+  width: 100px;
+  background-color: #f4ffab;
+  -webkit-transform: rotate(-20deg) translate(-5px);
+          transform: rotate(-20deg) translate(-5px);
 }
 
 @-webkit-keyframes name_scale {
