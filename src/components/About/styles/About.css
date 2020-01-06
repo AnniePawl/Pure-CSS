@@ -7,6 +7,7 @@
   font-weight: 300;
   font-size: 20px;
   text-align: left;
+  width: 500px;
 }
 
 .about_top_section {
@@ -17,6 +18,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -28,6 +32,6 @@ h1 {
   font-weight: 400;
   font-family: 'Oswald', sans-serif;
   font-size: 50px;
-  margin: 0;
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=About.css.map */

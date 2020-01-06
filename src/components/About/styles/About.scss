@@ -7,12 +7,14 @@
   font-weight: 300;
   font-size:20px;
   text-align: left;
-  // width:370px;
+  width: 500px;
+  color:white;
 }
 
 .about_top_section {
   display:flex;
   flex-direction: row;
+  align-items:center;
   justify-content: center;
 }
 
@@ -22,5 +24,6 @@ h1 {
   font-weight: 400;
   font-family: 'Oswald', sans-serif;
   font-size:50px;
-  margin:0;
+  margin-bottom:100px;
+  // margin:0;
 }

@@ -7,8 +7,9 @@ function Project() {
   return (
     <div className='about__container'>
 
+      <h1 className='about__title'>About This Project</h1>
+
       {/* Top Section */}
-      {/* What Is This? */}
       <div className='about_top_section'>
         {/* Pom Component */}
         <div className='pom'>
@@ -16,9 +17,10 @@ function Project() {
         </div>
         {/* About Content */}
         <div className='about__content'>
-          <h1 className='about__title'>About this Project</h1>
-          <p className='about_p'> Hi! Welcome to my collection of CSS animations. <br /> This is an ongoing side project that combines my interest in design and code. </p>
+
+          <p className='about_p'> Hi! Welcome to my collection of CSS animations. This is an ongoing side project that combines my interest in design and code. Every animation on this page is created from scratch using css.  </p>
         </div>
+
       </div>
 
     </div >
