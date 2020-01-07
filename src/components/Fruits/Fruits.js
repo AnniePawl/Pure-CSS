@@ -11,24 +11,24 @@ import Orange from './Orange/Orange'
 
 
 const bag = [
-  {
-    title: "Lively Lime",
-    desc: "https://codepen.io/annampawl/pen/BaaZYjM",
-    comp: < Lime />
-  },
-  {
-    title: "Playful Pomegranate",
-    desc: '<Link to="https://codepen.io/annampawl/pen/rNNwpRO">CodePen</Link>',
-    comp: <Pom />
-  },
+  // {
+  //   title: "Lively Lime",
+  //   desc: "https://codepen.io/annampawl/pen/BaaZYjM",
+  //   comp: < Lime />
+  // },
+  // {
+  //   title: "Playful Pomegranate",
+  //   desc: '<Link to="https://codepen.io/annampawl/pen/rNNwpRO">CodePen</Link>',
+  //   comp: <Pom />
+  // },
 
   {
-    title: "Bouncing  Bloobs",
+    // title: "Bouncing  Bloobs",
     desc: "Roses are red, blueberries are blue-ish",
     comp: <Blueberry />
   },
   {
-    title: "Percolating Pear",
+    // title: "Percolating Pear",
     desc: "Hello there my perfect pear! You're a fruit beyond compare ",
     comp: <Pear />
   },
@@ -40,7 +40,7 @@ const bag = [
 
 
   {
-    title: "Lemon",
+    // title: "Lemon",
     desc: "I cannot stop crying. There is lemon in my eyes. Juicy",
     comp: < Lemon />
   },

@@ -16,7 +16,6 @@ function FruitPage() {
 
   return (
     <div>
-      <h1>Fruit Page</h1>
 
       {things}
 
