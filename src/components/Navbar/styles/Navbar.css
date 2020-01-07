@@ -78,10 +78,23 @@
   }
 }
 
+@media (max-width: 375px) {
+  .nav {
+    height: 65px;
+  }
+}
+
 @media (max-width: 1024px) and (min-width: 769px) {
   .navbar > ul > li {
     font-size: 1.6em;
     margin: 6px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar > ul > li {
+    font-size: .9em;
+    margin: -4.1px;
   }
 }
 

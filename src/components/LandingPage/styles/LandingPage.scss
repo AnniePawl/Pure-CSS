@@ -113,8 +113,8 @@ img.profile_button {
   @media(max-width: $breakpoint-tablet){
     width:100vw;
   }
-}
 
+}
 
 .landing_container {
   @media (max-width:$breakpoint-ipad-pro) {
@@ -123,7 +123,7 @@ img.profile_button {
   }
 }
 
-// Heading
+// Heading MQ
 .landing_page_heading {
   @media(max-width: $breakpoint-ipad-pro) {
     font-weight: 200;
@@ -131,7 +131,7 @@ img.profile_button {
     font-size:100px;
     text-align: center;
     margin:10px;
-    margin-top:150px;
+    margin-top:180px;
     }
 
     @media(max-width: $breakpoint-tablet) {
@@ -142,9 +142,19 @@ img.profile_button {
     margin:10px;
     margin-top:250px;
     }
+    @media( max-width: $breakpoint-iphonex){
+     font-size:45px;
+     margin-top:230px;
+     margin-bottom:20px;
+    }
   }
 
   // Buttons
+  .profile_buttons {
+    @media( max-width: $breakpoint-iphonex) {
+      margin-left:-5px;
+    }
+  }
   img.profile_button {
     @media(max-width: $breakpoint-ipad-pro) and (min-width:$breakpoint-tablet +1px) {
       height:60px;
@@ -154,18 +164,42 @@ img.profile_button {
     @media(max-width: $breakpoint-tablet) {
       margin:10px;
     }
+    @media( max-width: $breakpoint-iphonex){
+      height: 33px;
+      width:33px;
+      margin:5px;
+     }
   }
 
+  .landing_page_text  {
+    @media(max-width: $breakpoint-ipad-pro){
+      text-align:center;
+      font-size:28px;
+    }
+    @media(max-width: $breakpoint-tablet){
+      font-size:22px;
+    }
+    @media(max-width: $breakpoint-iphonex){
+      font-size:18px;
+      margin:30px;
+    }
+  }
 
-.landing_page_name, .landing_page_text {
+.landing_page_name {
   @media(max-width: $breakpoint-ipad-pro){
     text-align:center;
+    font-size:25px;
   }
 
   @media(max-width: $breakpoint-tablet){
-    text-align:center;
+    font-size:18px;
+  }
+  @media(max-width: $breakpoint-iphonex){
+    font-size:16px;
   }
 }
+
+
 
 // Landing Lime
 .landing_lime {
@@ -175,6 +209,10 @@ img.profile_button {
   }
   @media(max-width: $breakpoint-tablet) {
     transform: scale(.9);
+    margin-top:-100px;
+  }
+  @media(max-width: $breakpoint-iphonex) {
+    transform: scale(.8);
     margin-top:-100px;
   }
 }

@@ -49,6 +49,9 @@ font-size:20px;
   @media (min-width: $breakpoint-tablet + 1px) and (max-width: $breakpoint-ipad-pro){
     height:120px;
   }
+  @media (max-width: $breakpoint-iphonex){
+    height:65px;
+  }
 }
 
 .navbar >ul >li {
@@ -56,6 +59,11 @@ font-size:20px;
     font-size:1.6em;
     margin:6px;
   }
+  @media( max-width: $breakpoint-iphonex){
+    font-size:.9em;
+    margin:-4.1px;
+  }
+  
 }
 
 .navbar > ul >li >a {
