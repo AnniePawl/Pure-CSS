@@ -58,10 +58,26 @@
   }
 }
 
+@media (max-width: 414px) {
+  .about__content {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 375px) {
   .about__content {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .about__content {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
     margin-left: 0;
   }
 }

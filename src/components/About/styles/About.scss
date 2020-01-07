@@ -44,15 +44,21 @@ font-size:50px;
   @media(max-width: $breakpoint-ipad-pro){
     flex-direction: column;
   }
-  @media( max-width: $breakpoint-iphonex) {
-  }
+  
 }
 
 .about__content {
+  @media (max-width: $breakpoint-iphone-plus){
+    transform: scale(.8);
+    margin-left:0;
+  }
   @media (max-width: $breakpoint-iphonex){
     transform: scale(.8);
     margin-left:0;
-
+  }
+  @media (max-width: $breakpoint-iphone5){
+    transform: scale(.5);
+    margin-left:0;
   }
 }
 

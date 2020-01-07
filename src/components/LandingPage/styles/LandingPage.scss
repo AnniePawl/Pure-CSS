@@ -142,17 +142,29 @@ img.profile_button {
     margin:10px;
     margin-top:250px;
     }
+    @media( max-width: $breakpoint-iphone-plus){
+      font-size:45px;
+      margin-top:220px;
+      margin-bottom:20px;
+     }
     @media( max-width: $breakpoint-iphonex){
      font-size:45px;
-     margin-top:230px;
+     margin-top:150px;
      margin-bottom:20px;
     }
+    @media( max-width: $breakpoint-iphone5){
+      font-size:30px;
+      margin-top:210px;
+      margin-bottom:20px;
+     }
   }
 
   // Buttons
   .profile_buttons {
-    @media( max-width: $breakpoint-iphonex) {
-      margin-left:-5px;
+    @media( max-width: $breakpoint-iphone-plus) {
+      margin-left:0px;
+    }
+    @media( max-width: $breakpoint-iphonex) {margin-left:0px;
     }
   }
   img.profile_button {
@@ -164,10 +176,20 @@ img.profile_button {
     @media(max-width: $breakpoint-tablet) {
       margin:10px;
     }
+    @media( max-width: $breakpoint-iphone-plus){
+      height: 33px;
+      width:33px;
+      margin:5px;
+     }
     @media( max-width: $breakpoint-iphonex){
       height: 33px;
       width:33px;
       margin:5px;
+     }
+     @media( max-width: $breakpoint-iphone5){
+      height: 26px;
+      width:26px;
+      margin:3px;
      }
   }
 
@@ -179,9 +201,17 @@ img.profile_button {
     @media(max-width: $breakpoint-tablet){
       font-size:22px;
     }
+    @media(max-width: $breakpoint-iphone-plus){
+      font-size:18px;
+      // margin:30px;
+    }
     @media(max-width: $breakpoint-iphonex){
       font-size:18px;
-      margin:30px;
+      // margin:30px;
+    }
+    @media(max-width: $breakpoint-iphone5){
+      font-size:13px;
+     
     }
   }
 
@@ -194,11 +224,19 @@ img.profile_button {
   @media(max-width: $breakpoint-tablet){
     font-size:18px;
   }
-  @media(max-width: $breakpoint-iphonex){
+  @media(max-width: $breakpoint-iphone-plus){
     font-size:16px;
   }
+  @media(max-width: $breakpoint-iphonex){
+    font-size:16px;
+    margin-top:-20px;
+  }
+  @media(max-width: $breakpoint-iphone5){
+    font-size:10px;
+    margin-top:-20px;
+  }
+  
 }
-
 
 
 // Landing Lime
@@ -211,12 +249,19 @@ img.profile_button {
     transform: scale(.9);
     margin-top:-100px;
   }
+  @media(max-width: $breakpoint-iphone-plus) {
+    transform: scale(.7);
+    margin-top:-160px;
+  }
   @media(max-width: $breakpoint-iphonex) {
-    transform: scale(.8);
-    margin-top:-100px;
+    transform: scale(.75);
+    margin-top:-150px;
+  }
+  @media(max-width: $breakpoint-iphonex) {
+    transform: scale(.5);
+    margin-top:-185px;
   }
 }
-
 
 // Arrows
 .arrows {

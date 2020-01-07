@@ -49,8 +49,14 @@ font-size:20px;
   @media (min-width: $breakpoint-tablet + 1px) and (max-width: $breakpoint-ipad-pro){
     height:120px;
   }
+  @media (max-width: $breakpoint-iphone-plus){
+    height:65px;
+  }
   @media (max-width: $breakpoint-iphonex){
     height:65px;
+  }
+  @media (max-width: $breakpoint-iphone5){
+    height:55px;
   }
 }
 
@@ -59,9 +65,20 @@ font-size:20px;
     font-size:1.6em;
     margin:6px;
   }
+  @media( max-width: $breakpoint-iphone-plus){
+    font-size:1em;
+    margin:-.5px;
+    margin-left:-5px;
+  }
   @media( max-width: $breakpoint-iphonex){
-    font-size:.9em;
-    margin:-4.1px;
+    font-size:1em;
+    margin:-4px;
+    margin-left:-11px;
+  }
+  @media( max-width: $breakpoint-iphone5){
+    font-size:.85em;
+    margin:-4px;
+    margin-left:-12px;
   }
   
 }

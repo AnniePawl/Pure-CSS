@@ -203,17 +203,39 @@ img.profile_button {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .landing_page_heading {
     font-size: 45px;
-    margin-top: 230px;
+    margin-top: 220px;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 375px) {
+  .landing_page_heading {
+    font-size: 45px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .landing_page_heading {
+    font-size: 30px;
+    margin-top: 210px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 414px) {
   .profile_buttons {
-    margin-left: -5px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .profile_buttons {
+    margin-left: 0px;
   }
 }
 
@@ -231,11 +253,27 @@ img.profile_button {
   }
 }
 
+@media (max-width: 414px) {
+  img.profile_button {
+    height: 33px;
+    width: 33px;
+    margin: 5px;
+  }
+}
+
 @media (max-width: 375px) {
   img.profile_button {
     height: 33px;
     width: 33px;
     margin: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  img.profile_button {
+    height: 26px;
+    width: 26px;
+    margin: 3px;
   }
 }
 
@@ -252,10 +290,21 @@ img.profile_button {
   }
 }
 
+@media (max-width: 414px) {
+  .landing_page_text {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 375px) {
   .landing_page_text {
     font-size: 18px;
-    margin: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .landing_page_text {
+    font-size: 13px;
   }
 }
 
@@ -272,9 +321,23 @@ img.profile_button {
   }
 }
 
+@media (max-width: 414px) {
+  .landing_page_name {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 375px) {
   .landing_page_name {
     font-size: 16px;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .landing_page_name {
+    font-size: 10px;
+    margin-top: -20px;
   }
 }
 
@@ -294,11 +357,27 @@ img.profile_button {
   }
 }
 
+@media (max-width: 414px) {
+  .landing_lime {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-top: -160px;
+  }
+}
+
 @media (max-width: 375px) {
   .landing_lime {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    margin-top: -100px;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    margin-top: -150px;
+  }
+}
+
+@media (max-width: 375px) {
+  .landing_lime {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    margin-top: -185px;
   }
 }
 
