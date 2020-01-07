@@ -10,6 +10,8 @@
 
 .navbar > ul {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .navbar > ul >li {
@@ -37,4 +39,11 @@ font-size:20px;
   0%{transform: scale(1); }
   50%{transform: scale(1.2);}
   100%{transform: scale(1);}
+}
+
+// Media Queries 
+.navbar > ul >li >a {
+  @media (max-width:768px) {
+    padding:.5em;
+  }
 }

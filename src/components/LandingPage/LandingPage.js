@@ -3,6 +3,7 @@ import './styles/LandingPage.scss'
 import Lime from '../Fruits/Lime/Lime'
 import Hero from './Hero/Hero'
 import About from '../About/About'
+import Navbar from '../Navbar/Navbar'
 // import Arrows from './Arrows/Arrows'
 import { withRouter } from 'react-router-dom'
 import ScrollableAnchor from 'react-scrollable-anchor'
@@ -10,6 +11,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 function LandingPage() {
   return (
     <div>
+      <Navbar />
       <div>
         {/* Star Animation */}
         <div className='landing_stars'></div>
@@ -31,7 +33,6 @@ function LandingPage() {
         <Arrows /> */}
 
         {/* About Section */}
-
         <div className='about_section'>
           <About />
         </div>
