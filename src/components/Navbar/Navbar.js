@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import './styles/Navbar.scss'
 
 function Navbar() {
@@ -18,43 +19,14 @@ function Navbar() {
 
           {/* This Project */}
           <li>
-            <Link
-              className="navbar__link"
-              to="about_section"
-            >This Project</Link>
+            <HashLink smooth to="/#about_section"
+            >This Project</HashLink>
           </li>
 
-          {/* Contact Link*/}
+          {/* More Animation Link*/}
           <li>
-            <Link className="navbar__link" to="/FruitPage">Contact Me</Link>
+            <Link className="navbar__link" to="/FruitPage">More Animations</Link>
           </li>
-
-          {/* Veggie Link */}
-          {/* <li>
-            <Link className="navbar__link" to="/VeggiePage">Veggie Garden</Link>
-          </li> */}
-
-          {/* Space Link */}
-          {/* <li>
-            <Link className="navbar__link" to="/SpacePage">Space Scene</Link>
-          </li> */}
-
-          {/* Bug Link */}
-          {/* <li>
-            <Link className="navbar__link" to="/BugPage">Bugs</Link>
-          </li> */}
-
-          {/* Candy Link */}
-          {/* <li>
-            <Link className="navbar__link" to="/CandyPage">Candy</Link>
-          </li> */}
-
-          {/* Plant Link */}
-          {/* <li>
-            <Link className="navbar__link" to="/PlantPage">Plants</Link>
-          </li> */}
-
-
 
         </ul>
       </nav>

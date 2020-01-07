@@ -1,5 +1,5 @@
 html {
-  background:#214054;
+  // background:#214054;
 }
 
 @mixin center_flex {
@@ -10,6 +10,7 @@ html {
 
 .landing_container {
   height:100vh;
+  background:#214054;
   @include center_flex();
   flex-direction: row;
   margin-bottom:50px;
@@ -137,7 +138,7 @@ img.profile_button {
     transform: scale(1);
   }
   50% {
-    transform: scale(.7);
+    transform: scale(1.3);
   }
   100% {
     transform: scale(1);

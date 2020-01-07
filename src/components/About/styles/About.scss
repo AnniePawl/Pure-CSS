@@ -1,5 +1,11 @@
 .about__container {
+  background-color:white;
   height:100vh;
+}
+
+.about__title {
+margin:80px;
+
 }
 
 .about_p {
@@ -8,7 +14,7 @@
   font-size:20px;
   text-align: left;
   width: 500px;
-  color:white;
+  color:#214054;
 }
 
 .about_top_section {
@@ -20,10 +26,8 @@
 
 h1 {
   text-transform: uppercase;
-  color:#ffe6ea;
+  color:#214054;
   font-weight: 400;
   font-family: 'Oswald', sans-serif;
   font-size:50px;
-  margin-bottom:100px;
-  // margin:0;
 }
