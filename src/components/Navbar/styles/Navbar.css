@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   background-color: #fbffab;
-  width: 100%;
+  width: 100vw;
   height: 90px;
 }
 
@@ -72,9 +72,28 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav {
+    height: 120px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .navbar > ul > li {
+    font-size: 1.6em;
+    margin: 6px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar > ul > li > a {
+    margin-right: 5px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar > ul > li > a {
-    padding: .5em;
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

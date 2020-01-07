@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles/LandingPage.scss'
+
 import Lime from '../Fruits/Lime/Lime'
 import Hero from './Hero/Hero'
 import About from '../About/About'
@@ -10,7 +11,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 function LandingPage() {
   return (
-    <div>
+    <div className='landing_page'>
       <Navbar />
       <div>
         {/* Star Animation */}

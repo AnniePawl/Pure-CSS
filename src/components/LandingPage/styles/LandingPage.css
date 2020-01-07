@@ -1,5 +1,6 @@
 .landing_container {
   height: 100vh;
+  width: 100vw;
   background: #214054;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,6 +158,12 @@ img.profile_button {
 }
 
 @media (max-width: 768px) {
+  .landing_page {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1024px) {
   .landing_container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -174,14 +181,14 @@ img.profile_button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .landing_page_heading {
     font-weight: 200;
     line-height: 1.2em;
-    font-size: 4.7em;
+    font-size: 100px;
     text-align: center;
     margin: 10px;
-    margin-top: 300px;
+    margin-top: 150px;
   }
 }
 
@@ -196,9 +203,37 @@ img.profile_button {
   }
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  img.profile_button {
+    height: 60px;
+    width: 60px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  img.profile_button {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .landing_page_name, .landing_page_text {
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .landing_page_name, .landing_page_text {
     text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .landing_lime {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    margin-top: -20px;
   }
 }
 
@@ -207,12 +242,6 @@ img.profile_button {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
     margin-top: -100px;
-  }
-}
-
-@media (max-width: 768px) {
-  img.profile_button {
-    margin: 10px;
   }
 }
 

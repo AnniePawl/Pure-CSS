@@ -1,8 +1,9 @@
+@import '../../../MediaQueries/MediaQueries.scss';
+
 .about__container {
   background-color:white;
   display: flex;
   flex-direction: row;
-
   height:100vh;
 }
 
@@ -35,4 +36,11 @@ font-size:50px;
 .about__pom {
 margin:10em;
   transform: scale(1.3);
+}
+
+// Media Queries
+.about__container{
+  @media(max-width: $breakpoint-ipad-pro){
+    flex-direction: column;
+  }
 }

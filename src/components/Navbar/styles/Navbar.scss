@@ -1,10 +1,12 @@
+@import '../../../MediaQueries/MediaQueries.scss';
+
 // Nav Bar Styles
 .nav {
   z-index:2;
   position:fixed;
   top:0;
   background-color:#fbffab;
-  width:100%;
+  width:100vw;
   height:90px;
 }
 
@@ -42,8 +44,26 @@ font-size:20px;
 }
 
 // Media Queries 
+
+.nav {
+  @media (min-width: $breakpoint-tablet + 1px) and (max-width: $breakpoint-ipad-pro){
+    height:120px;
+  }
+}
+
+.navbar >ul >li {
+  @media( max-width: $breakpoint-ipad-pro) and (min-width: $breakpoint-tablet +1){
+    font-size:1.6em;
+    margin:6px;
+  }
+}
+
 .navbar > ul >li >a {
-  @media (max-width:768px) {
-    padding:.5em;
+  @media (max-width: $breakpoint-ipad-pro) {
+    margin-right:5px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-right:10px;
   }
 }
