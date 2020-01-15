@@ -7,7 +7,7 @@
   top:0;
   background-color:#fbffab;
   width:100vw;
-  height:90px;
+  height:80px;
 }
 
 .navbar > ul {
@@ -45,50 +45,50 @@ font-size:20px;
 
 // Media Queries 
 
-.nav {
-  @media (min-width: $breakpoint-tablet + 1px) and (max-width: $breakpoint-ipad-pro){
-    height:120px;
-  }
-  @media (max-width: $breakpoint-iphone-plus){
-    height:65px;
-  }
-  @media (max-width: $breakpoint-iphonex){
-    height:65px;
-  }
-  @media (max-width: $breakpoint-iphone5){
-    height:55px;
-  }
-}
+// .nav {
+//   @media (min-width: $breakpoint-tablet + 1px) and (max-width: $breakpoint-ipad-pro){
+//     height:120px;
+//   }
+//   @media (max-width: $breakpoint-iphone-plus){
+//     height:65px;
+//   }
+//   @media (max-width: $breakpoint-iphonex){
+//     height:65px;
+//   }
+//   @media (max-width: $breakpoint-iphone5){
+//     height:55px;
+//   }
+// }
 
-.navbar >ul >li {
-  @media( max-width: $breakpoint-ipad-pro) and (min-width: $breakpoint-tablet +1){
-    font-size:1.6em;
-    margin:6px;
-  }
-  @media( max-width: $breakpoint-iphone-plus){
-    font-size:1em;
-    margin:-.5px;
-    margin-left:-5px;
-  }
-  @media( max-width: $breakpoint-iphonex){
-    font-size:1em;
-    margin:-4px;
-    margin-left:-11px;
-  }
-  @media( max-width: $breakpoint-iphone5){
-    font-size:.85em;
-    margin:-4px;
-    margin-left:-12px;
-  }
+// .navbar >ul >li {
+//   @media( max-width: $breakpoint-ipad-pro) and (min-width: $breakpoint-tablet +1){
+//     font-size:1.6em;
+//     margin:6px;
+//   }
+//   @media( max-width: $breakpoint-iphone-plus){
+//     font-size:1em;
+//     margin:-.5px;
+//     margin-left:-5px;
+//   }
+//   @media( max-width: $breakpoint-iphonex){
+//     font-size:1em;
+//     margin:-4px;
+//     margin-left:-11px;
+//   }
+//   @media( max-width: $breakpoint-iphone5){
+//     font-size:.85em;
+//     margin:-4px;
+//     margin-left:-12px;
+//   }
   
-}
+// }
 
-.navbar > ul >li >a {
-  @media (max-width: $breakpoint-ipad-pro) {
-    margin-right:5px;
-  }
+// .navbar > ul >li >a {
+//   @media (max-width: $breakpoint-ipad-pro) {
+//     margin-right:5px;
+//   }
 
-  @media (max-width: $breakpoint-tablet) {
-    margin-right:10px;
-  }
-}
+//   @media (max-width: $breakpoint-tablet) {
+//     margin-right:10px;
+//   }
+// }
