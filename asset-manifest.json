@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Pure-CSS-Animations/static/css/main.f6de8aae.chunk.css",
-    "main.js": "/Pure-CSS-Animations/static/js/main.df0039d0.chunk.js",
-    "main.js.map": "/Pure-CSS-Animations/static/js/main.df0039d0.chunk.js.map",
-    "runtime~main.js": "/Pure-CSS-Animations/static/js/runtime~main.a57741dc.js",
-    "runtime~main.js.map": "/Pure-CSS-Animations/static/js/runtime~main.a57741dc.js.map",
-    "static/js/2.1e32edb2.chunk.js": "/Pure-CSS-Animations/static/js/2.1e32edb2.chunk.js",
-    "static/js/2.1e32edb2.chunk.js.map": "/Pure-CSS-Animations/static/js/2.1e32edb2.chunk.js.map",
-    "index.html": "/Pure-CSS-Animations/index.html",
-    "precache-manifest.5c72e78591a85eee7ce7142c23ffec71.js": "/Pure-CSS-Animations/precache-manifest.5c72e78591a85eee7ce7142c23ffec71.js",
-    "service-worker.js": "/Pure-CSS-Animations/service-worker.js",
-    "static/css/main.f6de8aae.chunk.css.map": "/Pure-CSS-Animations/static/css/main.f6de8aae.chunk.css.map",
-    "static/media/codepen.svg": "/Pure-CSS-Animations/static/media/codepen.891cf13b.svg",
-    "static/media/dribbble.svg": "/Pure-CSS-Animations/static/media/dribbble.2946195e.svg",
-    "static/media/github.svg": "/Pure-CSS-Animations/static/media/github.a4dfa125.svg",
-    "static/media/linkedin.svg": "/Pure-CSS-Animations/static/media/linkedin.506ced1b.svg",
-    "static/media/medium.svg": "/Pure-CSS-Animations/static/media/medium.c5f92355.svg"
+    "main.css": "/Pure-CSS/static/css/main.f6de8aae.chunk.css",
+    "main.js": "/Pure-CSS/static/js/main.97bb6cb1.chunk.js",
+    "main.js.map": "/Pure-CSS/static/js/main.97bb6cb1.chunk.js.map",
+    "runtime~main.js": "/Pure-CSS/static/js/runtime~main.730130e2.js",
+    "runtime~main.js.map": "/Pure-CSS/static/js/runtime~main.730130e2.js.map",
+    "static/js/2.1e32edb2.chunk.js": "/Pure-CSS/static/js/2.1e32edb2.chunk.js",
+    "static/js/2.1e32edb2.chunk.js.map": "/Pure-CSS/static/js/2.1e32edb2.chunk.js.map",
+    "index.html": "/Pure-CSS/index.html",
+    "precache-manifest.6f12e5c14f6e82395174a253d3faf40e.js": "/Pure-CSS/precache-manifest.6f12e5c14f6e82395174a253d3faf40e.js",
+    "service-worker.js": "/Pure-CSS/service-worker.js",
+    "static/css/main.f6de8aae.chunk.css.map": "/Pure-CSS/static/css/main.f6de8aae.chunk.css.map",
+    "static/media/codepen.svg": "/Pure-CSS/static/media/codepen.891cf13b.svg",
+    "static/media/dribbble.svg": "/Pure-CSS/static/media/dribbble.2946195e.svg",
+    "static/media/github.svg": "/Pure-CSS/static/media/github.a4dfa125.svg",
+    "static/media/linkedin.svg": "/Pure-CSS/static/media/linkedin.506ced1b.svg",
+    "static/media/medium.svg": "/Pure-CSS/static/media/medium.c5f92355.svg"
   }
 }
