@@ -1,126 +1,125 @@
-$pom: #d63e64; 
-$pom_inner: #ffe6ea; 
+$pom: #d63e64;
+$pom_inner: #ffe6ea;
 $pom_bud: #2f3333;
-$pom_shadow:#e4e890;
+$pom_shadow: #e4e890;
 
 @mixin pom_top {
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 30px solid $pom; 
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid $pom;
 }
 
 @mixin center_flex {
-  display:flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .pom_container {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // background-color: #fbffab;
-  // height: 550px;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: center;
+	// align-items: center;
+	// background-color: #fbffab;
+	// height: 550px;
 }
 
 .total_pom {
-  transform: translate(-43px, 10px)
+	transform: translate(-43px, 10px);
 }
 
 .pom_base {
-  position: relative;
-  z-index:1;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  height:240px;
-  width:245px;
-  border-radius: 50%; 
-  background-color:$pom;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 240px;
+	width: 245px;
+	border-radius: 50%;
+	background-color: $pom;
 }
 
 .pom_inner {
-   height:215px;
-   width:220px;
-   border-radius: 50%; 
-   background-color: $pom_inner;
+	height: 215px;
+	width: 220px;
+	border-radius: 50%;
+	background-color: $pom_inner;
 }
 
 .total_pom {
-  @include center_flex;
+	@include center_flex;
 }
 
 .pom_inner_line {
-  z-index: 1;
-  position: relative;
-  width:15px;
-  height:230px;
-  transform: translate(102px, -50px);
-  background-color: $pom;
+	z-index: 1;
+	position: relative;
+	width: 15px;
+	height: 230px;
+	transform: translate(102px, -50px);
+	background-color: $pom;
 }
 
 .pom_top {
-  z-index: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: translate(169px, -132px)
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: translate(169px, -132px);
 }
 
 .tops {
-  z-index: 1;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .pom_top_base {
-  background:$pom;
-  height:25px;
-  width:50px;
+	background: $pom;
+	height: 25px;
+	width: 50px;
 }
 
 .pom_top1 {
-  @include pom_top();
-  transform: rotate(-35deg)translate(6px, 7px);
+	@include pom_top();
+	transform: rotate(-35deg)translate(6px, 7px);
 }
 
 .pom_top2 {
-  @include pom_top();
-  transform: translate(0, 1px)
+	@include pom_top();
+	transform: translate(0, 1px);
 }
 
 .pom_top3 {
-  @include pom_top();
-  transform: rotate(35deg)translate(-6px,7px);
+	@include pom_top();
+	transform: rotate(35deg)translate(-6px, 7px);
 }
 
 // POM SEEDS
 
 // See Container
 .all_pom_seeds {
-  position: relative;
-  z-index: 2;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-  transform: translate(0,3px);
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transform: translate(0, 3px);
 }
 
-// Universal pom seed style 
+// Universal pom seed style
 .pom_seeds {
-
-  height:25px;
-  width:25px;
-  border-radius:50%;
-  margin:5.5px;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	margin: 5.5px;
 }
 
 // Pom Shadow
@@ -135,97 +134,90 @@ $pom_shadow:#e4e890;
 //   box-shadow: 0 0 4px 8px $pom_shadow;
 // }
 
-
 // Seed color Assignments
 // Seed One Color
 .pom_seed1 {
-  animation: seed_color 5s infinite, scale_up 3s infinite;
+	animation: seed_color 5s infinite, scale_up 3s infinite;
 }
 
 .pom_seed2 {
-  animation: seed_color 5s infinite, scale_down 3s infinite;
-  animation-delay: 1s;
+	animation: seed_color 5s infinite, scale_down 3s infinite;
+	animation-delay: 1s;
 }
 
 .pom_seed3 {
-  animation: seed_color 5s infinite, scale_down 3s infinite;
-  animation-delay: 1s;
+	animation: seed_color 5s infinite, scale_down 3s infinite;
+	animation-delay: 1s;
 }
-
 
 // Left outer Set
 .pom_seeds1 {
-  transform: translate(2px, 35px)
-
+	transform: translate(2px, 35px);
 }
 
 // Set 2
-.pom_seeds2{
-  transform: translate(-12px, 5px)
+.pom_seeds2 {
+	transform: translate(-12px, 5px);
 }
 
 // Center Set
-.pom_seeds3{
-  transform: translate(-5px, -10px);
+.pom_seeds3 {
+	transform: translate(-5px, -10px);
 }
 
 // Set 4
-.pom_seeds4{
-  transform: translate(0px, 5px)
+.pom_seeds4 {
+	transform: translate(0px, 5px);
 }
 
 .pom_seeds5 {
-  transform: translate(-13px, 35px)
-
+	transform: translate(-13px, 35px);
 }
 
 // KEYFRAMES
 @keyframes scale_up {
-  0% {
-    transform: scale(1)
-  }
-  50% {
-    transform: scale(1.2)
-  }
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
 
-  100% {
-    transform: scale(1)
-  }
-  
+	100% {
+		transform: scale(1);
+	}
 }
 
 @keyframes scale_down {
-  0% {
-    transform: scale(1)
-  }
-  50% {
-    transform: scale(.6)
-  }
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(.6);
+	}
 
-  100% {
-    transform: scale(1)
-  }
-  
+	100% {
+		transform: scale(1);
+	}
 }
-
 
 // Change Seed Color
 @keyframes seed_color {
-  0% {
-    background-color: #ff8092
-  }
-  25% {
-    background-color: $pom
-  }
+	0% {
+		background-color: #ff8092;
+	}
+	25% {
+		background-color: $pom;
+	}
 
-  50% {
-    background-color:#822445
-  }
+	50% {
+		background-color: #822445;
+	}
 
-  75% {
-    background-color:$pom
-  }
-  100% {
-    background-color:#ff8092
-  }
+	75% {
+		background-color: $pom;
+	}
+	100% {
+		background-color: #ff8092;
+	}
 }
