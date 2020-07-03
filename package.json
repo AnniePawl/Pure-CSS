@@ -2,7 +2,7 @@
 	"name": "css-art",
 	"version": "0.2.0",
 	"private": true,
-	"homepage": "https://AnniePawl.github.io/Pure-CSS",
+	"homepage": "https://anniepawl.github.io/Pure-CSS/",
 	"dependencies": {
 		"gh-pages": "^2.1.1",
 		"react": "^16.9.0",
