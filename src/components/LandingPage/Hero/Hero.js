@@ -15,7 +15,7 @@ function Hero() {
 			<div className="profile_buttons">
 				<Buttons />
 			</div>
-
+ 
 			{/* Landing Page Text */}
 			<h4 className="landing_page_text">Made With ♥ By</h4>
 

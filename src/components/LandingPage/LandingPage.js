@@ -7,6 +7,7 @@ import About from '../About/About';
 import Navbar from '../Navbar/Navbar';
 // import Arrows from './Arrows/Arrows'
 import { withRouter } from 'react-router-dom';
+import Ghost from '../Ghost/ghost'
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 function LandingPage() {
@@ -37,7 +38,11 @@ function LandingPage() {
 				<div className="about_section">
 					<About />
 				</div>
+
+	
 			</div>
+
+			<Ghost/>
 		</div>
 	);
 }

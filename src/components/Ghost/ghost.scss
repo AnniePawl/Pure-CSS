@@ -1,0 +1,61 @@
+$background: #293138;
+$ghost: #f5faff;
+
+@mixin center_flex {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ghost_container {
+  @include center_flex();
+  height: 700px;
+  background-color: $background;
+}
+
+.ghost {
+  @include center_flex();
+  flex-direction: column;
+}
+
+.ghost_head {
+  height:100px;
+  width:100px;
+  border-radius: 45%;
+  background-color: $ghost;
+  display:flex;
+  justify-content: center;
+}
+
+.ghost_body {
+  background-color: $ghost;
+  display:flex;
+  justify-content: center;
+  height:85px;
+  width:100px;
+  transform: translateY(-50px);
+}
+
+// Ghost Eyes
+.ghost_eyes {
+  display:flex; 
+  flex-direction: row;
+  margin-top:20px;
+}
+
+.ghost_eye {
+  height: 15px;
+  width:15px;
+  margin:10px;
+  border-radius: 50%;
+  background-color:$background;
+}
+
+// Ghost Mouth 
+.ghost_mouth {
+  background-color: $background;
+  height: 20px;
+  width:40px;
+  border-radius: 40%;
+
+}
