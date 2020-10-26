@@ -42,31 +42,53 @@ function Ghost(){
                 <div className= 'whisker whisker3'></div>
               </div>
               {/* Nose */}
-              <div className='ghost_nose'></div>
+              <div className='nose_mouth'>
+                <div className='ghost_nose'></div>
+                {/* Mouth */}
+                <div className='ghost_mouth'>
+                    <div className='mouth mouth1'></div>
+                    <div className='mouth mouth2'></div>
+                </div>
+              </div>
               {/* Whisker set 2 */}
               <div className='whiskers2'>
                 <div className= 'whisker whisker4'></div>
                 <div className= 'whisker whisker5'></div>
                 <div className= 'whisker whisker6'></div>
-            </div>
+              </div>
             </div>
                 {/* Ghost Cheeks */}
-                <div className ='ghost_cheeks'>
-                  <div className='cheek1'></div>
-                  <div className='cheek2'></div>
-                </div>
-              {/* Ghost Mouth */}
-              <div className='ghost_mouth'></div> 
+            <div className ='ghost_cheeks'>
+              <div className='cheek1'></div>
+              <div className='cheek2'></div>
+            </div>
+            {/* Ghost Mouth */}
+            <div className='ghost_mouth'></div> 
           </div>
 
           {/* Ghost Bottom */}
           <div className='ghost_bottom_container'>
           <div className="ghost_bottom">
-            <div className='circle'></div>
-            <div className='circle'></div>
-            <div className='circle'></div>
-            <div className='circle'></div>
-            <div className='circle'></div>
+            <div className='bottom_piece bottom_piece1'>
+              <div className='rect'></div>
+              <div className='circle'></div>
+            </div>
+            <div className='bottom_piece bottom_piece2'>
+              <div className='rect'></div>
+              <div className='circle'></div>
+            </div>
+            <div className='bottom_piece bottom_piece3'>
+              <div className='rect'></div>
+              <div className='circle'></div>
+            </div>
+            <div className='bottom_piece bottom_piece4'>
+              <div className='rect'></div>
+              <div className='circle'></div>
+            </div>
+            <div className='bottom_piece bottom_piece5'>
+              <div className='rect'></div>
+              <div className='circle'></div>
+            </div>
           </div>
           </div>
 

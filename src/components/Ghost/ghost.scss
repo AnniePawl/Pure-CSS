@@ -1,7 +1,7 @@
 $background: #bd7b00;
 $black: #293138;
 $ghost: #f5faff;
-$cheeks: #ffc9da;
+$cheeks: #ffbfd6;
 
 @mixin center_flex {
   display:flex;
@@ -9,24 +9,21 @@ $cheeks: #ffc9da;
   align-items: center;
 }
 
+// Ghost Container
 .ghost_container {
   @include center_flex();
+  flex-direction: column;
   height: 700px;
   background-color: $background;
+  .ghost {
+    @include center_flex();
+    flex-direction: column;
+    animation: ghost_float 4s infinite;
+  }
 }
 
-.total_ghost {
-  @include center_flex();
-  flex-direction: column;
-}
 
-.ghost {
-  @include center_flex();
-  flex-direction: column;
-  // animation: ghost_float 3s infinite ease;
-}
-
-// Ghost Ears 
+// Ears
 .ghost_ears {
   width:110px;
   display: flex;
@@ -34,7 +31,6 @@ $cheeks: #ffc9da;
   justify-content: space-between;
   transform: translateY(20px);
   .ear1, .ear2 {
-    // background-color:$black;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 25px solid $black;
@@ -48,10 +44,8 @@ $cheeks: #ffc9da;
 }
 
 
-
-// Ghost head and Cheeks
+// Head 
 .ghost_head {
-  // z-index: 1;
   height:100px;
   width:100px;
   border-radius: 50%;
@@ -59,10 +53,7 @@ $cheeks: #ffc9da;
   display:flex;
   flex-direction: column;
   align-items: center;
-
-}
-
-// Ghost Eyes
+  // Ghost Eyes
 .ghost_eyes {
   width: 70px;
   margin-top:23px;
@@ -74,6 +65,7 @@ $cheeks: #ffc9da;
     width:24px;
     border-radius: 50%;
     @include center_flex();
+    
   }
   .ghost_eye1, .ghost_eye2 {
     display: flex;
@@ -98,6 +90,7 @@ $cheeks: #ffc9da;
       transform: translateX(3px);
     }
   }
+}
 
 }
 
@@ -106,130 +99,195 @@ $cheeks: #ffc9da;
 .ghost_body {
   background-color: $ghost;
   display:flex;
-  // flex-direction: column;
+  flex-direction: column;
   // justify-content: center;
-  align-items:center;
+  align-items: center;
   height:85px;
   width:100px;
   transform: translateY(-50px);
   // Ghost Cheeks 
   .ghost_cheeks { 
+    transform: translateY(-11px);
     width:80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    transform: translateY(-5px);
   }
   .cheek1, .cheek2 {
     background-color: $cheeks;
     height:13px;
     width:15px;
     border-radius: 50%;
-    opacity: 50%;
+    opacity:70%;
   }
+  
+ 
 
   // Ghost Whiskers 
   .nose_whiskers {
     display:flex;
     flex-direction: row;
-    align-items: center;
-  }
-  .whisker {
-    height:1px;
-    width: 10px;
-    background-color: $black;
-    margin-top:.3px;
-  }
-
-
-  .whisker1 {
-    transform: rotate(12deg);
+    // align-items: center;
+    // Ghost Nose 
+    .nose_mouth {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(2px);
+      .ghost_mouth {
+        transform: translateY(.5px);
+        display: flex;
+        flex-direction: row;
+      }
+      .mouth {
+        height: 4px;
+        width:1px;
+        background-color: $black;
+        margin:1px;
+        border-radius: 20%;
+      }
+      .mouth1 {
+        transform: rotate(30deg);
+      }
+      .mouth2 {
+        transform: rotate(-30deg);
+      }
+    }
+    .ghost_nose {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid $black;
+      border-radius: 20px;
+      transform: translateY(2.5px);
     
+    }
+    .whisker {
+      height:1px;
+      width: 12px;
+      background-color: $black;
+      margin-top:1px;
+      border-radius: 40%;
+      
+    }
+    .whiskers1,.whiskers2 {
+      margin-top:3px;
+    }
+    .whisker1 {
+      transform: rotate(15deg);
+    }
+    .whisker4 {
+      transform: rotate(-15deg);
+    }
+    .whisker3 {
+      transform: rotate(-15deg);
+    }
+    .whisker6{
+      transform: rotate(15deg);
+    }
   }
-  .whisker4 {
-    transform: rotate(-12deg);
-  }
-  .whisker3 {
-    transform: rotate(-12deg);
+ 
 
-  }
-  .whisker6{
-    transform: rotate(12deg);
-
-  }
-  
-  // Ghost Nose 
-  .ghost_nose {
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid $black;
-    border-radius: 20px;
-    transform: translateY(2.5px);
-  }
-  // Ghost Mouth 
-  .ghost_mouth {
-    // background-color: $black;
-    // height: 22px;
-    // width:27px;
-    // border-radius: 50%;
-    // transform: translateY(-12px);
-
-    // height:10px;
-    // width: 7px;
-    // border-radius: 10px 0 0 10px;
-    // border-top: 4px solid $black;
-    // border-left: 4px solid $black;
-    // border-bottom: 4px solid $black;
-    // transform:rotate(-90deg) translateX(10px);
-   
-  }
 }
 
 // Ghost Bottom 
 .ghost_bottom_container {
-  width:100px
-
+  width:100px;
+  .ghost_bottom {
+    transform: translateY(-85px);
+    .rect {
+      background-color:$ghost;
+      height:30px;
+      width:20px;
+      transform: translateY(10px);
+    }
+    @include center_flex();
+    // transform: translateY(-60px);
+    .circle {
+      background-color: $ghost;
+      height:20px;
+      width:20px;
+      border-radius: 50%;
+    }
+    .bottom_piece1, .bottom_piece3, .bottom_piece5 {
+      animation:bottom_float 3s infinite;
+    }
+   
+    .bottom_piece2, .bottom_piece4{
+      animation:bottom_float2 5s infinite;
+    }
+   
+  
+  }
 }
 
-.ghost_bottom {
-  @include center_flex();
-  animation:bottomAnimation 5s infinite;
-}
-
-.circle {
-  background-color: $ghost;
-  height:20px;
-  width:20px;
-  border-radius: 50%;
-}
 
 // Ghost Shadow 
-// .ghost_shadow {
-// 	// position: relative;
-// 	background-color: $black;
-// 	border-radius: 50%;
-// 	height: 15px;
-// 	width: 110px;
-// 	// animation: lime_shadow 3s infinite;
-// 	box-shadow: 0 0 2px 5px $black;
-// }
+.ghost_shadow {
+	// position: relative;
+	background-color: $black;
+	border-radius: 50%;
+	height: 12px;
+	width: 110px;
+	animation: ghost_shadow 4s infinite;
+	box-shadow: 0 0 2px 5px $black;
+}
 
 // Keyframes 
+
+@keyframes bottom_float {
+  0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(15px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+
+}
+
+@keyframes blink {
+  0% {
+		
+	}
+	50% {
+		background-color: $black;
+	}
+	100% {
+	
+	}
+
+}
+
+@keyframes bottom_float2 {
+  0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+
+}
 
 @keyframes ghost_shadow {
 	0% {
 		opacity: .5;
-		transform: scale(1);
+		transform: scale(.85);
 	}
 	50% {
 		opacity: 1.5;
-		transform: scale(1.15);
+		transform: scale(1.1);
 	}
 	100% {
 		opacity: .5;
-		transform:scale(1);
+		transform:scale(.85);
 	}
 }
 
