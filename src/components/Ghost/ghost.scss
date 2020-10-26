@@ -1,4 +1,4 @@
-$background: #4d4d4d;
+$background: #bd7b00;
 $black: #293138;
 $ghost: #f5faff;
 $cheeks: #ffc9da;
@@ -15,9 +15,15 @@ $cheeks: #ffc9da;
   background-color: $background;
 }
 
+.total_ghost {
+  @include center_flex();
+  flex-direction: column;
+}
+
 .ghost {
   @include center_flex();
   flex-direction: column;
+  // animation: ghost_float 3s infinite ease;
 }
 
 // Ghost Ears 
@@ -53,14 +59,13 @@ $cheeks: #ffc9da;
   display:flex;
   flex-direction: column;
   align-items: center;
-  .eyes_cheeks {
-    margin-top:23px;
-  }
+
 }
 
 // Ghost Eyes
 .ghost_eyes {
   width: 70px;
+  margin-top:23px;
   display:flex; 
   justify-content: space-between;
   .outer_eye1, .outer_eye2 {
@@ -101,35 +106,75 @@ $cheeks: #ffc9da;
 .ghost_body {
   background-color: $ghost;
   display:flex;
-  flex-direction: column;
+  // flex-direction: column;
   // justify-content: center;
   align-items:center;
   height:85px;
   width:100px;
   transform: translateY(-50px);
   // Ghost Cheeks 
-  .ghost_cheeks {
-    
+  .ghost_cheeks { 
     width:80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transform: translateY(-5px);
   }
   .cheek1, .cheek2 {
     background-color: $cheeks;
     height:13px;
     width:15px;
     border-radius: 50%;
-    // transform: translateY(-px);
     opacity: 50%;
+  }
+
+  // Ghost Whiskers 
+  .nose_whiskers {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .whisker {
+    height:1px;
+    width: 10px;
+    background-color: $black;
+    margin-top:.3px;
+  }
+
+
+  .whisker1 {
+    transform: rotate(12deg);
+    
+  }
+  .whisker4 {
+    transform: rotate(-12deg);
+  }
+  .whisker3 {
+    transform: rotate(-12deg);
+
+  }
+  .whisker6{
+    transform: rotate(12deg);
+
+  }
+  
+  // Ghost Nose 
+  .ghost_nose {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid $black;
+    border-radius: 20px;
+    transform: translateY(2.5px);
   }
   // Ghost Mouth 
   .ghost_mouth {
-    background-color: $black;
-    height: 22px;
-    width:27px;
-    border-radius: 50%;
-    transform: translateY(-10px);
+    // background-color: $black;
+    // height: 22px;
+    // width:27px;
+    // border-radius: 50%;
+    // transform: translateY(-12px);
 
     // height:10px;
     // width: 7px;
@@ -143,9 +188,14 @@ $cheeks: #ffc9da;
 }
 
 // Ghost Bottom 
+.ghost_bottom_container {
+  width:100px
+
+}
+
 .ghost_bottom {
   @include center_flex();
-  transform: translateY(-60px);
+  animation:bottomAnimation 5s infinite;
 }
 
 .circle {
@@ -153,4 +203,56 @@ $cheeks: #ffc9da;
   height:20px;
   width:20px;
   border-radius: 50%;
+}
+
+// Ghost Shadow 
+// .ghost_shadow {
+// 	// position: relative;
+// 	background-color: $black;
+// 	border-radius: 50%;
+// 	height: 15px;
+// 	width: 110px;
+// 	// animation: lime_shadow 3s infinite;
+// 	box-shadow: 0 0 2px 5px $black;
+// }
+
+// Keyframes 
+
+@keyframes ghost_shadow {
+	0% {
+		opacity: .5;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1.5;
+		transform: scale(1.15);
+	}
+	100% {
+		opacity: .5;
+		transform:scale(1);
+	}
+}
+
+@keyframes ghost_float {
+	0% {
+		transform: translateY(-60px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-60px);
+	}
+}
+
+@keyframes bottomAnimation {
+	0% {
+		transform: translateY(-60px) translate3d(10px, 0, 0);
+	}
+	50% {
+		transform: translateY(-60px) translate3d(0px, 0, 0);
+  }
+  100% {
+		transform: translateY(-60px) translate3d(-10px, 0, 0);
+	}
 }
