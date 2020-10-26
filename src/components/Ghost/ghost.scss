@@ -1,5 +1,7 @@
-$background: #293138;
+$background: #4d4d4d;
+$black: #293138;
 $ghost: #f5faff;
+$cheeks: #ffc9da;
 
 @mixin center_flex {
   display:flex;
@@ -18,44 +20,137 @@ $ghost: #f5faff;
   flex-direction: column;
 }
 
-.ghost_head {
-  height:100px;
-  width:100px;
-  border-radius: 45%;
-  background-color: $ghost;
-  display:flex;
-  justify-content: center;
+// Ghost Ears 
+.ghost_ears {
+  width:110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: translateY(20px);
+  .ear1, .ear2 {
+    // background-color:$black;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid $black;
+  }
+  .ear1 {
+    transform: rotate(-38deg);
+  }
+  .ear2 {
+    transform: rotate(38deg);
+  }
 }
 
-.ghost_body {
-  background-color: $ghost;
-  display:flex;
-  justify-content: center;
-  height:85px;
+
+
+// Ghost head and Cheeks
+.ghost_head {
+  // z-index: 1;
+  height:100px;
   width:100px;
-  transform: translateY(-50px);
+  border-radius: 50%;
+  background-color: $black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  .eyes_cheeks {
+    margin-top:23px;
+  }
 }
 
 // Ghost Eyes
 .ghost_eyes {
+  width: 70px;
   display:flex; 
-  flex-direction: row;
-  margin-top:20px;
+  justify-content: space-between;
+  .outer_eye1, .outer_eye2 {
+    background-color:white;
+    height:24px;
+    width:24px;
+    border-radius: 50%;
+    @include center_flex();
+  }
+  .ghost_eye1, .ghost_eye2 {
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+    width:15px;
+    border-radius: 50%;
+    background-color:$black;
+    .pupil1 {
+      background-color: $ghost;
+      height:6px;
+      width:6px;
+      border-radius: 50%;
+      transform: translateX(5px);
+
+    }
+    .pupil2 {
+      background-color: $ghost;
+      height:4px;
+      width:4px;
+      border-radius: 50%;
+      transform: translateX(3px);
+    }
+  }
+
 }
 
-.ghost_eye {
-  height: 15px;
-  width:15px;
-  margin:10px;
+
+// Ghost Body 
+.ghost_body {
+  background-color: $ghost;
+  display:flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items:center;
+  height:85px;
+  width:100px;
+  transform: translateY(-50px);
+  // Ghost Cheeks 
+  .ghost_cheeks {
+    
+    width:80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cheek1, .cheek2 {
+    background-color: $cheeks;
+    height:13px;
+    width:15px;
+    border-radius: 50%;
+    // transform: translateY(-px);
+    opacity: 50%;
+  }
+  // Ghost Mouth 
+  .ghost_mouth {
+    background-color: $black;
+    height: 22px;
+    width:27px;
+    border-radius: 50%;
+    transform: translateY(-10px);
+
+    // height:10px;
+    // width: 7px;
+    // border-radius: 10px 0 0 10px;
+    // border-top: 4px solid $black;
+    // border-left: 4px solid $black;
+    // border-bottom: 4px solid $black;
+    // transform:rotate(-90deg) translateX(10px);
+   
+  }
+}
+
+// Ghost Bottom 
+.ghost_bottom {
+  @include center_flex();
+  transform: translateY(-60px);
+}
+
+.circle {
+  background-color: $ghost;
+  height:20px;
+  width:20px;
   border-radius: 50%;
-  background-color:$background;
-}
-
-// Ghost Mouth 
-.ghost_mouth {
-  background-color: $background;
-  height: 20px;
-  width:40px;
-  border-radius: 40%;
-
 }
