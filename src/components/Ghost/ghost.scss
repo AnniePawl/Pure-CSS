@@ -1,12 +1,9 @@
-$background: #bd7b00;
-$background:#ffd6eb;
-$background:#355f75;
-$background:#b3ffd6;
-$background:#566e61;
-// $background:#5a4a69;
+$background:#dba148;
+// $background:#789485;
 $black: #293138;
 $ghost: #f5faff;
 $cheeks: #ffbfd6;
+$shadow:#3d2d14;
 
 @mixin center_flex {
   display:flex;
@@ -64,7 +61,7 @@ $cheeks: #ffbfd6;
   flex-direction: row;
   justify-content: space-between;
   transform: translateY(6px);
-  animation: blink 4s infinite;
+  animation: blink 3s infinite;
  
   .eyelid1, .eyelid2 {
     height:24px;
@@ -81,6 +78,13 @@ $cheeks: #ffbfd6;
   display:flex; 
   transform: translateY(-25px);
   justify-content: space-between;
+  .inner_eye1, .inner_eye2 {
+    @include center_flex();
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+    background-color:lightgreen;
+  }
   .outer_eye1, .outer_eye2 {
     background-color:white;
     height:24px;
@@ -100,18 +104,18 @@ $cheeks: #ffbfd6;
     background-color:$black;
     .pupil1 {
       background-color: $ghost;
-      height:6px;
+      height:5px;
       width:6px;
       border-radius: 50%;
-      transform: translateX(5px);
+      transform: translateX(3px);
 
     }
     .pupil2 {
       background-color: $ghost;
-      height:4px;
-      width:4px;
+      height:2.5px;
+      width:2.5px;
       border-radius: 50%;
-      transform: translateX(3px);
+      transform: translateX(8px);
     }
   }
 }
@@ -131,7 +135,7 @@ $cheeks: #ffbfd6;
   transform: translateY(-50px);
   // Ghost Cheeks 
   .ghost_cheeks { 
-    transform: translateY(-11px);
+    transform: translateY(-9px);
     width:80px;
     display: flex;
     flex-direction: row;
@@ -139,13 +143,71 @@ $cheeks: #ffbfd6;
   }
   .cheek1, .cheek2 {
     background-color: $cheeks;
-    height:13px;
-    width:15px;
+    height:8px;
+    width:10px;
     border-radius: 50%;
-    opacity:70%;
+    opacity:60%;
+    box-shadow: 0 0 1.5px 2.5px $cheeks;
+  }
+  // Arms
+  .ghost_arms {
+    width:170px;
+    display:flex;
+    justify-content:space-between;
+    .claws1 {
+      transform: translateX(-3px) translateY(2px);
+    }
+    .claws2 {
+      transform: translateY(2px) translateX(18px);
+    }
+    .claws1, .claws2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .claw {
+        height:1px;
+        width: 6px;
+        background-color: $black;
+        margin-top:4px;
+        border-radius: 40%;
+      }
+
+    }
+   
+    
+    .ghost_arm1, .ghost_arm2 {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .ghost_arm1 {
+      transform: rotate(-10deg);
+      animation: arm_wave1 4s infinite;
+    }
+    .ghost_arm2 {
+      transform: rotate(10deg);
+      animation: arm_wave2 4s infinite;
+    }
+    .arm_rect {
+      height:22px;
+      width:22px;
+      background-color:$ghost;
+    }
+    .arm_circle {
+      height:22px;
+      width:22px;
+      border-radius: 50%;
+      background-color:$ghost;
+    }
+    .arm_circle1 {
+      transform: translateX(10px);
+  
+    }
+    .arm_circle2 {
+      transform: translateX(-10px);
+    }
   }
   
- 
 
   // Ghost Whiskers 
   .nose_whiskers {
@@ -212,9 +274,9 @@ $cheeks: #ffbfd6;
       transform: rotate(15deg);
     }
   }
- 
 
 }
+
 
 // Ghost Bottom 
 .ghost_bottom_container {
@@ -234,6 +296,7 @@ $cheeks: #ffbfd6;
       height:20px;
       width:20px;
       border-radius: 50%;
+      box-shadow: 0 0 .5px px $ghost
     }
     .bottom_piece1, .bottom_piece3, .bottom_piece5 {
       animation:bottom_float 3s infinite;
@@ -251,12 +314,12 @@ $cheeks: #ffbfd6;
 // Ghost Shadow 
 .ghost_shadow {
 	// position: relative;
-	background-color: $black;
+	background-color: $shadow;
 	border-radius: 50%;
-	height: 12px;
-	width: 110px;
+	height: 11px;
+	width: 105px;
 	animation: ghost_shadow 4s infinite;
-	box-shadow: 0 0 2px 5px $black;
+	box-shadow: 0 0 2px 5px $shadow;
 }
 
 // Keyframes 
@@ -301,6 +364,31 @@ $cheeks: #ffbfd6;
 	}
 	100% {
 		transform: translateY(0px);
+	}
+
+}
+
+@keyframes arm_wave1 {
+  0% {
+		transform:  rotate(-20deg);
+	}
+	50% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(-20deg);
+	}
+
+}
+@keyframes arm_wave2 {
+  0% {
+		transform:  rotate(20deg);
+	}
+	50% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(20deg);
 	}
 
 }

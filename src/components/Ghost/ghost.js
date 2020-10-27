@@ -23,20 +23,25 @@ function Ghost(){
               <div className='ghost_eyes'>
               
                 <div className='outer_eye1'>
+                  <div className='inner_eye1'>
                   <div className='ghost_eye1'>
                     <div className='pupil1'></div>
                     <div className='pupil2'></div>
                   </div>
+                  </div>
                 </div>
                
                 <div className='outer_eye2'>
+                  <div className='inner_eye2'>
                   <div className='ghost_eye2'>
                     <div className='pupil1'></div>
                     <div className='pupil2'></div>
                   </div>
+                  </div>
                 </div>
               </div>
           </div>
+
 
           {/* Ghost Body */}
           <div className='ghost_body'>
@@ -71,7 +76,34 @@ function Ghost(){
             </div>
             {/* Ghost Mouth */}
             <div className='ghost_mouth'></div> 
+
+            {/* Ghost Arms*/}
+            <div className='ghost_arms'>
+              <div className='ghost_arm1'>
+                <div className='arm_circle arm_circle1'>  
+                  {/* claws */}
+                  <div className='claws1'>
+                    <div className= 'claw claw1'></div>
+                    <div className= 'claw claw2'></div>
+                    <div className= 'claw claw3'></div> 
+                  </div> 
+                </div>
+                <div className='arm_rect'></div>
+              </div>
+              <div className='ghost_arm2'>
+                <div className='arm_rect'></div>
+                <div className='arm_circle arm_circle2'>
+                   {/* claws */}
+                   <div className='claws2'>
+                    <div className= 'claw claw4'></div>
+                    <div className= 'claw claw5'></div>
+                    <div className= 'claw claw6'></div> 
+                  </div> 
+                </div>
+              </div>
+            </div>
           </div>
+        
 
           {/* Ghost Bottom */}
           <div className='ghost_bottom_container'>
