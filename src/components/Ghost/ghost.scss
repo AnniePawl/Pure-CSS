@@ -1,4 +1,9 @@
 $background: #bd7b00;
+$background:#ffd6eb;
+$background:#355f75;
+$background:#b3ffd6;
+$background:#566e61;
+// $background:#5a4a69;
 $black: #293138;
 $ghost: #f5faff;
 $cheeks: #ffbfd6;
@@ -53,11 +58,28 @@ $cheeks: #ffbfd6;
   display:flex;
   flex-direction: column;
   align-items: center;
+.eyelids {
+  width:70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: translateY(6px);
+  animation: blink 4s infinite;
+ 
+  .eyelid1, .eyelid2 {
+    height:24px;
+    width:24px;
+    background-color: $black;
+    border-radius: 50%;
+  }
+}
+
   // Ghost Eyes
 .ghost_eyes {
   width: 70px;
   margin-top:23px;
   display:flex; 
+  transform: translateY(-25px);
   justify-content: space-between;
   .outer_eye1, .outer_eye2 {
     background-color:white;
@@ -65,6 +87,8 @@ $cheeks: #ffbfd6;
     width:24px;
     border-radius: 50%;
     @include center_flex();
+    display: flex;
+    flex-direction: column;
     
   }
   .ghost_eye1, .ghost_eye2 {
@@ -242,7 +266,7 @@ $cheeks: #ffbfd6;
 		transform: translateY(0px);
 	}
 	50% {
-		transform: translateY(15px);
+    transform: translateY(12px);
 	}
 	100% {
 		transform: translateY(0px);
@@ -254,12 +278,17 @@ $cheeks: #ffbfd6;
   0% {
 		
 	}
-	50% {
-		background-color: $black;
-	}
-	100% {
+	5% {
+    transform:translateY(22px);
+    z-index: 1;
+  }
+  10% {
+    z-index: 0;
+  }
+	// 100% {
+  //   z-index:0;
 	
-	}
+	// }
 
 }
 

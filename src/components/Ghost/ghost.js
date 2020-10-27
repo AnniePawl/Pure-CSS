@@ -14,14 +14,21 @@ function Ghost(){
           </div>
           {/* Ghost Head */}
           <div className='ghost_head'>
+              {/* Ghost Eyelids */}
+              <div className='eyelids'>
+                <div className='eyelid1'></div>  
+                <div className='eyelid2'></div>
+              </div>
               {/* Ghost Eyes */}
               <div className='ghost_eyes'>
+              
                 <div className='outer_eye1'>
                   <div className='ghost_eye1'>
                     <div className='pupil1'></div>
                     <div className='pupil2'></div>
                   </div>
                 </div>
+               
                 <div className='outer_eye2'>
                   <div className='ghost_eye2'>
                     <div className='pupil1'></div>
