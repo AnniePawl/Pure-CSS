@@ -1,10 +1,11 @@
 import React from 'react'
 import Lime from './Lime/Lime'
 import Pear from './Pear/Pear'
-import Watermelon from './Watermelon/Watermelon'
 // import Beet from './Beet/Beet'
 import Lemon from './Lemon/Lemon'
 import Blueberry from './Blueberry/Blueberry'
+import Ghost from '../Ghost/ghost'
+import Watermelon from '../Fruits/Watermelon/Watermelon'
 import Pom from './Pom/Pom'
 import Orange from './Orange/Orange'
 
@@ -21,6 +22,13 @@ const bag = [
   //   desc: '<Link to="https://codepen.io/annampawl/pen/rNNwpRO">CodePen</Link>',
   //   comp: <Pom />
   // },
+  {
+    comp: <Ghost/>
+  },
+
+  {
+    comp: <Watermelon/>
+  },
 
   {
     // title: "Bouncing  Bloobs",

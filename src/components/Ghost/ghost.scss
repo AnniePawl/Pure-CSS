@@ -61,7 +61,7 @@ $shadow:#3d2d14;
   flex-direction: row;
   justify-content: space-between;
   transform: translateY(6px);
-  animation: blink 3s infinite;
+  animation: blink 2s infinite;
  
   .eyelid1, .eyelid2 {
     height:24px;
@@ -181,11 +181,11 @@ $shadow:#3d2d14;
     }
   
     .ghost_arm1 {
-      transform: rotate(-10deg);
+      transform: rotate(-30deg);
       animation: arm_wave1 4s infinite;
     }
     .ghost_arm2 {
-      transform: rotate(10deg);
+      transform: rotate(30deg);
       animation: arm_wave2 4s infinite;
     }
     .arm_rect {
@@ -370,25 +370,27 @@ $shadow:#3d2d14;
 
 @keyframes arm_wave1 {
   0% {
-		transform:  rotate(-20deg);
+    transform:  rotate(-30deg);
+
 	}
 	50% {
-		transform: rotate(0);
+		transform: rotate(-20deg);
 	}
 	100% {
-		transform: rotate(-20deg);
+		transform: rotate(-30deg);
 	}
 
 }
 @keyframes arm_wave2 {
   0% {
-		transform:  rotate(20deg);
+    transform:  rotate(30deg);
+
 	}
 	50% {
-		transform: rotate(0);
+    transform: rotate(20deg);
 	}
 	100% {
-		transform: rotate(20deg);
+    transform: rotate(30deg);
 	}
 
 }
@@ -410,7 +412,8 @@ $shadow:#3d2d14;
 
 @keyframes ghost_float {
 	0% {
-		transform: translateY(-60px);
+    transform: translateY(-60px);
+
 	}
 	50% {
 		transform: translateY(0px);
