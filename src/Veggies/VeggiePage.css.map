@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,eAAe,CAAC;EACd,UAAU,EAAE,KAAK;CAClB;;AAMD,AAAA,KAAK,CAAC;EACJ,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,KAAK;EACZ,UAAU,EAAE,iCAAoC;EAChD,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAC,GAAG;EACV,MAAM,EAAC,KAAK;CACb",
-    "sources": [
-        "VeggiePage.scss"
-    ],
-    "names": [],
-    "file": "VeggiePage.css"
-}
