@@ -12,7 +12,6 @@ function Circles() {
           <div className='outer_circle_bottom'></div>
         </div>
       
-        
       </div>
         {/* inner circle */}
         <div className='inner_circle'> 

@@ -9,7 +9,7 @@ import Ghost from '../Ghost/ghost'
 import Watermelon from '../Fruits/Watermelon/Watermelon'
 import Pom from './Pom/Pom'
 import Orange from './Orange/Orange'
-import './fruits.css'
+import './Fruits.css'
 
 
 
