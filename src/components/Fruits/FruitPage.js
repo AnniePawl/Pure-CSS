@@ -1,6 +1,7 @@
 import React from 'react'
 import bag from './Fruits'
 import Display from '../Display/Display'
+import './fruits.scss'
 
 function FruitPage() {
   const things = bag.map((item) => {
@@ -15,7 +16,7 @@ function FruitPage() {
   })
 
   return (
-    <div>
+    <div className='fruit_page'>
 
       {things}
 

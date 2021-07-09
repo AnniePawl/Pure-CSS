@@ -1,4 +1,4 @@
-.watermelon_container {
+.fruit_page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,7 +12,5 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 700px;
-  background-color: #ffe6eb;
 }
-/*# sourceMappingURL=Watermelon.css.map */
+/*# sourceMappingURL=Fruits.css.map */

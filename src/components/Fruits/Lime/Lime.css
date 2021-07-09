@@ -45,7 +45,7 @@
   height: 180px;
   width: 160px;
   border-radius: 50%;
-  background-color: #f4ffab;
+  background-color: #f7ffbd;
   -webkit-box-shadow: 6px 1px #e8f587;
           box-shadow: 6px 1px #e8f587;
 }
@@ -84,7 +84,7 @@
   width: 35px;
   height: 45px;
   border-radius: 50%;
-  background-color: #f4ffab;
+  background-color: #f7ffbd;
   -webkit-transform: translate(0, -110px);
           transform: translate(0, -110px);
 }
@@ -94,7 +94,7 @@
   width: 35px;
   height: 45px;
   border-radius: 50%;
-  background-color: #f4ffab;
+  background-color: #f7ffbd;
   -webkit-transform: translate(0, 5px);
           transform: translate(0, 5px);
 }
@@ -146,7 +146,7 @@
   height: 95px;
   -webkit-transform: translate(-52px, -43px) rotate(40deg);
           transform: translate(-52px, -43px) rotate(40deg);
-  border-radius: 80%  0%  90% 0%;
+  border-radius: 80% 0% 90% 0%;
   -webkit-animation: lime_leaf 3s infinite;
           animation: lime_leaf 3s infinite;
   background-color: #7ebfb6;

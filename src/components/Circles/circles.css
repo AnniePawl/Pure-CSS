@@ -1,0 +1,53 @@
+.container {
+  background-color: #baf9ff;
+  height: 700px;
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circles {
+  position: absolute;
+  margin-top: auto;
+  margin-right: auto;
+}
+
+.inner_circle {
+  z-index: 1;
+}
+
+.outer_circle_top {
+  width: 500px;
+  height: 250px;
+  background-color: #fdffb6;
+  border-radius: 250px 250px 0px 0px;
+}
+
+.outer_circle_bottom {
+  width: 500px;
+  height: 250px;
+  background-color: #ffb8b8;
+  border-radius: 0px 0px 250px 250px;
+}
+
+.inner_circle_top {
+  width: 300px;
+  height: 150px;
+  background-color: #bdb2ff;
+  border-radius: 150px 150px 0px 0px;
+}
+
+.inner_circle_bottom {
+  width: 300px;
+  height: 150px;
+  background-color: #caffbf;
+  border-radius: 0px 0px 150px 150px;
+}
+/*# sourceMappingURL=circles.css.map */

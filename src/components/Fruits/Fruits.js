@@ -2,12 +2,14 @@ import React from 'react'
 import Lime from './Lime/Lime'
 import Pear from './Pear/Pear'
 // import Beet from './Beet/Beet'
+import Circles from '../Circles/circles'
 import Lemon from './Lemon/Lemon'
 import Blueberry from './Blueberry/Blueberry'
 import Ghost from '../Ghost/ghost'
 import Watermelon from '../Fruits/Watermelon/Watermelon'
 import Pom from './Pom/Pom'
 import Orange from './Orange/Orange'
+import './fruits.css'
 
 
 
@@ -23,12 +25,17 @@ const bag = [
   //   comp: <Pom />
   // },
   {
+    comp: <Circles/>
+  },
+
+  {
     comp: <Ghost/>
   },
 
   {
     comp: <Watermelon/>
   },
+
 
   {
     // title: "Bouncing  Bloobs",
