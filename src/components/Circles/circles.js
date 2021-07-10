@@ -21,7 +21,6 @@ function Circles() {
         </div>
     </div>
 
-    
   )
 }
 
