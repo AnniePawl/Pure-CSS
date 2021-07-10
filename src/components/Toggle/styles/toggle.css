@@ -1,4 +1,5 @@
 .toggle_container {
+  border: 10px solid #edff96;
   height: 700px;
   width: 700px;
   background-color: #748cab;
@@ -30,20 +31,60 @@
   height: 100px;
 }
 
+.toggle_row:nth-child(2n) .toggle_box:nth-child(2n+1) .toggle_circle {
+  -webkit-animation: circle_slide 5s linear infinite 2s;
+          animation: circle_slide 5s linear infinite 2s;
+}
+
+.toggle_row:nth-child(2n) .toggle_box:nth-child(2n+1) .oval {
+  -webkit-animation: oval_slide 5s linear infinite;
+          animation: oval_slide 5s linear infinite;
+}
+
+.toggle_row:nth-child(2n+1) .toggle_box:nth-child(2n) .toggle_circle {
+  -webkit-animation: circle_slide 5s linear infinite;
+          animation: circle_slide 5s linear infinite;
+}
+
 .oval {
   height: 100px;
   width: 200px;
   background-color: #37536b;
   border-radius: 100px;
+  border: 3px solid #edff96;
 }
 
-.circle {
+.toggle_circle {
   height: 100px;
   width: 100px;
   background-color: #f0ebd8;
   border-radius: 50%;
   z-index: 0;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
+  -webkit-transform: translateY(-103px);
+          transform: translateY(-103px);
+  -webkit-animation: circle_slide 5s linear infinite;
+          animation: circle_slide 5s linear infinite;
+}
+
+@-webkit-keyframes circle_slide {
+  0%, 5%, 95%, 100% {
+    background-color: #f0ebd8;
+  }
+  45%, 55% {
+    -webkit-transform: translate(103px, -103px);
+            transform: translate(103px, -103px);
+    background-color: #c5db58;
+  }
+}
+
+@keyframes circle_slide {
+  0%, 5%, 95%, 100% {
+    background-color: #f0ebd8;
+  }
+  45%, 55% {
+    -webkit-transform: translate(103px, -103px);
+            transform: translate(103px, -103px);
+    background-color: #c5db58;
+  }
 }
 /*# sourceMappingURL=toggle.css.map */
