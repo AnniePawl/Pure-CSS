@@ -8,7 +8,7 @@ $circle:#f0ebd8;
 $circle-height:100px;
 
 .toggle_container {
-  border:10px solid #edff96;
+  // border:10px solid #edff96;
   height:700px; 
   width:700px;
   background-color: $background-color ;
@@ -33,21 +33,24 @@ $circle-height:100px;
 .toggle_row:nth-child(2n){
   .toggle_box:nth-child(2n+1){
     .toggle_circle{
-      animation: circle_slide 5s linear infinite 2s;
+      animation: circle_slide 5s linear infinite 3s;
+     
       // transform: translate(100px, -100px);
-      
+
     }
-    .oval {
-      animation: oval_slide 5s linear infinite
-    }
+    // .oval {
+    //   animation: oval_slide 5s linear infinite
+    // }
   }
 }
 
 .toggle_row:nth-child(2n+1){
   .toggle_box:nth-child(2n){
     .toggle_circle{
-      // background-color: red;
-      animation: circle_slide 5s linear infinite;
+      
+      animation: circle_slide 10s linear infinite 3s;
+
+      // background-color: yellow;
     }
   }
 }
@@ -55,9 +58,12 @@ $circle-height:100px;
 .oval {
   height:$oval-height;
   width:$oval-width;
-  background-color: $oval;
+  // background-color: $oval;
+  // background: rgb(171,221,223);
+  // background:$oval;
+  background: linear-gradient(263deg, rgba(171,221,223,1) 2%, rgba(55,83,107,1) 100%);  
   border-radius: $border-radius;
-  border: 3px solid #edff96;
+  // border: 2px solid #edff96;
 }
 
 .toggle_circle{
@@ -66,7 +72,7 @@ $circle-height:100px;
   background-color:$circle;
   border-radius: 50%;
   z-index: 0;
-  transform: translateY(-103px);
+  transform: translateY(-100px);
   // border:2px solid $border;
   animation: circle_slide 5s linear infinite;
 
@@ -90,8 +96,10 @@ $circle-height:100px;
   }
   45%, 55% {
       // left: 100%;
-      transform: translate(103px, -103px);
-      background-color: #c5db58;
+      transform: translate(100px, -100px);
+      // background-color: rgb(171,221,223);
+      background-color: #eeff96;
+      // background-color: $oval;
   }
 }
 

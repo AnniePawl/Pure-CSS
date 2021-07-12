@@ -6,6 +6,7 @@ import Pom from './Pom/Pom'
 import Tomato from './Tomato/Tomato'
 
 
+
 const fruit_bag = [
   {
     component: <Lemon />

@@ -11,6 +11,7 @@ import Pom from './Pom/Pom'
 import Orange from './Orange/Orange'
 import './Fruits.css'
 import Toggle from '../Toggle/Toggle'
+import Dots from '../Dots/Dots'
 
 
 
@@ -25,6 +26,9 @@ const bag = [
   //   desc: '<Link to="https://codepen.io/annampawl/pen/rNNwpRO">CodePen</Link>',
   //   comp: <Pom />
   // },
+  {
+    comp: <Dots/>
+  },
   {
     comp: <Toggle/>
   },

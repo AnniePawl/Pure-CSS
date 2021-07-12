@@ -37,6 +37,7 @@ $inner_bottom:#ffe169;
   width:500px;
   height:250px;
   background-color: $outer_top;
+  // border:5px solid hotpink;
   border-radius: 250px 250px 0px 0px;
 }
 
@@ -44,9 +45,9 @@ $inner_bottom:#ffe169;
   width:500px;
   height:250px;
   background-color:$outer_bottom;
+  // border:5px solid darkseagreen;
   border-radius: 0px 0px 250px 250px;
 }
-
 
 .inner_circle_top {
   width: 300px;

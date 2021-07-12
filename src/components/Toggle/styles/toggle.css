@@ -1,5 +1,4 @@
 .toggle_container {
-  border: 10px solid #edff96;
   height: 700px;
   width: 700px;
   background-color: #748cab;
@@ -32,26 +31,20 @@
 }
 
 .toggle_row:nth-child(2n) .toggle_box:nth-child(2n+1) .toggle_circle {
-  -webkit-animation: circle_slide 5s linear infinite 2s;
-          animation: circle_slide 5s linear infinite 2s;
-}
-
-.toggle_row:nth-child(2n) .toggle_box:nth-child(2n+1) .oval {
-  -webkit-animation: oval_slide 5s linear infinite;
-          animation: oval_slide 5s linear infinite;
+  -webkit-animation: circle_slide 5s linear infinite 3s;
+          animation: circle_slide 5s linear infinite 3s;
 }
 
 .toggle_row:nth-child(2n+1) .toggle_box:nth-child(2n) .toggle_circle {
-  -webkit-animation: circle_slide 5s linear infinite;
-          animation: circle_slide 5s linear infinite;
+  -webkit-animation: circle_slide 10s linear infinite 3s;
+          animation: circle_slide 10s linear infinite 3s;
 }
 
 .oval {
   height: 100px;
   width: 200px;
-  background-color: #37536b;
+  background: linear-gradient(263deg, #abdddf 2%, #37536b 100%);
   border-radius: 100px;
-  border: 3px solid #edff96;
 }
 
 .toggle_circle {
@@ -60,8 +53,8 @@
   background-color: #f0ebd8;
   border-radius: 50%;
   z-index: 0;
-  -webkit-transform: translateY(-103px);
-          transform: translateY(-103px);
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
   -webkit-animation: circle_slide 5s linear infinite;
           animation: circle_slide 5s linear infinite;
 }
@@ -71,9 +64,9 @@
     background-color: #f0ebd8;
   }
   45%, 55% {
-    -webkit-transform: translate(103px, -103px);
-            transform: translate(103px, -103px);
-    background-color: #c5db58;
+    -webkit-transform: translate(100px, -100px);
+            transform: translate(100px, -100px);
+    background-color: #eeff96;
   }
 }
 
@@ -82,9 +75,9 @@
     background-color: #f0ebd8;
   }
   45%, 55% {
-    -webkit-transform: translate(103px, -103px);
-            transform: translate(103px, -103px);
-    background-color: #c5db58;
+    -webkit-transform: translate(100px, -100px);
+            transform: translate(100px, -100px);
+    background-color: #eeff96;
   }
 }
 /*# sourceMappingURL=toggle.css.map */
