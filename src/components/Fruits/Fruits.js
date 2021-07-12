@@ -1,5 +1,5 @@
 import React from 'react'
-import Lime from './Lime/Lime'
+// import Lime from './Lime/Lime'
 import Pear from './Pear/Pear'
 // import Beet from './Beet/Beet'
 import Circles from '../Circles/circles'
@@ -7,12 +7,12 @@ import Lemon from './Lemon/Lemon'
 import Blueberry from './Blueberry/Blueberry'
 import Ghost from '../Ghost/ghost'
 import Watermelon from '../Fruits/Watermelon/Watermelon'
-import Pom from './Pom/Pom'
-import Orange from './Orange/Orange'
+// import Pom from './Pom/Pom'
+// import Orange from './Orange/Orange'
 import './Fruits.css'
 import Toggle from '../Toggle/Toggle'
 import Dots from '../Dots/Dots'
-
+import Stripes from '../Stripes/Stripes'
 
 
 const bag = [
@@ -26,6 +26,13 @@ const bag = [
   //   desc: '<Link to="https://codepen.io/annampawl/pen/rNNwpRO">CodePen</Link>',
   //   comp: <Pom />
   // },
+  // {
+  //   comp: <Stripes/>
+
+  // },
+  {
+    comp: <Stripes/>
+  },
   {
     comp: <Dots/>
   },

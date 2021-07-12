@@ -1,0 +1,78 @@
+.stripe-1 {
+  height: 600px;
+  width: 40px;
+  background-color: #fdffb6;
+}
+
+.stripe-2 {
+  height: 600px;
+  width: 40px;
+  background-color: #9bf6ff;
+}
+
+.stripe-3 {
+  height: 600px;
+  width: 40px;
+  background-color: #ffc6ff;
+}
+
+.stripe-4 {
+  height: 600px;
+  width: 40px;
+  background-color: #caffbf;
+}
+
+.stripe-5 {
+  height: 600px;
+  width: 40px;
+  background-color: #bdb2ff;
+}
+
+.stripe-6 {
+  height: 600px;
+  width: 40px;
+  background-color: #ffd6a5;
+}
+
+.stripe-7 {
+  height: 600px;
+  width: 40px;
+  background-color: #ffadad;
+}
+
+.stripes_container {
+  height: 700px;
+  width: 700px;
+  background-color: #c2c2c2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stripes_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+  width: 650px;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=stripes.css.map */
