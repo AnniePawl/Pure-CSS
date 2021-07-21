@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAUA,AAAA,eAAe,CAAC;EACd,MAAM,EAAC,KAAK;EACZ,KAAK,EAAC,KAAK;EACX,gBAAgB,EAbN,OAAO;CAclB",
+    "sources": [
+        "Dots.scss"
+    ],
+    "names": [],
+    "file": "Dots.css"
+}

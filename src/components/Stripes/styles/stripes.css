@@ -2,55 +2,55 @@
   margin-top: auto;
   height: 600px;
   width: 55px;
-  background-color: #fdffb6;
+  background-color: #edf2fb;
 }
 
 .stripe-2 {
   margin-top: auto;
   height: 600px;
   width: 55px;
-  background-color: #9bf6ff;
+  background-color: #e2eafc;
 }
 
 .stripe-3 {
   margin-top: auto;
   height: 600px;
   width: 55px;
-  background-color: #ffc6ff;
+  background-color: #d7e3fc;
 }
 
 .stripe-4 {
   margin-top: auto;
   height: 600px;
   width: 55px;
-  background-color: #caffbf;
+  background-color: #ccdbfd;
 }
 
 .stripe-5 {
   margin-top: auto;
   height: 600px;
   width: 55px;
-  background-color: #bdb2ff;
+  background-color: #c1d3fe;
 }
 
 .stripe-6 {
   margin-top: auto;
   height: 600px;
   width: 55px;
-  background-color: #ffd9ab;
+  background-color: #b6ccfe;
 }
 
 .stripe-7 {
   margin-top: auto;
   height: 600px;
   width: 55px;
-  background-color: #ffadad;
+  background-color: #abc4ff;
 }
 
 .stripes_container {
   height: 700px;
   width: 700px;
-  background-color: #c2c2c2;
+  background-color: #ffa38c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,51 +84,51 @@
 }
 
 .stripe-1 {
-  -webkit-animation: shrink 2s infinite ease;
-          animation: shrink 2s infinite ease;
+  -webkit-animation: shrink 3s infinite ease;
+          animation: shrink 3s infinite ease;
 }
 
 .stripe-2 {
-  -webkit-animation: shrink 2s infinite .5s ease;
-          animation: shrink 2s infinite .5s ease;
+  -webkit-animation: shrink 3s infinite .1s ease;
+          animation: shrink 3s infinite .1s ease;
 }
 
 .stripe-3 {
-  -webkit-animation: shrink 2s infinite ease;
-          animation: shrink 2s infinite ease;
+  -webkit-animation: shrink 3s infinite .2s ease;
+          animation: shrink 3s infinite .2s ease;
 }
 
 .stripe-4 {
-  -webkit-animation: shrink 2s infinite .5s ease;
-          animation: shrink 2s infinite .5s ease;
+  -webkit-animation: shrink 3s infinite .3s ease;
+          animation: shrink 3s infinite .3s ease;
 }
 
 .stripe-5 {
-  -webkit-animation: shrink 2s infinite ease;
-          animation: shrink 2s infinite ease;
+  -webkit-animation: shrink 3s infinite .4s ease;
+          animation: shrink 3s infinite .4s ease;
 }
 
 .stripe-6 {
-  -webkit-animation: shrink 2s infinite .5s ease;
-          animation: shrink 2s infinite .5s ease;
+  -webkit-animation: shrink 3s infinite .5s ease;
+          animation: shrink 3s infinite .5s ease;
 }
 
 .stripe-7 {
-  -webkit-animation: shrink 2s infinite ease;
-          animation: shrink 2s infinite ease;
+  -webkit-animation: shrink 3s infinite .6s ease;
+          animation: shrink 3s infinite .6s ease;
 }
 
 @-webkit-keyframes shrink {
   50% {
     height: 30%;
-    opacity: 40%;
+    opacity: 70%;
   }
 }
 
 @keyframes shrink {
   50% {
     height: 30%;
-    opacity: 40%;
+    opacity: 70%;
   }
 }
 

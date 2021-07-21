@@ -1,0 +1,101 @@
+.square-1 {
+  -webkit-animation: circle 7s infinite;
+          animation: circle 7s infinite;
+}
+
+.square-2 {
+  -webkit-animation: circle 7s infinite;
+          animation: circle 7s infinite;
+}
+
+.square-3 {
+  -webkit-animation: circle 7s infinite;
+          animation: circle 7s infinite;
+}
+
+.square-4 {
+  -webkit-animation: circle 7s infinite;
+          animation: circle 7s infinite;
+}
+
+.square-5 {
+  -webkit-animation: circle 7s infinite;
+          animation: circle 7s infinite;
+}
+
+.square-6 {
+  -webkit-animation: circle 7s infinite;
+          animation: circle 7s infinite;
+}
+
+.checkers_container {
+  height: 700px;
+  width: 700px;
+  background: #ecf576;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkers_holder {
+  height: 95%;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.checker_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #202933;
+}
+
+@-webkit-keyframes circle {
+  25% {
+    border-radius: 50%;
+  }
+  50% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+  }
+}
+
+@keyframes circle {
+  25% {
+    border-radius: 50%;
+  }
+  50% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+  }
+}
+/*# sourceMappingURL=checkers.css.map */

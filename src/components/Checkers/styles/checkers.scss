@@ -1,0 +1,47 @@
+$background-color: #ecf576;
+$color: #202933;
+
+@for $i from 1 to 7 {
+	.square-#{$i} {
+		animation: circle 7s infinite;
+	}
+}
+
+.checkers_container {
+	height: 700px;
+	width: 700px;
+	background: $background-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.checkers_holder {
+	height: 95%;
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.checker_row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.square {
+	height: 50px;
+	width: 50px;
+	background-color: $color;
+}
+
+@keyframes circle {
+	25% {
+		border-radius: 50%;
+	}
+	50% {
+		transform: scale(3);
+	}
+	100% {
+	}
+}

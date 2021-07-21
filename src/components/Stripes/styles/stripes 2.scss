@@ -1,0 +1,45 @@
+$background_color:#c2c2c2;
+;
+
+$colors: 
+#fdffb6,
+#9bf6ff,
+#ffc6ff,
+#caffbf,
+#bdb2ff,
+#ffd6a5,
+#ffadad;
+
+@for $i from 1 through 7 {
+  $color: nth($colors,$i);
+  .stripe-#{$i}{
+    height: 600px;
+    width: 40px;
+    background-color: $color;
+  } 
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;  };
+
+.stripes_container {
+  height: 700px;
+  width:700px;
+  background-color: $background_color;
+  @include center();
+}
+
+.stripes_box {
+  // border: 2px solid blue;
+  @include center();
+  height:600px;
+  width:650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // @include stripe_colors()
+}
+
+
