@@ -1,33 +1,52 @@
 {
-	"name": "css-art",
-	"version": "0.2.0",
-	"private": true,
-	"homepage": "https://anniepawl.github.io/Pure-CSS/",
-	"dependencies": {
-		"gh-pages": "^2.1.1",
-		"react": "^16.9.0",
-		"react-dom": "^16.9.0",
-		"react-ga": "^2.7.0",
-		"react-router-dom": "^5.1.2",
-		"react-router-hash-link": "^1.2.2",
-		"react-scripts": "3.1.1",
-		"react-scroll": "^1.7.14",
-		"react-scrollable-anchor": "^0.6.1",
-		"sass": "^1.23.0"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [ ">0.2%", "not dead", "not op_mini all" ],
-		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
-	}
+  "name": "css-art",
+  "version": "0.2.0",
+  "private": true,
+  "homepage": "https://anniepawl.github.io/Pure-CSS/",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-ga": "^2.7.0",
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
+    "react-scripts": "^3.1.1",
+    "react-scroll": "^1.7.14",
+    "react-scrollable-anchor": "^0.6.1",
+    "sass": "^1.23.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "![GitHub repo size](https://img.shields.io/github/repo-size/AnniePawl/Pure-CSS-Animations?color=%23214054&style=for-the-badge) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/AnniePawl/Pure-CSS-Animations?color=%23214054&style=for-the-badge) ![GitHub stars](https://img.shields.io/github/stars/AnniePawl/Pure-CSS-Animations?color=%23214054&style=for-the-badge)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnniePawl/Pure-CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnniePawl/Pure-CSS/issues"
+  }
 }

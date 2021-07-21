@@ -1,45 +1,72 @@
-$background_color:#c2c2c2;
-;
-
-$colors: 
-#fdffb6,
-#9bf6ff,
-#ffc6ff,
-#caffbf,
-#bdb2ff,
-#ffd6a5,
-#ffadad;
+$background_color: #c2c2c2;
+$colors: #fdffb6, #9bf6ff, #ffc6ff, #caffbf, #bdb2ff, #ffd9ab, #ffadad;
 
 @for $i from 1 through 7 {
-  $color: nth($colors,$i);
-  .stripe-#{$i}{
-    height: 600px;
-    width: 40px;
-    background-color: $color;
-  } 
+	$color: nth($colors, $i);
+	.stripe-#{$i} {
+		margin-top: auto;
+		height: 600px;
+		width: 55px;
+		background-color: $color;
+	}
 }
 
 @mixin center {
-  display: flex;
-  justify-content: center;
-  align-items: center;  };
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .stripes_container {
-  height: 700px;
-  width:700px;
-  background-color: $background_color;
-  @include center();
+	height: 700px;
+	width: 700px;
+	background-color: $background_color;
+	@include center();
 }
 
 .stripes_box {
-  // border: 2px solid blue;
-  @include center();
-  height:600px;
-  width:650px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  // @include stripe_colors()
+	// border: 2px solid blue;
+	@include center();
+	height: 600px;
+	width: 650px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	// @include stripe_colors()
 }
 
+.stripe-1 {
+	animation: shrink 2s infinite ease;
+}
+.stripe-2 {
+	animation: shrink 2s infinite .5s ease;
+}
+.stripe-3 {
+	animation: shrink 2s infinite ease;
+}
+.stripe-4 {
+	animation: shrink 2s infinite .5s ease;
+}
+.stripe-5 {
+	animation: shrink 2s infinite ease;
+}
+.stripe-6 {
+	animation: shrink 2s infinite .5s ease;
+	// animation: move 2s forwards;
+}
+.stripe-7 {
+	animation: shrink 2s infinite ease;
+}
 
+@keyframes shrink {
+	50% {
+		height: 30%;
+		opacity: 40%;
+	}
+}
+
+@keyframes move {
+	100% {
+		transform: translateX(52px);
+	}
+}

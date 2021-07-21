@@ -1,42 +1,49 @@
 .stripe-1 {
+  margin-top: auto;
   height: 600px;
-  width: 40px;
+  width: 55px;
   background-color: #fdffb6;
 }
 
 .stripe-2 {
+  margin-top: auto;
   height: 600px;
-  width: 40px;
+  width: 55px;
   background-color: #9bf6ff;
 }
 
 .stripe-3 {
+  margin-top: auto;
   height: 600px;
-  width: 40px;
+  width: 55px;
   background-color: #ffc6ff;
 }
 
 .stripe-4 {
+  margin-top: auto;
   height: 600px;
-  width: 40px;
+  width: 55px;
   background-color: #caffbf;
 }
 
 .stripe-5 {
+  margin-top: auto;
   height: 600px;
-  width: 40px;
+  width: 55px;
   background-color: #bdb2ff;
 }
 
 .stripe-6 {
+  margin-top: auto;
   height: 600px;
-  width: 40px;
-  background-color: #ffd6a5;
+  width: 55px;
+  background-color: #ffd9ab;
 }
 
 .stripe-7 {
+  margin-top: auto;
   height: 600px;
-  width: 40px;
+  width: 55px;
   background-color: #ffadad;
 }
 
@@ -74,5 +81,68 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.stripe-1 {
+  -webkit-animation: shrink 2s infinite ease;
+          animation: shrink 2s infinite ease;
+}
+
+.stripe-2 {
+  -webkit-animation: shrink 2s infinite .5s ease;
+          animation: shrink 2s infinite .5s ease;
+}
+
+.stripe-3 {
+  -webkit-animation: shrink 2s infinite ease;
+          animation: shrink 2s infinite ease;
+}
+
+.stripe-4 {
+  -webkit-animation: shrink 2s infinite .5s ease;
+          animation: shrink 2s infinite .5s ease;
+}
+
+.stripe-5 {
+  -webkit-animation: shrink 2s infinite ease;
+          animation: shrink 2s infinite ease;
+}
+
+.stripe-6 {
+  -webkit-animation: shrink 2s infinite .5s ease;
+          animation: shrink 2s infinite .5s ease;
+}
+
+.stripe-7 {
+  -webkit-animation: shrink 2s infinite ease;
+          animation: shrink 2s infinite ease;
+}
+
+@-webkit-keyframes shrink {
+  50% {
+    height: 30%;
+    opacity: 40%;
+  }
+}
+
+@keyframes shrink {
+  50% {
+    height: 30%;
+    opacity: 40%;
+  }
+}
+
+@-webkit-keyframes move {
+  100% {
+    -webkit-transform: translateX(52px);
+            transform: translateX(52px);
+  }
+}
+
+@keyframes move {
+  100% {
+    -webkit-transform: translateX(52px);
+            transform: translateX(52px);
+  }
 }
 /*# sourceMappingURL=stripes.css.map */
