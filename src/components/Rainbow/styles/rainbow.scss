@@ -1,0 +1,92 @@
+$background-color: #f2f2f2;
+$red: #ffadad;
+$orange: #ffd6a5;
+$yellow: #fdffb6;
+$green: #caffbf;
+$blue: #9bf6ff;
+$violet: #a0c4ff;
+$purple: #bdb2ff;
+
+@for $i from 1 to 7 {
+	.rainbow-#{$i} {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.rainbow_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 700px;
+	width: 700px;
+	background-color: $background-color;
+	margin-bottom: 1000px;
+}
+
+.full_rainbow {
+	border: 2px solid blue;
+	transform: translateY(350px);
+}
+
+.rainbow {
+	border-radius: 50%;
+}
+
+.rainbow-1 {
+	height: 650px;
+	width: 650px;
+	background: linear-gradient($red, $red 50%, $background-color 50%, $background-color 50%);
+
+	// background-color: $red;
+}
+
+.rainbow-2 {
+	z-index: 0;
+	// transform: translateY(350px);
+	height: 550px;
+	width: 550px;
+	background: linear-gradient($orange, $orange 50%, $background-color 50%, $background-color 50%);
+	// background-color: $red;
+}
+
+.rainbow-3 {
+	// transform: translateY(350px);
+	height: 450px;
+	width: 450px;
+	background: linear-gradient($yellow, $yellow 50%, $red 50%, $red 50%);
+	// background-color: $red;
+}
+
+.rainbow-4 {
+	// transform: translateY(350px);
+	height: 450px;
+	width: 450px;
+	background: linear-gradient($green, $green 50%, $background-color 50%, $background-color 50%);
+	// background-color: $red;
+}
+
+.rainbow-5 {
+	// transform: translateY(350px);
+	height: 350px;
+	width: 350px;
+	background: linear-gradient($blue, $blue 50%, $background-color 50%, $background-color 50%);
+	// background-color: $red;
+}
+
+.rainbow-6 {
+	// transform: translateY(350px);
+	height: 250px;
+	width: 250px;
+	background: linear-gradient($violet, $violet 50%, $background-color 50%, $background-color 50%);
+	// background-color: $red;
+}
+
+.rainbow-7 {
+	// transform: translateY(350px);
+	height: 150px;
+	width: 150px;
+	background: $background-color;
+	// background-color: $red;
+}

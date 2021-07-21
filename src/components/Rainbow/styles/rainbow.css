@@ -1,0 +1,147 @@
+.rainbow-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rainbow-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rainbow-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rainbow-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rainbow-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rainbow-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rainbow_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+  width: 700px;
+  background-color: #f2f2f2;
+  margin-bottom: 1000px;
+}
+
+.full_rainbow {
+  border: 2px solid blue;
+  -webkit-transform: translateY(350px);
+          transform: translateY(350px);
+}
+
+.rainbow {
+  border-radius: 50%;
+}
+
+.rainbow-1 {
+  height: 650px;
+  width: 650px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffadad), color-stop(50%, #ffadad), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#ffadad, #ffadad 50%, #f2f2f2 50%, #f2f2f2 50%);
+}
+
+.rainbow-2 {
+  z-index: 0;
+  height: 550px;
+  width: 550px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd6a5), color-stop(50%, #ffd6a5), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#ffd6a5, #ffd6a5 50%, #f2f2f2 50%, #f2f2f2 50%);
+}
+
+.rainbow-3 {
+  height: 450px;
+  width: 450px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdffb6), color-stop(50%, #fdffb6), color-stop(50%, #ffadad), color-stop(50%, #ffadad));
+  background: linear-gradient(#fdffb6, #fdffb6 50%, #ffadad 50%, #ffadad 50%);
+}
+
+.rainbow-4 {
+  height: 450px;
+  width: 450px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#caffbf), color-stop(50%, #caffbf), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#caffbf, #caffbf 50%, #f2f2f2 50%, #f2f2f2 50%);
+}
+
+.rainbow-5 {
+  height: 350px;
+  width: 350px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9bf6ff), color-stop(50%, #9bf6ff), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#9bf6ff, #9bf6ff 50%, #f2f2f2 50%, #f2f2f2 50%);
+}
+
+.rainbow-6 {
+  height: 250px;
+  width: 250px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a0c4ff), color-stop(50%, #a0c4ff), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#a0c4ff, #a0c4ff 50%, #f2f2f2 50%, #f2f2f2 50%);
+}
+
+.rainbow-7 {
+  height: 150px;
+  width: 150px;
+  background: #f2f2f2;
+}
+/*# sourceMappingURL=rainbow.css.map */

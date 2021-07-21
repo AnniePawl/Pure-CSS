@@ -14,6 +14,7 @@ import Toggle from '../Toggle/Toggle';
 import Dots from '../Dots/Dots';
 import Stripes from '../Stripes/Stripes';
 import Checkers from '../Checkers/Checkers';
+import Rainbow from '../Rainbow/Rainbow';
 
 const bag = [
 	// {
@@ -30,6 +31,9 @@ const bag = [
 	//   comp: <Stripes/>
 
 	// },
+	{
+		comp: <Rainbow />
+	},
 	{
 		comp: <Checkers />
 	},
