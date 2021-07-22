@@ -1,95 +1,104 @@
 .rainbow-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffadad), color-stop(50%, #ffadad), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#ffadad, #ffadad 50%, #f2f2f2 50%, #f2f2f2 50%);
+  z-index: 0;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: spin 5s forwards 3s;
+          animation: spin 5s forwards 3s;
 }
 
 .rainbow-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd6a5), color-stop(50%, #ffd6a5), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#ffd6a5, #ffd6a5 50%, #f2f2f2 50%, #f2f2f2 50%);
+  z-index: 1;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: spin 5s forwards 2.5s;
+          animation: spin 5s forwards 2.5s;
 }
 
 .rainbow-3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdffb6), color-stop(50%, #fdffb6), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#fdffb6, #fdffb6 50%, #f2f2f2 50%, #f2f2f2 50%);
+  z-index: 2;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: spin 5s forwards 2s;
+          animation: spin 5s forwards 2s;
 }
 
 .rainbow-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#caffbf), color-stop(50%, #caffbf), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#caffbf, #caffbf 50%, #f2f2f2 50%, #f2f2f2 50%);
+  z-index: 3;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: spin 5s forwards 1.5s;
+          animation: spin 5s forwards 1.5s;
 }
 
 .rainbow-5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9bf6ff), color-stop(50%, #9bf6ff), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#9bf6ff, #9bf6ff 50%, #f2f2f2 50%, #f2f2f2 50%);
+  z-index: 4;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: spin 5s forwards 1s;
+          animation: spin 5s forwards 1s;
 }
 
 .rainbow-6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a0c4ff), color-stop(50%, #a0c4ff), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#a0c4ff, #a0c4ff 50%, #f2f2f2 50%, #f2f2f2 50%);
+  z-index: 5;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: spin 5s forwards 0.5s;
+          animation: spin 5s forwards 0.5s;
+}
+
+.rainbow-7 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bdb2ff), color-stop(50%, #bdb2ff), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
+  background: linear-gradient(#bdb2ff, #bdb2ff 50%, #f2f2f2 50%, #f2f2f2 50%);
+  z-index: 6;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: spin 5s forwards 0s;
+          animation: spin 5s forwards 0s;
 }
 
 .rainbow_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 700px;
   width: 700px;
   background-color: #f2f2f2;
   margin-bottom: 1000px;
+  overflow: hidden;
 }
 
 .full_rainbow {
-  border: 2px solid blue;
-  -webkit-transform: translateY(350px);
-          transform: translateY(350px);
+  -webkit-transform: translateY(700px) rotate(180deg);
+          transform: translateY(700px) rotate(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rainbow {
@@ -97,51 +106,62 @@
 }
 
 .rainbow-1 {
+  z-index: 0;
   height: 650px;
   width: 650px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffadad), color-stop(50%, #ffadad), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
-  background: linear-gradient(#ffadad, #ffadad 50%, #f2f2f2 50%, #f2f2f2 50%);
 }
 
 .rainbow-2 {
-  z-index: 0;
+  z-index: 1;
   height: 550px;
   width: 550px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffd6a5), color-stop(50%, #ffd6a5), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
-  background: linear-gradient(#ffd6a5, #ffd6a5 50%, #f2f2f2 50%, #f2f2f2 50%);
 }
 
 .rainbow-3 {
   height: 450px;
   width: 450px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fdffb6), color-stop(50%, #fdffb6), color-stop(50%, #ffadad), color-stop(50%, #ffadad));
-  background: linear-gradient(#fdffb6, #fdffb6 50%, #ffadad 50%, #ffadad 50%);
 }
 
 .rainbow-4 {
   height: 450px;
   width: 450px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#caffbf), color-stop(50%, #caffbf), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
-  background: linear-gradient(#caffbf, #caffbf 50%, #f2f2f2 50%, #f2f2f2 50%);
 }
 
 .rainbow-5 {
   height: 350px;
   width: 350px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9bf6ff), color-stop(50%, #9bf6ff), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
-  background: linear-gradient(#9bf6ff, #9bf6ff 50%, #f2f2f2 50%, #f2f2f2 50%);
 }
 
 .rainbow-6 {
   height: 250px;
   width: 250px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a0c4ff), color-stop(50%, #a0c4ff), color-stop(50%, #f2f2f2), color-stop(50%, #f2f2f2));
-  background: linear-gradient(#a0c4ff, #a0c4ff 50%, #f2f2f2 50%, #f2f2f2 50%);
 }
 
 .rainbow-7 {
   height: 150px;
   width: 150px;
   background: #f2f2f2;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 /*# sourceMappingURL=rainbow.css.map */

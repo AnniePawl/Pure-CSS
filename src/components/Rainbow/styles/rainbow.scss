@@ -1,33 +1,47 @@
 $background-color: #f2f2f2;
-$red: #ffadad;
-$orange: #ffd6a5;
-$yellow: #fdffb6;
-$green: #caffbf;
-$blue: #9bf6ff;
-$violet: #a0c4ff;
-$purple: #bdb2ff;
+// $red: #ffadad;
+// $orange: #ffd6a5;
+// $yellow: #fdffb6;
+// $green: #caffbf;
+// $blue: #9bf6ff;
+// $violet: #a0c4ff;
+// $purple: #bdb2ff;
 
-@for $i from 1 to 7 {
+$colors: #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff;
+$z-indexes: 0, 1, 2, 3, 4, 5, 6, 7;
+$delays: 3s, 2.5s, 2s, 1.5s, 1s, .5s, 0s;
+// $delays: 10s, 9.5s, 9s, 8.5s, 8s, 7.5s, s;
+
+@for $i from 1 to 8 {
+	$z-index: nth($z-indexes, $i);
+	$color: nth($colors, $i);
+	$delay: nth($delays, $i);
 	.rainbow-#{$i} {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		background: linear-gradient($color, $color 50%, $background-color 50%, $background-color 50%);
+		z-index: $z-index;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		animation: spin 5s forwards $delay;
 	}
 }
 
 .rainbow_container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
 	height: 700px;
 	width: 700px;
 	background-color: $background-color;
 	margin-bottom: 1000px;
+	overflow: hidden;
 }
 
 .full_rainbow {
-	border: 2px solid blue;
-	transform: translateY(350px);
+	transform: translateY(700px) rotate(180deg);
+	display: flex;
+	align-items: center;
 }
 
 .rainbow {
@@ -35,27 +49,27 @@ $purple: #bdb2ff;
 }
 
 .rainbow-1 {
+	z-index: 0;
 	height: 650px;
 	width: 650px;
-	background: linear-gradient($red, $red 50%, $background-color 50%, $background-color 50%);
 
-	// background-color: $red;
+	// background: linear-gradient($red, $red 50%, $background-color 50%, $background-color 50%);
 }
 
 .rainbow-2 {
-	z-index: 0;
+	z-index: 1;
 	// transform: translateY(350px);
 	height: 550px;
 	width: 550px;
-	background: linear-gradient($orange, $orange 50%, $background-color 50%, $background-color 50%);
-	// background-color: $red;
+	// background: linear-gradient($orange, $orange 50%, $background-color 50%, $background-color 50%);
+	// animation: rotate 5s;
 }
 
 .rainbow-3 {
 	// transform: translateY(350px);
 	height: 450px;
 	width: 450px;
-	background: linear-gradient($yellow, $yellow 50%, $red 50%, $red 50%);
+	// background: linear-gradient($yellow, $yellow 50%, $background-color 50%, $background-color 50%);
 	// background-color: $red;
 }
 
@@ -63,7 +77,7 @@ $purple: #bdb2ff;
 	// transform: translateY(350px);
 	height: 450px;
 	width: 450px;
-	background: linear-gradient($green, $green 50%, $background-color 50%, $background-color 50%);
+	// background: linear-gradient($green, $green 50%, $background-color 50%, $background-color 50%);
 	// background-color: $red;
 }
 
@@ -71,7 +85,7 @@ $purple: #bdb2ff;
 	// transform: translateY(350px);
 	height: 350px;
 	width: 350px;
-	background: linear-gradient($blue, $blue 50%, $background-color 50%, $background-color 50%);
+	// background: linear-gradient($blue, $blue 50%, $background-color 50%, $background-color 50%);
 	// background-color: $red;
 }
 
@@ -79,7 +93,7 @@ $purple: #bdb2ff;
 	// transform: translateY(350px);
 	height: 250px;
 	width: 250px;
-	background: linear-gradient($violet, $violet 50%, $background-color 50%, $background-color 50%);
+	// background: linear-gradient($violet, $violet 50%, $background-color 50%, $background-color 50%);
 	// background-color: $red;
 }
 
@@ -89,4 +103,14 @@ $purple: #bdb2ff;
 	width: 150px;
 	background: $background-color;
 	// background-color: $red;
+}
+
+// Keyframes
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
 }
