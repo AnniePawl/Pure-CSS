@@ -1,0 +1,34 @@
+.wave_container {
+  height: 700px;
+  width: 700px;
+  background-color: #a1c5ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wave_lines_box1 {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wave_line {
+  height: 200px;
+  width: 6px;
+  background-color: #ffa052;
+}
+/*# sourceMappingURL=wave.css.map */

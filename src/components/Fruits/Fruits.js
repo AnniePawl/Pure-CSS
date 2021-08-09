@@ -13,8 +13,9 @@ import './Fruits.css';
 import Toggle from '../Toggle/Toggle';
 import Dots from '../Dots/Dots';
 import Stripes from '../Stripes/Stripes';
-import Checkers from '../Checkers/Checkers';
+// import Checkers from '../Checkers/Checkers';
 import Rainbow from '../Rainbow/Rainbow';
+import Wave from '../Wave/wave'
 
 const bag = [
 	// {
@@ -35,7 +36,7 @@ const bag = [
 		comp: <Rainbow />
 	},
 	{
-		comp: <Checkers />
+		comp: <Wave/>
 	},
 	{
 		comp: <Stripes />

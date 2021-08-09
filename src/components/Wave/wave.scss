@@ -1,0 +1,33 @@
+$background_color:#a1c5ff;
+$line_color:#ffa052;
+
+@mixin center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+.wave_container {
+  height: 700px;
+  width: 700px;
+  background-color: $background_color;
+  @include center_flex()
+}
+
+.wave_lines_box1 {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.wave_line {
+  height: 200px;
+  width:6px;
+  background-color: $line_color;
+}
+
+
+
+
