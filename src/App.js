@@ -1,39 +1,28 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import LandingPage from '../src/components/LandingPage/LandingPage'
-import FruitPage from '../src/components/Fruits/FruitPage'
-import VeggiePage from '../src/components/Veggies/VeggiePage'
-import SpacePage from '../src/components/Space/SpacePage'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import LandingPage from '../src/components/LandingPage/LandingPage';
+import FruitPage from '../src/components/Fruits/FruitPage';
+import animationPage from './components/Animations/animationPage';
 
 function App() {
+	return (
+		<div className="App">
+			<Router>
+				<Route exact path="/">
+					<LandingPage />
+				</Route>
 
-  return (
-    <div className="App">
+				<Route exact path="/Pure-CSS-Animations">
+					<LandingPage />
+				</Route>
 
-      <Router>
+				<Route path="/animationPage" component={animationPage} />
 
-        <Route exact path="/" >
-          <LandingPage />
-        </Route>
-
-        <Route exact path="/Pure-CSS-Animations" >
-          <LandingPage />
-        </Route>
-
-        <Route path="/FruitPage" component={FruitPage}>
-        </Route>
-
-        <Route path='/VeggiePage' component={VeggiePage}>
-        </Route>
-
-        <Route path='/SpacePage' component={SpacePage}>
-        </Route>
-
-      </Router>
-
-    </div>
-  );
+				<Route path="/FruitPage" component={FruitPage} />
+			</Router>
+		</div>
+	);
 }
 
 export default App;

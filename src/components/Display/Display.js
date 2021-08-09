@@ -1,16 +1,7 @@
-import React from 'react'
-import './Display.scss'
+import React from 'react';
 
 function Display(props) {
-  return (
-
-    <div className='display_container'>
-      <div className='title_container'>
-        <h1 className='title'>{props.title}</h1>
-      </div>
-      {props.comp}
-    </div>
-  )
+	return <div className="display_container">{props.comp}</div>;
 }
 
-export default Display 
+export default Display;
