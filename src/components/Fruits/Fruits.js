@@ -15,7 +15,6 @@ import Dots from '../Dots/Dots';
 import Stripes from '../Stripes/Stripes';
 // import Checkers from '../Checkers/Checkers';
 import Rainbow from '../Rainbow/Rainbow';
-import Wave from '../Wave/wave'
 
 const bag = [
 	// {
@@ -32,12 +31,11 @@ const bag = [
 	//   comp: <Stripes/>
 
 	// },
+
 	{
 		comp: <Rainbow />
 	},
-	{
-		comp: <Wave/>
-	},
+
 	{
 		comp: <Stripes />
 	},

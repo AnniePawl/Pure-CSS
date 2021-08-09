@@ -1,77 +1,73 @@
-@import '../../../MediaQueries/MediaQueries.scss';
+@import '../../MediaQueries/MediaQueries.scss';
 
 .about__container {
-  background-color:white;
-  display: flex;
-  flex-direction: row;
-  height:100vh;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
 }
 
 .about__content {
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left:5em;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 5em;
 }
 
 .about__title {
-margin-top:60px;
-margin-bottom:5px;
-text-transform: uppercase;
-color:#214054;
-font-weight: 400;
-font-family: 'Oswald', sans-serif;
-font-size:50px;
+	margin-top: 60px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	color: #214054;
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
 }
 
-
 .about_p {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  font-size:22.5px;
-  text-align: left;
-  width: 410px;
-  color:#214054;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 22.5px;
+	text-align: left;
+	width: 410px;
+	color: #214054;
 }
 
 .about__pom {
-  margin:10em;
-  transform: scale(1.3);
+	margin: 10em;
+	transform: scale(1.3);
 }
 
 // Media Queries
-.about__container{
-  @media(max-width: $breakpoint-ipad-pro){
-    flex-direction: column;
-  }
-  
+.about__container {
+	@media (max-width: $breakpoint-ipad-pro) {
+		flex-direction: column;
+	}
 }
 
 .about__content {
-  @media (max-width: $breakpoint-iphone-plus){
-    transform: scale(.8);
-    margin-left:0;
-  }
-  @media (max-width: $breakpoint-iphonex){
-    transform: scale(.8);
-    margin-left:0;
-  }
-  @media (max-width: $breakpoint-iphone5){
-    transform: scale(.5);
-    margin-left:0;
-  }
+	@media (max-width: $breakpoint-iphone-plus) {
+		transform: scale(.8);
+		margin-left: 0;
+	}
+	@media (max-width: $breakpoint-iphonex) {
+		transform: scale(.8);
+		margin-left: 0;
+	}
+	@media (max-width: $breakpoint-iphone5) {
+		transform: scale(.5);
+		margin-left: 0;
+	}
 }
 
 .about__title {
-  @media (max-width: $breakpoint-iphonex){
-   
-  }
+	@media (max-width: $breakpoint-iphonex) {
+	}
 }
 
 // Pom
 .about__pom {
-  @media (max-width: $breakpoint-iphonex){
-    transform: scale(.6);
-  }
+	@media (max-width: $breakpoint-iphonex) {
+		transform: scale(.6);
+	}
 }
-

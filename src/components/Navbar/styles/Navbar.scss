@@ -1,94 +1,98 @@
-@import '../../../MediaQueries/MediaQueries.scss';
+@import '../../MediaQueries/MediaQueries.scss';
 
-// Nav Bar Styles
 .nav {
-  z-index:2;
-  position:fixed;
-  top:0;
-  background-color:#fbffab;
-  width:100vw;
-  height:90px;
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	background-color: #fbffab;
+	width: 100vw;
+	height: 90px;
 }
 
 .navbar > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 
-.navbar > ul >li {
-list-style-type: none;
-font-size:20px;
+.navbar > ul > li {
+	list-style-type: none;
+	font-size: 20px;
 }
 
-.navbar > ul > li > a  {
-  font-family: 'Oswald', sans-serif;
-  text-decoration: none;
-  font-weight: 300;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 0.6em;
-  color: #3e3f40;
-  margin-right:50px;
+.navbar > ul > li > a {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	font-weight: 300;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0.6em;
+	color: #3e3f40;
+	margin-right: 50px;
 }
 
 .navbar > ul > li > a:hover {
-  color: #7ebfb6;
-  animation: nav_animation 2s ease infinite;
+	color: #7ebfb6;
+	animation: nav_animation 2s ease infinite;
 }
 
-@keyframes nav_animation  {
-  0%{transform: scale(1); }
-  50%{transform: scale(1.2);}
-  100%{transform: scale(1);}
+@keyframes nav_animation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
-// Media Queries 
+// Media Queries
 
 .nav {
-  @media (min-width: $breakpoint-tablet + 1px) and (max-width: $breakpoint-ipad-pro){
-    height:120px;
-  }
-  @media (max-width: $breakpoint-iphone-plus){
-    height:65px;
-  }
-  @media (max-width: $breakpoint-iphonex){
-    height:65px;
-  }
-  @media (max-width: $breakpoint-iphone5){
-    height:55px;
-  }
+	@media (min-width: $breakpoint-tablet + 1px) and (max-width: $breakpoint-ipad-pro) {
+		height: 120px;
+	}
+	@media (max-width: $breakpoint-iphone-plus) {
+		height: 65px;
+	}
+	@media (max-width: $breakpoint-iphonex) {
+		height: 65px;
+	}
+	@media (max-width: $breakpoint-iphone5) {
+		height: 55px;
+	}
 }
 
-.navbar >ul >li {
-  @media( max-width: $breakpoint-ipad-pro) and (min-width: $breakpoint-tablet +1){
-    font-size:1.6em;
-    margin:6px;
-  }
-  @media( max-width: $breakpoint-iphone-plus){
-    font-size:1em;
-    margin:-.5px;
-    margin-left:-5px;
-  }
-  @media( max-width: $breakpoint-iphonex){
-    font-size:1em;
-    margin:-4px;
-    margin-left:-11px;
-  }
-  @media( max-width: $breakpoint-iphone5){
-    font-size:.85em;
-    margin:-4px;
-    margin-left:-12px;
-  }
-  
+.navbar > ul > li {
+	@media (max-width: $breakpoint-ipad-pro) and (min-width: $breakpoint-tablet +1) {
+		font-size: 1.6em;
+		margin: 6px;
+	}
+	@media (max-width: $breakpoint-iphone-plus) {
+		font-size: 1em;
+		margin: -.5px;
+		margin-left: -5px;
+	}
+	@media (max-width: $breakpoint-iphonex) {
+		font-size: 1em;
+		margin: -4px;
+		margin-left: -11px;
+	}
+	@media (max-width: $breakpoint-iphone5) {
+		font-size: .85em;
+		margin: -4px;
+		margin-left: -12px;
+	}
 }
 
-.navbar > ul >li >a {
-  @media (max-width: $breakpoint-ipad-pro) {
-    margin-right:5px;
-  }
+.navbar > ul > li > a {
+	@media (max-width: $breakpoint-ipad-pro) {
+		margin-right: 5px;
+	}
 
-  @media (max-width: $breakpoint-tablet) {
-    margin-right:10px;
-  }
+	@media (max-width: $breakpoint-tablet) {
+		margin-right: 10px;
+	}
 }
