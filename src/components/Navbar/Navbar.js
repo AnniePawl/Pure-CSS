@@ -24,17 +24,17 @@ function Navbar() {
 						</HashLink>
 					</li>
 
-					{/* More Animation Link*/}
+					{/* Animation Link*/}
 					<li>
 						<Link className="navbar__link" to="/animationPage">
 							Animations
 						</Link>
 					</li>
 
-					{/* More Animation Link*/}
+					{/* Workspace Link*/}
 					<li>
-						<Link className="navbar__link" to="/FruitPage">
-							More Animations
+						<Link className="navbar__link" to="/workspacePage">
+							My Workspace
 						</Link>
 					</li>
 				</ul>
