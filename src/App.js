@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
-				<Route exact path="/">
+				<Route exact path="/Pure-CSS">
 					<LandingPage />
 				</Route>
 

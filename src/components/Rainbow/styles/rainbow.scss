@@ -28,14 +28,11 @@ $delays: 3s, 2.5s, 2s, 1.5s, 1s, .5s, 0s;
 }
 
 .rainbow_container {
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
 	height: 700px;
 	width: 700px;
 	background-color: $background-color;
 	margin-bottom: 1000px;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 .full_rainbow {

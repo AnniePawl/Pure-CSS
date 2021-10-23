@@ -1,0 +1,118 @@
+$blue: #255d8d;
+
+// Varibles
+$kanit: 'Kanit', sans-serif;
+$blue: #255d8d;
+$orange: #ffaf73;
+$roboto: "Roboto", sans-serif;
+
+// Mixins
+@mixin center-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.LoginDropdown__container {
+	margin: 30px;
+	height: 250px;
+	width: 200px;
+	@include center-flex();
+	justify-content: space-evenly;
+	border-radius: 5px;
+	box-shadow: 0 0 8px #ccc;
+	h1 {
+		font-family: $kanit;
+		margin: 0;
+		text-transform: uppercase;
+		color: $blue;
+	}
+}
+
+// Button Styles
+.LoginButton__button,
+.LogoutButton__button {
+	height: 40px;
+	width: 80px;
+	margin: 5px;
+	background-color: $orange;
+	color: $blue;
+	font-family: $roboto;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 10px;
+	box-shadow: 2px 3px;
+	border: none;
+}
+
+// Button Hover Styles
+.LoginButton__button:hover {
+	background-color: $blue;
+	color: white;
+}
+
+.LogoutButton__button:hover {
+	background-color: $blue;
+	color: white;
+}
+
+// Link Styles
+.extensionPopup__link {
+	font-family: $roboto;
+	font-weight: 500;
+	font-size: 14px;
+	color: $blue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $orange;
+}
+
+// TODO This will need to expand if counts grow
+.widget__container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 5px;
+}
+
+.upvote_downvote__container {
+	@include center-flex();
+	justify-content: space-evenly;
+	flex-direction: row;
+	height: 35px;
+	width: 150px;
+	border-radius: 5px;
+	box-shadow: 0 0 8px #ccc;
+}
+
+.Upvote__container > button,
+.Downvote__container > button {
+	border: none;
+	margin-right: 5px;
+}
+
+.Upvote__container > span,
+.Downvote__container > span {
+	font-weight: bold;
+	color: $blue;
+}
+
+// Login Dropdown Styles
+.LoginDropdown__container {
+	height: 300px;
+	width: 200px;
+}
+
+// Hover Styles
+.notdisplayed {
+	display: none;
+}
+
+.displayed {
+	display: flex;
+	height: 20px;
+	margin: auto;
+}

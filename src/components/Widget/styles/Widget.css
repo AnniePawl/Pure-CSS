@@ -1,0 +1,139 @@
+.LoginDropdown__container {
+  margin: 30px;
+  height: 250px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 8px #ccc;
+          box-shadow: 0 0 8px #ccc;
+}
+
+.LoginDropdown__container h1 {
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  color: #255d8d;
+}
+
+.LoginButton__button,
+.LogoutButton__button {
+  height: 40px;
+  width: 80px;
+  margin: 5px;
+  background-color: #ffaf73;
+  color: #255d8d;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 3px;
+          box-shadow: 2px 3px;
+  border: none;
+}
+
+.LoginButton__button:hover {
+  background-color: #255d8d;
+  color: white;
+}
+
+.LogoutButton__button:hover {
+  background-color: #255d8d;
+  color: white;
+}
+
+.extensionPopup__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #255d8d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffaf73;
+}
+
+.widget__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+}
+
+.upvote_downvote__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  height: 35px;
+  width: 150px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 8px #ccc;
+          box-shadow: 0 0 8px #ccc;
+}
+
+.Upvote__container > button,
+.Downvote__container > button {
+  border: none;
+  margin-right: 5px;
+}
+
+.Upvote__container > span,
+.Downvote__container > span {
+  font-weight: bold;
+  color: #255d8d;
+}
+
+.LoginDropdown__container {
+  height: 300px;
+  width: 200px;
+}
+
+.notdisplayed {
+  display: none;
+}
+
+.displayed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  margin: auto;
+}
+/*# sourceMappingURL=Widget.css.map */
