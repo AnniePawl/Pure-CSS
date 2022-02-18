@@ -1,0 +1,24 @@
+.practice-container {
+  height: 700px;
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+}
+
+.rainbow {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  background-color: #fcfcfc;
+  -webkit-box-shadow: 0 0 0 2.5em #c39eff, 0 0 0 4.5em #8fc1ff, 0 0 0 6.5em #a6ffbe, 0 0 0 8.5em #ffe984, 0 0 0 10.5em #ffb88c, 0 0 0 12.5em #ff8080;
+          box-shadow: 0 0 0 2.5em #c39eff, 0 0 0 4.5em #8fc1ff, 0 0 0 6.5em #a6ffbe, 0 0 0 8.5em #ffe984, 0 0 0 10.5em #ffb88c, 0 0 0 12.5em #ff8080;
+}
+/*# sourceMappingURL=practice.css.map */

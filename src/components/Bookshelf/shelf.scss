@@ -1,0 +1,17 @@
+$wall-color: #dde4ff;
+$shelf-color: #a88573;
+$shelf-shadow-color: #7e8394;
+$book-height: 40px;
+
+@mixin center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wall {
+  height: 100vh;
+  width: 100vw;
+  @include center-flex();
+  background-color: $wall-color;
+}

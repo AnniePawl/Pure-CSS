@@ -1,0 +1,120 @@
+@import "universal_styles.scss";
+
+$book-height: 30px;
+$book-border-radius: 8px;
+$book-width: $book-height * 4;
+// $book-font-size: $book-height * 0.35;
+$book-pages: #fffefa;
+$book1-color: #454545;
+$book1-ribbon: #f58282;
+$book2-color: #6f9cf4;
+$book2-ribbon: #667b53;
+$book4-color: #b3f2c3;
+$book4-color2: #a6e0b5;
+$book4-border: #777fa1;
+
+.books {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.book {
+  @include center-flex;
+  height: $book-height;
+  width: $book-width;
+  border-radius: 2px;
+}
+
+.book1 {
+  background-color: $book1-color;
+  border-top-left-radius: $book-border-radius;
+  border-bottom-left-radius: $book-border-radius;
+  position: relative;
+  &::after {
+    content: "";
+    background-image: repeating-linear-gradient(
+      $book-pages 0 3px,
+      lightgray 3px 4.5px
+    );
+    border-top-left-radius: $book-border-radius * 0.5;
+    border-bottom-left-radius: $book-border-radius * 0.5;
+    height: $book-height * 0.7;
+    width: $book-width * 0.99;
+    margin-left: 3.5%;
+  }
+  &::before {
+    content: "";
+    margin-right: 50%;
+    height: $book-height * 0.5;
+    position: absolute;
+    border-left: $book-border-radius solid $book1-ribbon;
+    border-right: $book-border-radius solid $book1-ribbon;
+    border-bottom: 6px solid transparent;
+  }
+}
+
+.book2 {
+  margin-left: 5%;
+  background-color: $book2-color;
+  height: $book-height * 0.8;
+  width: $book-width * 0.8;
+  border-top-left-radius: $book-border-radius;
+  border-bottom-left-radius: $book-border-radius;
+  position: relative;
+  &::after {
+    content: "";
+    background-image: repeating-linear-gradient(
+      $book-pages 0 2.5px,
+      lightgray 2.5px 3.5px
+    );
+    border-top-left-radius: $book-border-radius * 0.5;
+    border-bottom-left-radius: $book-border-radius * 0.5;
+    height: $book-height * 0.55;
+    width: $book-width * 0.99;
+    margin-left: 3.7%;
+    margin-top: 0.5px;
+  }
+  &::before {
+    content: "";
+    margin-right: 20%;
+    height: $book-height * 0.4;
+    position: absolute;
+    border-left: 4px solid $book2-ribbon;
+    border-right: 4px solid $book2-ribbon;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.book3 {
+  width: $book-width * 1.1;
+  justify-content: space-around;
+  background-color: pink;
+  &::before {
+    content: "";
+    height: $book-height;
+  }
+
+  &::after {
+    content: "";
+    height: $book-height;
+  }
+}
+
+.book4 {
+  // position: relative;
+  width: $book-width * 1.2;
+  height: $book-height * 1.2;
+  border-right: 15px double $book4-border;
+  background-image: linear-gradient($book4-color 0 70%, $book4-color2 70% 30%);
+  &::before {
+    content: "Cat's Cradle";
+    border-left: 6px solid $book4-border;
+    height: $book-height * 1.2;
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    height: $book-height;
+  }
+}
