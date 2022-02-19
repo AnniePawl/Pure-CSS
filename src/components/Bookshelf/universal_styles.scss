@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+$wall-color: #dde4ff;
+
 @mixin center-flex {
   display: flex;
   justify-content: center;

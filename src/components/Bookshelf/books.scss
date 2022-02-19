@@ -1,21 +1,42 @@
 @import "universal_styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-$book-height: 30px;
-$book-border-radius: 8px;
+$book-height: 25px;
+$book-border-radius: 2px;
 $book-width: $book-height * 4;
-// $book-font-size: $book-height * 0.35;
 $book-pages: #fffefa;
-$book1-color: #454545;
-$book1-ribbon: #f58282;
-$book2-color: #6f9cf4;
-$book2-ribbon: #667b53;
-$book4-color: #b3f2c3;
-$book4-color2: #a6e0b5;
-$book4-border: #777fa1;
+$book1-color: #ff837a;
+$book1-ribbon: #9cd6ac;
+$book1-ribbon2: #77ba8a;
+$book2-color: #787878;
+$book2-ribbon: #faba7a;
+$book2-ribbon2: #e09448;
+$book3-color: #fff0b8;
+$book3-color2: #ffd57a;
+$book3-color3: #baf0ff;
+$book3-color4: #98cbd9;
+$book3-label: #baf0ff;
+$book3-label2: #98cbd9;
+$book4-color: #ffb0a1;
+$book4-color2: #f29180;
+$book4-border: #fff2b3;
+$book5-color: #ddffd1;
+$book5-color2: #b9e8a9;
+$book5-border: #86b0d1;
+$book5-label: #bae8ff;
+$book5-label2: #89c0e0;
+$font: "Open Sans", sans-serif;
 
 .books {
+  // transform: scale(0.5);
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  @include center-flex();
+  background-color: $wall-color;
+
+  // transform: scale(0.8);
 }
 
 .book {
@@ -26,7 +47,39 @@ $book4-border: #777fa1;
 }
 
 .book1 {
+  margin-left: -3px;
   background-color: $book1-color;
+  height: $book-height * 0.8;
+  width: $book-width * 0.8;
+  border-top-left-radius: $book-border-radius;
+  border-bottom-left-radius: $book-border-radius;
+  position: relative;
+  &::after {
+    content: "";
+    background-image: repeating-linear-gradient(
+      $book-pages 0 2.5px,
+      lightgray 2.5px 4px
+    );
+    border-top-left-radius: $book-border-radius * 0.5;
+    border-bottom-left-radius: $book-border-radius * 0.5;
+    height: $book-height * 0.55;
+    width: $book-width * 0.99;
+    margin-left: 4%;
+    margin-top: 0.5px;
+  }
+  &::before {
+    content: "";
+    margin-right: 25%;
+    height: $book-height * 0.4;
+    position: absolute;
+    border-left: 4px solid $book1-ribbon;
+    border-right: 4px solid $book1-ribbon2;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.book2 {
+  background-color: $book2-color;
   border-top-left-radius: $book-border-radius;
   border-bottom-left-radius: $book-border-radius;
   position: relative;
@@ -38,83 +91,98 @@ $book4-border: #777fa1;
     );
     border-top-left-radius: $book-border-radius * 0.5;
     border-bottom-left-radius: $book-border-radius * 0.5;
-    height: $book-height * 0.7;
+    height: $book-height * 0.75;
     width: $book-width * 0.99;
-    margin-left: 3.5%;
+    margin-left: 3%;
   }
   &::before {
     content: "";
     margin-right: 50%;
     height: $book-height * 0.5;
     position: absolute;
-    border-left: $book-border-radius solid $book1-ribbon;
-    border-right: $book-border-radius solid $book1-ribbon;
+    border-left: 6px solid $book2-ribbon;
+    border-right: 6px solid $book2-ribbon2;
     border-bottom: 6px solid transparent;
   }
 }
 
-.book2 {
-  margin-left: 5%;
-  background-color: $book2-color;
-  height: $book-height * 0.8;
-  width: $book-width * 0.8;
-  border-top-left-radius: $book-border-radius;
-  border-bottom-left-radius: $book-border-radius;
-  position: relative;
-  &::after {
-    content: "";
-    background-image: repeating-linear-gradient(
-      $book-pages 0 2.5px,
-      lightgray 2.5px 3.5px
-    );
-    border-top-left-radius: $book-border-radius * 0.5;
-    border-bottom-left-radius: $book-border-radius * 0.5;
-    height: $book-height * 0.55;
-    width: $book-width * 0.99;
-    margin-left: 3.7%;
-    margin-top: 0.5px;
-  }
-  &::before {
-    content: "";
-    margin-right: 20%;
-    height: $book-height * 0.4;
-    position: absolute;
-    border-left: 4px solid $book2-ribbon;
-    border-right: 4px solid $book2-ribbon;
-    border-bottom: 5px solid transparent;
-  }
-}
-
 .book3 {
+  margin-left: -25px;
   width: $book-width * 1.1;
   justify-content: space-around;
-  background-color: pink;
+  background-image: linear-gradient($book3-color 0 60%, $book3-color2 60% 40%);
+
   &::before {
     content: "";
-    height: $book-height;
+    height: $book-height * 0.6;
+    background-color: $book-pages;
+    background-image: linear-gradient(
+      $book3-label 0 65%,
+      $book3-label2 65% 100%
+    );
+    width: $book-width * 0.3;
   }
-
   &::after {
     content: "";
+    background-image: linear-gradient(
+      $book3-color3 0 60%,
+      $book3-color4 60% 100%
+    );
+    border-top-right-radius: $book-border-radius;
+    border-bottom-right-radius: $book-border-radius;
+    margin-right: -$book-width * 0.23;
     height: $book-height;
+    width: $book-width * 0.2;
   }
 }
 
 .book4 {
-  // position: relative;
   width: $book-width * 1.2;
-  height: $book-height * 1.2;
-  border-right: 15px double $book4-border;
-  background-image: linear-gradient($book4-color 0 70%, $book4-color2 70% 30%);
+  height: $book-height * 1.15;
+  font-family: $font;
+  color: #454545;
+  font-size: 12px;
+  border-right: 10px double $book4-border;
+  border-left: 10px double $book4-border;
+  background-image: linear-gradient($book4-color 0 60%, $book4-color2 60% 100%);
   &::before {
-    content: "Cat's Cradle";
-    border-left: 6px solid $book4-border;
-    height: $book-height * 1.2;
-    position: absolute;
+    content: "";
+    border-left: 10px double $book4-border;
+    height: $book-height * 1.15;
+    padding: 2px;
   }
 
   &::after {
     content: "";
-    height: $book-height;
+    border-left: 3px solid $book4-border;
+    height: $book-height * 1.15;
+  }
+}
+
+.book5 {
+  width: $book-width * 1.4;
+  height: $book-height * 1.2;
+  font-family: $font;
+  color: #454545;
+  font-size: 12px;
+  background-image: linear-gradient($book5-color 0 60%, $book5-color2 60% 100%);
+  &::before {
+    padding: 5px;
+    content: "";
+    border-right: 7px double $book5-border;
+    height: $book-height * 1.2;
+    margin-right: 7vw;
+  }
+
+  &::after {
+    content: "";
+    border-radius: 1px;
+    width: $book-width * 0.3;
+    height: $book-height * 0.8;
+    background-color: $book-pages;
+    background-image: linear-gradient(
+      $book5-label 0 65%,
+      $book5-label2 65% 100%
+    );
   }
 }
