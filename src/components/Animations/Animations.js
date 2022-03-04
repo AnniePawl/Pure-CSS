@@ -4,9 +4,11 @@ import Stripes from "../Stripes/Stripes";
 import Rainbow from "../Rainbow/Rainbow";
 import Cat from "../Cat/Cat.js";
 import Shelf from "../Bookshelf/Shelf";
+import Books from "../Bookshelf/Books";
 
 // Animation Components
 const animations = [
+  // { comp: <Books /> },
   { comp: <Shelf /> },
   { comp: <Cat /> },
   { comp: "HI" },

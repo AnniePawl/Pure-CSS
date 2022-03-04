@@ -1,5 +1,8 @@
 $wall-color: #dde4ff;
-$shelf-color: #a88573;
+$shelf-color: #c4a597;
+$shelf-color2: #a68372;
+$shelf-bracket-color: #4f4f4f;
+$shelf-bracket-color2: #666666;
 $shelf-shadow-color: #7e8394;
 $book-height: 40px;
 
@@ -14,4 +17,41 @@ $book-height: 40px;
   width: 100vw;
   @include center-flex();
   background-color: $wall-color;
+}
+
+.bookshelf {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ad8a7b;
+  background-image: linear-gradient($shelf-color 0 65%, $shelf-color2 65% 100%);
+  box-shadow: 0 10px 12px -4px $shelf-shadow-color;
+  border-radius: 2px;
+  height: 18px;
+  width: 350px;
+  &::before {
+    content: "";
+
+    margin-top: 18px;
+    background-color: $shelf-bracket-color;
+    background-image: linear-gradient(
+      $shelf-bracket-color 0 60%,
+      $shelf-bracket-color2 60% 100%
+    );
+    height: 20px;
+    width: 12px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  &::after {
+    content: "";
+    margin-top: 18px;
+    background-image: linear-gradient(
+      $shelf-bracket-color 0 60%,
+      $shelf-bracket-color2 60% 100%
+    );
+    height: 20px;
+    width: 12px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
 }
