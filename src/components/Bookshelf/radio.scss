@@ -1,0 +1,141 @@
+@import "./universal_styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+
+$wall-color: #eaf4ff;
+$radio-height: 30px;
+$radio-width: 145px;
+$radio-outline-clr: #7089ac;
+$radio-body-clr: #ffe8b7;
+$radio-display-clr: #405572;
+$speaker-clr: pink;
+$radio-font: "Roboto Mono", monospace;
+$radio-font-clr: white;
+
+.radio-container {
+  @include center-flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  background-color: $wall-color;
+}
+
+.radio-top {
+  height: $radio-height;
+  width: $radio-width;
+  border-right: 6px solid $radio-outline-clr;
+  border-left: 6px solid $radio-outline-clr;
+  border-top: 6px solid $radio-outline-clr;
+  border-bottom: 3px solid $radio-outline-clr;
+  border-radius: 5px 5px 0 0;
+  background-image: repeating-linear-gradient(
+      45deg,
+      $radio-outline-clr 0%,
+      $radio-outline-clr 1%,
+      transparent 1%,
+      transparent 5%
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      $radio-outline-clr 0%,
+      $radio-outline-clr 1%,
+      $wall-color 1%,
+      $wall-color 5%
+    );
+
+  // background-position: 0 0, 10px 0, 10px -10px, 0px 10px;
+}
+
+.radio-top::before {
+  // content: "hi";
+  // display: flex;
+  // border-top: double 5px red;
+}
+
+.radio-bottom {
+  @include center-flex;
+  height: $radio-height * 1.7;
+  width: $radio-width;
+  background-color: $radio-body-clr;
+  border-radius: 0 0 5px 5px;
+  border-right: 6px solid $radio-outline-clr;
+  border-left: 6px solid $radio-outline-clr;
+  border-bottom: 6px solid $radio-outline-clr;
+}
+
+.radio-display {
+  @include center-flex;
+  flex-direction: column;
+}
+
+.radio-display-station {
+  @include center-flex;
+  border-radius: 2px;
+  height: $radio-height * 0.7;
+  width: $radio-width * 0.32;
+  background-color: $radio-display-clr;
+  color: $radio-font-clr;
+  font-family: $radio-font;
+  font-size: 0.65em;
+  margin-top: 3px;
+}
+
+.radio-buttons {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.radio-button {
+  box-shadow: 0.2px 0.2px 2.5px;
+  margin-top: 3px;
+  padding: 0;
+  @include center-flex;
+  border: 1px solid $radio-display-clr;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  font-size: 10px;
+  background-color: $wall-color;
+  // color: $radio-font-clr;
+  // font-family: $radio-font;
+
+  // font-size: 10px;
+}
+
+.radio-button:hover {
+  background-color: #7089ac;
+  transform: scale(0.8);
+}
+
+.radio-buttons::before,
+.radio-buttons::after {
+  position: absolute;
+  content: "";
+  height: $radio-height * 1.1;
+  width: $radio-width * 0.23;
+  border: 2px solid $radio-outline-clr;
+  border-radius: 50%;
+  background-image: repeating-linear-gradient(
+      45deg,
+      $radio-outline-clr 0%,
+      $radio-outline-clr 2.5%,
+      transparent 2.5%,
+      transparent 10%
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      $radio-outline-clr 0%,
+      $radio-outline-clr 2.5%,
+      $wall-color 2.5%,
+      $wall-color 10%
+    );
+  bottom: $radio-width * 0.016;
+}
+
+.radio-buttons::before {
+  margin-right: $radio-width * 0.65;
+}
+
+.radio-buttons::after {
+  margin-left: $radio-width * 0.65;
+}

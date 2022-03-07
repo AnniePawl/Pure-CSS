@@ -5,10 +5,12 @@ import Rainbow from "../Rainbow/Rainbow";
 import Cat from "../Cat/Cat.js";
 import Shelf from "../Bookshelf/Shelf";
 import Books from "../Bookshelf/Books";
+import Radio from "../Bookshelf/Radio";
 
 // Animation Components
 const animations = [
   // { comp: <Books /> },
+  { comp: <Radio /> },
   { comp: <Shelf /> },
   { comp: <Cat /> },
   { comp: "HI" },
