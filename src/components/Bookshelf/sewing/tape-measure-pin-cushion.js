@@ -8,7 +8,10 @@ function TapeMeasurePinCushion() {
         <div className="tape-measure-left"></div>
         <div className="tape-measure-right"></div>
       </div>
-      <div className="pin-cushion"></div>
+      <div className="pin-cushion">
+        <div className="pin-cushion-top"></div>
+        <div className="pin-cushion-bottom"></div>
+      </div>
     </div>
   );
 }

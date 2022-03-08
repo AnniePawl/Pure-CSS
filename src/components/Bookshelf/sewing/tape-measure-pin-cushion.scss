@@ -1,14 +1,22 @@
 @import "../universal_styles.scss";
 
-$tape-clr: #ffe3a8;
-$tape-clr2: #facc6a;
-$tape-ticks: #383838;
+$tape-clr: #fff5ab;
+$tape-clr2: #fce4a4;
+$tape-clr3: #fad678;
+$tape-ticks: #595959;
 $tape-bottom-clr: #c2c2c2;
-$tape-height: 8px;
-$tape-width: 30px;
+$tape-height: 12px;
+$tape-width: 34px;
 
 .tmpc-container {
   @include bookshelf-container;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tape-measure {
+  // transform: scale(1.2);
 }
 
 .tape-measure-left {
@@ -40,7 +48,7 @@ $tape-width: 30px;
     border-width: ($tape-height + $tape-height * 0.3) 0 0
       ($tape-height + $tape-height * 0.3);
 
-    border-color: transparent transparent transparent $tape-clr2;
+    border-color: transparent transparent transparent $tape-clr3;
     margin-left: $tape-width;
     // position: absolute;
   }
@@ -50,7 +58,7 @@ $tape-width: 30px;
   position: absolute;
   width: $tape-height;
   height: $tape-width * 1.5;
-  background-color: #ffe3a8;
+  background-color: $tape-clr;
   margin-left: $tape-width * 1;
   margin-top: $tape-height * 0.3;
   box-shadow: $tape-height * 0.25 0 $tape-clr2;
@@ -75,15 +83,57 @@ $tape-width: 30px;
     margin-top: $tape-width * 1.5;
     margin-left: -$tape-height * 0.5;
     border-radius: 0 0 1px 1px;
+    box-shadow: $tape-height * 0.2 0 #b0b0b0;
     position: absolute;
     height: $tape-height;
-    width: $tape-height * 1.3;
+    width: $tape-height;
     background-color: #666666;
-    border: $tape-height * 0.3 solid $tape-bottom-clr;
-    // background-image: linear-gradient(
-    //   to bottom,
-    //   $tape-bottom-clr 70%,
-    //   $tape-ticks 70%
-    // );
+    border: $tape-height * 0.35 solid $tape-bottom-clr;
   }
+}
+
+$pc-base-width: 50px;
+$pc-base-height: 6px;
+$pc-color: #7089ac;
+$pc-color2: #405572;
+$pc-base-clr: #c9ab8d;
+$pc-base-clr2: #998471;
+
+.pin-cushion {
+  // display: flex;
+  // flex-direction: column;
+}
+// base
+.pin-cushion-bottom {
+  position: relative;
+  height: $pc-base-height;
+  width: $pc-base-width;
+  border-radius: 1px 1px 1px 1px;
+  background-color: $pc-base-clr;
+  box-shadow: 0 3px $pc-base-clr2;
+  // cushion
+  &::before {
+    content: "";
+    position: absolute;
+    height: $pc-base-width * 0.45;
+    box-shadow: 0 $pc-base-width * 0.05 $pc-color2;
+    width: $pc-base-width * 0.9;
+    background-color: $pc-color;
+    border-radius: 10em 10em 0 0;
+    transform: translateY(-$pc-base-height * 4.2)
+      translateX(-$pc-base-height * 3.75);
+  }
+  &::after {
+  }
+}
+
+// pins
+.pin-cushion-top {
+  z-index: 10;
+  transform: translateY(-$pc-base-width * 0.75);
+  position: absolute;
+  height: 25px;
+  width: 1px;
+  box-shadow: 1px 0 $tape-ticks, 6px 0 $tape-ticks, 9px 0 $tape-ticks,
+    12px 0 $tape-ticks, 6px 0 $tape-ticks;
 }
