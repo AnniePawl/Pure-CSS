@@ -1,0 +1,89 @@
+@import "../universal_styles.scss";
+
+$tape-clr: #ffe3a8;
+$tape-clr2: #facc6a;
+$tape-ticks: #383838;
+$tape-bottom-clr: #c2c2c2;
+$tape-height: 8px;
+$tape-width: 30px;
+
+.tmpc-container {
+  @include bookshelf-container;
+}
+
+.tape-measure-left {
+  border-radius: 2px 0 0 1px;
+  position: relative;
+  display: flex;
+  height: $tape-height;
+  width: $tape-width;
+  background-color: $tape-clr;
+  box-shadow: 0px $tape-height * 0.3 $tape-clr2;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: $tape-height * 0.5;
+    background-image: repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 9%,
+      $tape-ticks 9%,
+      $tape-ticks 12%
+    );
+  }
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: ($tape-height + $tape-height * 0.3) 0 0
+      ($tape-height + $tape-height * 0.3);
+
+    border-color: transparent transparent transparent $tape-clr2;
+    margin-left: $tape-width;
+    // position: absolute;
+  }
+}
+
+.tape-measure-right {
+  position: absolute;
+  width: $tape-height;
+  height: $tape-width * 1.5;
+  background-color: #ffe3a8;
+  margin-left: $tape-width * 1;
+  margin-top: $tape-height * 0.3;
+  box-shadow: $tape-height * 0.25 0 $tape-clr2;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: $tape-width * 1.5;
+    margin-left: -$tape-height * 0.5;
+    margin-top: -1px;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 9%,
+      $tape-ticks 9%,
+      $tape-ticks 11%
+    );
+  }
+
+  &::after {
+    content: "";
+    margin-top: $tape-width * 1.5;
+    margin-left: -$tape-height * 0.5;
+    border-radius: 0 0 1px 1px;
+    position: absolute;
+    height: $tape-height;
+    width: $tape-height * 1.3;
+    background-color: #666666;
+    border: $tape-height * 0.3 solid $tape-bottom-clr;
+    // background-image: linear-gradient(
+    //   to bottom,
+    //   $tape-bottom-clr 70%,
+    //   $tape-ticks 70%
+    // );
+  }
+}

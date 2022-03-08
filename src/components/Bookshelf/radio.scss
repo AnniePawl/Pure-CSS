@@ -13,11 +13,8 @@ $radio-font-clr: white;
 $radio-top-btn-clr: #ffe89c;
 
 .radio-container {
-  @include center-flex;
+  @include bookshelf-container;
   flex-direction: column;
-  height: 500px;
-  width: 500px;
-  background-color: $wall-color;
 }
 
 .radio-top {

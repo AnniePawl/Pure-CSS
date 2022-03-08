@@ -6,10 +6,12 @@ import Cat from "../Cat/Cat.js";
 import Shelf from "../Bookshelf/Shelf";
 import Books from "../Bookshelf/Books";
 import Radio from "../Bookshelf/Radio";
+import TapeMeasurePinCushion from "../Bookshelf/sewing/tape-measure-pin-cushion";
 
 // Animation Components
 const animations = [
   // { comp: <Books /> },
+  { comp: <TapeMeasurePinCushion /> },
   { comp: <Radio /> },
   { comp: <Shelf /> },
   { comp: <Cat /> },

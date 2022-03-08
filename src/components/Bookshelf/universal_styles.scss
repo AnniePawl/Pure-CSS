@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
-$wall-color: #dde4ff;
+$wall-color: #eaf4ff;
+
+$test-border: 2px solid blue;
 
 @mixin center-flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@mixin bookshelf-container {
+  @include center-flex;
+  // flex-direction: column;
+  height: 500px;
+  width: 500px;
+  background-color: $wall-color;
 }
