@@ -1,0 +1,57 @@
+@import "../universal_styles.scss";
+
+.sewing-machine-container {
+  @include bookshelf-container;
+  // display: flex;
+  // justify-content: column;
+}
+
+$sm-height: 43px;
+$sm-width: 100px;
+$sm-clr: #9cbae6;
+$sm-clr2: #6c8cbd;
+
+.sewing-machine {
+  // display: flex;
+  // flex-direction: column;
+}
+
+.sewing-machine-top {
+  display: flex;
+  height: $sm-height;
+  width: $sm-width;
+  border-radius: 25px 0 0 0px;
+  background-color: $sm-clr;
+  box-shadow: 0 $sm-height * 0.12 $sm-clr2;
+  // left arm
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 0 0 10px 10px;
+    height: $sm-height * 0.5;
+    width: $sm-width * 0.35;
+    transform: translateY($sm-height);
+    background-color: $sm-clr;
+  }
+  // right base
+  &::after {
+    content: "";
+    border-radius: 0 25px 0 0;
+    // position: absolute;
+    height: $sm-height * 2.4;
+    width: $sm-width * 0.4;
+    background-color: $sm-clr;
+    transform: translateX($sm-width);
+  }
+}
+
+.sewing-machine-bottom {
+  display: flex;
+  height: $sm-height * 0.7;
+  width: $sm-width * 1.55;
+
+  border-radius: 5px 0 0 0px;
+  background-color: $sm-clr;
+  box-shadow: 0 $sm-height * 0.15 $sm-clr2;
+  transform: translateY($sm-height) translateX(-$sm-width * 0.15);
+}

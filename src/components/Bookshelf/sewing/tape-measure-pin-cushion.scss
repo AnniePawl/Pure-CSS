@@ -5,7 +5,7 @@ $tape-clr2: #fce4a4;
 $tape-clr3: #fad678;
 $tape-ticks: #595959;
 $tape-bottom-clr: #c2c2c2;
-$tape-height: 12px;
+$tape-height: 10px;
 $tape-width: 34px;
 
 .tmpc-container {
@@ -99,13 +99,10 @@ $pc-color2: #405572;
 $pc-base-clr: #c9ab8d;
 $pc-base-clr2: #998471;
 
-.pin-cushion {
-  // display: flex;
-  // flex-direction: column;
-}
 // base
-.pin-cushion-bottom {
+.pin-cushion {
   position: relative;
+  // border: 2px solid yellow;
   height: $pc-base-height;
   width: $pc-base-width;
   border-radius: 1px 1px 1px 1px;
@@ -115,6 +112,7 @@ $pc-base-clr2: #998471;
   &::before {
     content: "";
     position: absolute;
+    z-index: 1;
     height: $pc-base-width * 0.45;
     box-shadow: 0 $pc-base-width * 0.05 $pc-color2;
     width: $pc-base-width * 0.9;
@@ -123,17 +121,67 @@ $pc-base-clr2: #998471;
     transform: translateY(-$pc-base-height * 4.2)
       translateX(-$pc-base-height * 3.75);
   }
-  &::after {
+}
+
+// Colors
+$pin-clr: #cfcfcf;
+$pin-top-clr: #ff6969;
+
+// Measurements
+$pin-height: 20px;
+$pin-width: 1px;
+$pin-top-size: 4px;
+
+.pin-cushion-container {
+  // border: $test-border;
+  // display: flex;
+  // flex-direction: column;
+}
+// Pins
+.pin {
+  z-index: 5;
+  margin-right: 8.5px;
+  height: $pin-height;
+  width: $pin-width;
+  background-image: linear-gradient(to bottom, gray, $pin-clr);
+  // background-color: $pin-clr;
+  &::before {
+    // z-index: 5;
+    position: absolute;
+    display: flex;
+    content: "";
+    height: $pin-top-size;
+    width: $pin-top-size;
+    border-radius: 50%;
+    background-color: $pin-top-clr;
+    transform: translateX(-$pin-width * 1.4) translateY(-$pin-width * 4);
   }
 }
 
-// pins
-.pin-cushion-top {
-  z-index: 10;
-  transform: translateY(-$pc-base-width * 0.75);
+.pins {
+  display: flex;
+  z-index: 5;
   position: absolute;
-  height: 25px;
-  width: 1px;
-  box-shadow: 1px 0 $tape-ticks, 6px 0 $tape-ticks, 9px 0 $tape-ticks,
-    12px 0 $tape-ticks, 6px 0 $tape-ticks;
+  justify-content: space-around;
+  transform: translateY(-$pin-height * 1.6);
+}
+
+// Rotating Pins
+.pin:nth-child(1) {
+  transform: rotate(-35deg) translateY(5px);
+}
+.pin:nth-child(2) {
+  transform: rotate(-20deg);
+}
+.pin:nth-child(3) {
+  transform: rotate(-9deg) translateY(-3px);
+}
+.pin:nth-child(4) {
+  transform: rotate(3deg) translateY(-3px);
+}
+.pin:nth-child(5) {
+  transform: rotate(20deg) translateY(-1px);
+}
+.pin:nth-child(6) {
+  transform: rotate(35deg) translateY(5px);
 }

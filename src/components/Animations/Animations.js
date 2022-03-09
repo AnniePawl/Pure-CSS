@@ -7,10 +7,12 @@ import Shelf from "../Bookshelf/Shelf";
 import Books from "../Bookshelf/Books";
 import Radio from "../Bookshelf/Radio";
 import TapeMeasurePinCushion from "../Bookshelf/sewing/tape-measure-pin-cushion";
+import SewingMachine from "../Bookshelf/sewing/sewing-machine";
 
 // Animation Components
 const animations = [
   // { comp: <Books /> },
+  { comp: <SewingMachine /> },
   { comp: <TapeMeasurePinCushion /> },
   { comp: <Radio /> },
   { comp: <Shelf /> },
