@@ -1,0 +1,39 @@
+@import "./universal_styles.scss";
+
+// Colors
+$cup-clr: lightgray;
+$cup-clr2: darkgray;
+$ruler-clr: blue;
+$ruler-clr2: darkblue;
+$pen-clr: blue;
+$pen-clr2: darkblue;
+$pencil-clr: blue;
+$pencil-clr2: darkblue;
+
+// Measurements
+$cup-height: 50px;
+$cup-width: 100px;
+$ruler-height: 80px;
+$ruler-width: 15px;
+$pen-height: 80px;
+$pen-width: 15px;
+$pencil-height: 80px;
+$pencil-width: 15px;
+
+.ruler {
+  height: $ruler-height;
+  width: $ruler-width;
+  background-color: $ruler-clr;
+}
+
+.pen {
+  height: $pen-height;
+  width: $pen-width;
+  background-color: $pen-clr;
+}
+
+.pencil {
+  height: $pencil-height;
+  width: $pencil-width;
+  background-color: $pencil-clr;
+}

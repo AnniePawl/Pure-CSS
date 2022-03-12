@@ -8,10 +8,13 @@ import Books from "../Bookshelf/Books";
 import Radio from "../Bookshelf/Radio";
 import TapeMeasurePinCushion from "../Bookshelf/sewing/tape-measure-pin-cushion";
 import SewingMachine from "../Bookshelf/sewing/sewing-machine";
+import Container from "../Bookshelf/Container";
+import Writing from "../Bookshelf/Writing";
 
 // Animation Components
 const animations = [
   // { comp: <Books /> },
+  { comp: <Container item={<Writing />} /> },
   { comp: <SewingMachine /> },
   { comp: <TapeMeasurePinCushion /> },
   { comp: <Radio /> },
