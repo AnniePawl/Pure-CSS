@@ -2,38 +2,148 @@
 
 // Colors
 $cup-clr: lightgray;
-$cup-clr2: darkgray;
-$ruler-clr: blue;
-$ruler-clr2: darkblue;
-$pen-clr: blue;
-$pen-clr2: darkblue;
-$pencil-clr: blue;
-$pencil-clr2: darkblue;
+$cup-clr2: #bebebe;
+$cup-rim-clr: #93949c;
+$ruler-clr: #87a8c9;
+$ruler-clr2: #abc4de;
+$ruler-ticks: #4e4e4e;
+$pen-clr: lightyellow;
+$pen-clr2: yellow;
+$pencil-top-clr: rgb(145, 145, 145);
+$pencil-top-clr2: rgb(182, 182, 182);
+$eraser-clr: #cf72a8;
+$eraser-clr2: rgb(219, 146, 219);
+$pencil-clr: #64698b;
+$pencil-clr2: #8e94b4;
+$pencil2-clr: #f3dd7b;
+$pencil2-clr2: rgb(255, 245, 187);
 
 // Measurements
-$cup-height: 50px;
-$cup-width: 100px;
-$ruler-height: 80px;
-$ruler-width: 15px;
+$cup-height: 60px;
+$cup-width: 50px;
+$ruler-height: 90px;
+$ruler-width: 18px;
 $pen-height: 80px;
-$pen-width: 15px;
+$pen-width: 7px;
 $pencil-height: 80px;
-$pencil-width: 15px;
+$pencil-width: 3px;
 
-.ruler {
-  height: $ruler-height;
-  width: $ruler-width;
-  background-color: $ruler-clr;
+.cup-contents {
+  // border: $test-border;
+  display: flex;
+  flex-direction: row;
+  width: 60px;
+  justify-content: space-around;
 }
 
+// Cup
+.cup {
+  height: $cup-height;
+  width: $cup-width;
+  border-radius: 0 0 10px 10px;
+  background-image: linear-gradient(to right, $cup-clr 0 50%, $cup-clr2 50%);
+  // Rim
+  &::before {
+    content: "";
+    display: flex;
+    // position: absolute;
+    height: $pencil-width * 2;
+    width: $cup-width * 1.1;
+    border-radius: 1.5px;
+    background-color: $cup-rim-clr;
+    transform: translateX(5px) translateY(2px);
+  }
+  // &::after {
+  //   content: "hi";
+  //   height: 4px;
+  //   width: 4px;
+  //   border-radius: 50%;
+  //   background-color: $wall-color;
+  //   transform: translateX(5px) translateY(2px);
+  // }
+}
+
+// Ruler
+.ruler {
+  display: flex;
+  height: $ruler-height;
+  width: $ruler-width;
+  background-image: linear-gradient(
+    to right,
+    $ruler-clr 0 50%,
+    $ruler-clr2 50%
+  );
+  // Ruler ticks
+  &::before {
+    content: "";
+    position: absolute;
+    height: $ruler-height;
+    width: $ruler-width * 0.7;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 8%,
+      $ruler-ticks 8%,
+      $ruler-ticks 9%
+    );
+    background-position: top 10%;
+  }
+  &::after {
+    content: "";
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: $wall-color;
+    transform: translateX(5px) translateY(2px);
+  }
+}
+
+// Pen
 .pen {
   height: $pen-height;
   width: $pen-width;
   background-color: $pen-clr;
 }
 
+// Pencils
 .pencil {
   height: $pencil-height;
   width: $pencil-width;
+  // Eraser
+  &::before {
+    content: "";
+    display: flex;
+    height: $pencil-width * 2;
+    width: $pencil-width * 2;
+    border-radius: 1.5px 1.5px 0 0;
+    transform: translateY(-5px);
+
+    background-image: linear-gradient(
+      to right,
+      $eraser-clr 0 50%,
+      $eraser-clr2 50%
+    );
+  }
+  // Silver top
+  &::after {
+    content: "";
+    display: flex;
+    height: $pencil-width * 2;
+    width: $pencil-width;
+    background-color: $pencil-top-clr;
+    box-shadow: $pencil-width 0px $pencil-top-clr2;
+    transform: translateY(-5px);
+  }
+}
+
+// Pencil 1
+.pencil-1 {
   background-color: $pencil-clr;
+  box-shadow: $pencil-width 0 $pencil-clr2;
+}
+
+// Pencil 2
+.pencil-2 {
+  background-color: $pencil2-clr;
+  box-shadow: $pencil-width 0 $pencil2-clr2;
 }
