@@ -1,73 +1,210 @@
 @import "./universal_styles.scss";
 
 // Colors
-$cup-clr: lightgray;
-$cup-clr2: #bebebe;
-$cup-rim-clr: #93949c;
-$ruler-clr: #87a8c9;
-$ruler-clr2: #abc4de;
-$ruler-ticks: #4e4e4e;
-$pen-clr: lightyellow;
-$pen-clr2: yellow;
+$paper-clr: rgba(255, 255, 255, 0.7);
+$paper-lines: rgb(140, 186, 255);
+$paper-lines2: rgba(255, 104, 104, 0.6);
+$notebook-clr: #5c5c5c;
+$notebook-clr2: #757575;
+$bookmark-clr: #83a7ca;
+$bookmark-clr2: #aacbee;
+$cup-clr: #bebebe;
+$cup-clr2: #cecece;
+$cup-rim-clr: #d6d6d6;
+$cup-rim-clr2: #c4c4c4;
+$ruler-clr: #7caddf;
+$ruler-clr2: #9fc4ec;
+$ruler-ticks: #6d6f77;
+$pen-clr: #ec7781;
+$pen-clr2: rgb(253, 159, 159);
+$pen-clr3: #686868;
+$pen-clr4: #999999;
 $pencil-top-clr: rgb(145, 145, 145);
-$pencil-top-clr2: rgb(182, 182, 182);
-$eraser-clr: #cf72a8;
-$eraser-clr2: rgb(219, 146, 219);
-$pencil-clr: #64698b;
-$pencil-clr2: #8e94b4;
-$pencil2-clr: #f3dd7b;
-$pencil2-clr2: rgb(255, 245, 187);
+$pencil-top-clr2: rgb(197, 197, 197);
+$eraser-clr: #ce79aa;
+$eraser-clr2: rgb(248, 169, 248);
+$pencil-clr: #f3d860;
+$pencil-clr2: rgb(255, 240, 167);
+$pencil2-clr: #6473a3;
+$pencil2-clr2: #7694c2;
 
 // Measurements
-$cup-height: 60px;
-$cup-width: 50px;
-$ruler-height: 90px;
+$paper-height: 180px;
+$paper-width: 130px;
+$notebook-height: 150px;
+$notebook-width: 25px;
+$cup-height: 55px;
+$cup-width: 45px;
+$ruler-height: 95px;
 $ruler-width: 18px;
-$pen-height: 80px;
-$pen-width: 7px;
+$pen-height: 65px;
+$pen-width: 8px;
 $pencil-height: 80px;
 $pencil-width: 3px;
 
-.cup-contents {
+.container {
+  background-color: #fff6cd;
+}
+.writing-container {
+  // transform: scale(0.9);
   // border: $test-border;
   display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.paper {
+  height: $paper-height;
+  width: $paper-width;
+  box-shadow: 0.5px 0.5px 10px lightgray;
+  transform: translateX(-6px);
+  background-image: linear-gradient(
+      to right,
+      $paper-clr 0 15%,
+      $paper-lines2 15% 15.5%,
+      $paper-clr 15.5%
+    ),
+    repeating-linear-gradient($paper-clr 0 5%, $paper-lines 5% 5.5%);
+  &::before {
+    transform: translateY(31px) translateX(6px);
+    background-color: #fff6cd;
+
+    content: "";
+    display: flex;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 1px gray;
+  }
+  &::after {
+    transform: translateY(135px) translateX(6px);
+    background-color: #fff6cd;
+
+    content: "";
+    display: flex;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 1px gray;
+  }
+}
+
+// .notebook {
+//   height: $notebook-height;
+//   width: $notebook-width;
+//   border-radius: 2px;
+//   // margin-right: 25px;
+
+//   background-image: linear-gradient(
+//     to right,
+//     $notebook-clr 0 50%,
+//     $notebook-clr2 50%
+//   );
+//   // Book ribs
+//   &::before {
+//     content: "";
+//     display: flex;
+//     height: $notebook-height;
+//     width: $notebook-width * 1.05;
+//     transform: translateX(-0.5px) translateY(-5px);
+//     background: repeating-linear-gradient(
+//       transparent,
+//       transparent 25%,
+//       #585858 25%,
+//       #585858 28%
+//     );
+//   }
+// // Bookmark
+// &::after {
+//   content: "";
+//   display: flex;
+//   height: $notebook-height * 0.7;
+//   width: $notebook-width * 0.15;
+//   border-radius: 1px;
+//   transform: translateY(-$notebook-height - 1px) translateX(4px);
+//   background: linear-gradient(
+//     to right,
+//     $bookmark-clr 0 50%,
+//     $bookmark-clr2 50%
+//   );
+// }
+// }
+
+// .notebook1 {
+//   // margin-right: 9px;
+//   transform: translateX(-35px) rotate(12deg);
+//   &::after {
+//     content: "";
+//     display: flex;
+//     height: $notebook-height * 0.7;
+//     width: $notebook-width * 0.15;
+//     border-radius: 1px;
+//     transform: translateY(-$notebook-height - 1px) translateX(9px);
+//     background: linear-gradient(
+//       to right,
+//       $bookmark-clr 0 50%,
+//       $bookmark-clr2 50%
+//     );
+//   }
+// }
+// .notebook2 {
+//   // margin-right: 9px;
+//   transform: translateX(-20px);
+// }
+
+// Cup
+.cup-container {
+  position: absolute;
+  transform: translateY(-4px);
+  // border: $test-border;
+}
+
+.cup-contents {
+  display: flex;
   flex-direction: row;
-  width: 60px;
   justify-content: space-around;
+  transform: translateY(23px);
 }
 
 // Cup
 .cup {
+  position: relative;
   height: $cup-height;
   width: $cup-width;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 8px 8px;
   background-image: linear-gradient(to right, $cup-clr 0 50%, $cup-clr2 50%);
   // Rim
   &::before {
     content: "";
     display: flex;
-    // position: absolute;
-    height: $pencil-width * 2;
+    height: $pencil-width * 1.5;
     width: $cup-width * 1.1;
     border-radius: 1.5px;
-    background-color: $cup-rim-clr;
-    transform: translateX(5px) translateY(2px);
+    background-image: linear-gradient($cup-rim-clr 0 50%, $cup-rim-clr2 50%);
+    transform: translateX(-2.5px);
   }
-  // &::after {
-  //   content: "hi";
-  //   height: 4px;
-  //   width: 4px;
-  //   border-radius: 50%;
-  //   background-color: $wall-color;
-  //   transform: translateX(5px) translateY(2px);
-  // }
+  // Cup bottom
+  &::after {
+    content: "";
+    display: flex;
+    height: $cup-width * 0.13;
+    width: $cup-width * 0.75;
+    border-radius: 0 0 1px 1px;
+    background-image: linear-gradient(to right, $cup-clr 0 50%, $cup-clr2 50%);
+    transform: translateY(49px) translateX(5.5px);
+  }
 }
 
 // Ruler
 .ruler {
+  animation: ruler-animation 5s infinite;
   display: flex;
+  position: relative;
+  z-index: 0;
   height: $ruler-height;
   width: $ruler-width;
+  border-radius: 1px;
+  transform: translateX(-5px) translateY(-15px) rotate(-8deg);
   background-image: linear-gradient(
     to right,
     $ruler-clr 0 50%,
@@ -76,33 +213,63 @@ $pencil-width: 3px;
   // Ruler ticks
   &::before {
     content: "";
-    position: absolute;
+    display: flex;
+    // position: absolute;
     height: $ruler-height;
-    width: $ruler-width * 0.7;
+    width: $ruler-width * 0.6;
+    transform: translateY(5px);
     background-image: repeating-linear-gradient(
       to bottom,
       transparent,
-      transparent 8%,
-      $ruler-ticks 8%,
-      $ruler-ticks 9%
+      transparent 7%,
+      $ruler-ticks 7%,
+      $ruler-ticks 8%
     );
-    background-position: top 10%;
   }
+  // Ruler circle
   &::after {
     content: "";
-    height: 4px;
-    width: 4px;
+    height: 4.5px;
+    width: 4.5px;
     border-radius: 50%;
     background-color: $wall-color;
-    transform: translateX(5px) translateY(2px);
+    transform: translateY(3px) translateX(-4px);
   }
 }
 
 // Pen
 .pen {
+  animation: pen-animation 6s 1s infinite;
+  z-index: 1;
   height: $pen-height;
   width: $pen-width;
-  background-color: $pen-clr;
+  border-radius: 1px;
+  background-image: linear-gradient(to right, $pen-clr 0 50%, $pen-clr2 50%);
+  transform: translateX(-6px) translateY(20px);
+
+  // Pen top
+  &::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    height: $pen-width * 0.9;
+    width: $pen-width * 0.65;
+    background-image: linear-gradient(to right, $pen-clr3 0 50%, $pen-clr4 50%);
+    transform: translateY(-7px) translateX(1.5px);
+    border-radius: 50% 50% 0 0;
+  }
+  // Pen clip
+  &::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    border-radius: 45%;
+    height: $pen-width * 3;
+    width: $pen-width * 0.5;
+    // background-image: linear-gradient(to right, $cup-clr 0 50%, $cup-clr2 50%);
+    background-image: linear-gradient(to right, $pen-clr3 0 50%, $pen-clr4 50%);
+    transform: translateY(4px) translateX(2px);
+  }
 }
 
 // Pencils
@@ -116,8 +283,7 @@ $pencil-width: 3px;
     height: $pencil-width * 2;
     width: $pencil-width * 2;
     border-radius: 1.5px 1.5px 0 0;
-    transform: translateY(-5px);
-
+    transform: translateY(-10px);
     background-image: linear-gradient(
       to right,
       $eraser-clr 0 50%,
@@ -132,18 +298,47 @@ $pencil-width: 3px;
     width: $pencil-width;
     background-color: $pencil-top-clr;
     box-shadow: $pencil-width 0px $pencil-top-clr2;
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 }
 
 // Pencil 1
 .pencil-1 {
+  animation: pencil1-animation 4s 1s infinite;
+  z-index: 0;
   background-color: $pencil-clr;
   box-shadow: $pencil-width 0 $pencil-clr2;
+  transform: rotate(-3deg) translateX(-6px);
 }
 
 // Pencil 2
 .pencil-2 {
+  animation: pencil2-animation 5s 0s infinite;
   background-color: $pencil2-clr;
   box-shadow: $pencil-width 0 $pencil2-clr2;
+  transform: rotate(5deg) translatex(0px);
+}
+
+// Keyframes
+
+@keyframes ruler-animation {
+  50% {
+    transform: translateX(-5px) translateY(-7px) rotate(-8deg);
+  }
+}
+
+@keyframes pen-animation {
+  50% {
+    transform: translateX(-6px) translateY(7px);
+  }
+}
+@keyframes pencil1-animation {
+  50% {
+    transform: rotate(-3deg) translateX(-5px) translateY(7px);
+  }
+}
+@keyframes pencil2-animation {
+  70% {
+    transform: rotate(8deg) translatex(2px) translateY(10px);
+  }
 }
