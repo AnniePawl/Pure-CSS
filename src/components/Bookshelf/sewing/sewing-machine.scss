@@ -6,52 +6,197 @@
   // justify-content: column;
 }
 
-$sm-height: 35px;
-$sm-width: 100px;
-$sm-clr: #9cbae6;
-$sm-clr2: #6c8cbd;
+$thread-height: 25px;
+$thread-width: 16px;
+$sm-top-height: 50px;
+$sm-top-width: 185px;
+$sm-right-arm-height: 50px;
+$sm-right-arm-width: 50px;
+$sm-left-arm-height: 11px;
+$sm-left-arm-width: 45px;
+$sm-base-height: 40px;
+$needle-height: 20px;
+$sm-clr: white;
+$sm-clr2: #bdbdbd;
+$knob-clr: #a1a1a1;
+$knob-clr2: #818181;
+$spool-clr: #af8c72;
+$spool-clr2: #91715c;
+$thread-clr: rgb(241, 103, 126);
+$thread-clr2: rgb(255, 173, 173);
+$fabric-clr: rgba(146, 175, 212, 0.6);
+$fabric-clr2: rgb(247, 213, 64, 85%);
+$fabric-clr3: rgb(211, 95, 114, 95%);
 
-.sewing-machine {
-  // display: flex;
-  // flex-direction: column;
+// Needle
+.needle {
+  position: absolute;
+  height: $needle-height;
+  width: 3.5px;
+  background-color: $knob-clr;
+  transform: translateY($sm-top-height + $sm-left-arm-height)
+    translateX($sm-left-arm-width/2.2);
+  &::before {
+    content: "";
+    display: flex;
+    height: $needle-height * 0.9;
+    width: 8px;
+    border-radius: 0.5px;
+    transform: translateX(-2px) translateY(3px);
+    background-image: linear-gradient(
+      to bottom,
+      $knob-clr2 0 20%,
+      transparent 20% 85%,
+      $knob-clr2 85%
+    );
+  }
+  &::after {
+    content: "";
+    display: flex;
+    height: 15px;
+    width: 1px;
+    background-color: $knob-clr2;
+    transform: translateY(2px) translateX(1.2px);
+    border-radius: 0 0 50% 50%;
+  }
+}
+// Thread
+.thread {
+  height: $thread-height;
+  width: $thread-width;
+  transform: translateX(142px);
+  background-image: repeating-linear-gradient(
+    35deg,
+    $thread-clr,
+    $thread-clr 0 7%,
+    $thread-clr2 7% 11%
+  );
+  // spool
+  &::before {
+    content: "";
+    display: flex;
+    height: $thread-height;
+    width: $thread-width * 1.22;
+    border-radius: 0.5px;
+    transform: translateX(-2px);
+    border-radius: 2px;
+    background-image: linear-gradient(
+      to bottom,
+      $spool-clr 0 10%,
+      $spool-clr2 10% 20%,
+      transparent 20% 80%,
+      $spool-clr 80% 90%,
+      $spool-clr2 90%
+    );
+  }
+  // thread
+  &::after {
+    content: "";
+    display: flex;
+    height: 1px;
+    width: 105px;
+    background-color: $thread-clr;
+    transform: translateX(-103px) translateY(-9.5px) rotate(-10deg);
+  }
 }
 
+// Sewing Machine
 .sewing-machine-top {
   display: flex;
-  height: $sm-height;
-  width: $sm-width;
-  border-radius: 5px 0 0 0px;
+  height: $sm-top-height;
+  width: $sm-top-width;
+  border-radius: 5px 5px 0 0px;
   background-color: $sm-clr;
-  box-shadow: 0 $sm-height * 0.12 $sm-clr2;
+  box-shadow: 0 3px $sm-clr2, 0px 0px 2px $sm-clr2;
   // left arm
   &::before {
     content: "";
+    height: $sm-left-arm-height;
+    width: $sm-left-arm-width;
     position: absolute;
-    border-radius: 0 0 2px 2px;
-    height: $sm-height * 0.5;
-    width: $sm-width * 0.4;
-    transform: translateY($sm-height);
+    border-radius: 0 0 1px 1px;
+    transform: translateY($sm-top-height);
+    box-shadow: 0 3px $sm-clr2;
+
     background-color: $sm-clr;
   }
-  // right base
+  // screen
   &::after {
     content: "";
-    border-radius: 0 5px 0 0;
-    // position: absolute;
-    height: $sm-height * 3;
-    width: $sm-width * 0.4;
-    background-color: $sm-clr;
-    transform: translateX($sm-width);
+    background-image: linear-gradient($knob-clr 0 80%, $knob-clr2 80%);
+    height: $sm-top-height * 0.3;
+    width: $sm-top-height * 0.8;
+    transform: translateX($sm-top-height * 1.5) translateY($sm-top-height / 2.5);
   }
 }
 
-.sewing-machine-bottom {
-  display: flex;
-  height: $sm-height * 0.7;
-  width: $sm-width * 1.55;
+// Right arm
+.sewing-machine-right {
+  content: "";
+  height: $sm-right-arm-height;
+  width: $sm-right-arm-width;
+  background-color: $sm-clr;
+  box-shadow: -3px 0px $sm-clr2, 0px 5px 2px $sm-clr2;
 
+  transform: translateX(135px);
+  // knob
+  &::before {
+    content: "";
+    height: $sm-top-height/1.4;
+    width: $sm-top-height / 4;
+    position: absolute;
+    border-radius: 0 25% 25% 0;
+    transform: translateY(-20px) translateX(25px);
+    background-image: linear-gradient(
+      to right,
+      $knob-clr 0 75%,
+      $knob-clr2 75%
+    );
+  }
+  // buttons
+  &::after {
+    content: "";
+    display: flex;
+    height: $sm-top-height * 0.6;
+    width: $sm-right-arm-width * 0.2;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgb(179, 177, 177) 0 10%,
+      $knob-clr2 10% 20%,
+      transparent 20% 40%
+    );
+    transform: translateX(18px) translateY(10px);
+  }
+}
+
+// Bottom Half
+.sewing-machine-bottom {
+  height: $sm-base-height;
+  width: $sm-top-width + 15px;
   border-radius: 5px 0 0 0px;
   background-color: $sm-clr;
-  box-shadow: 0 $sm-height * 0.15 $sm-clr2;
-  transform: translateY($sm-height * 1.3) translateX(-$sm-width * 0.15);
+  transform: translateX(-15px);
+  box-shadow: 0 3px $sm-clr2, 0px 2px 2px $sm-clr2;
+  // Fabric
+  &::before {
+    content: "";
+    display: flex;
+    height: 85px;
+    width: 125px;
+    background-image: repeating-linear-gradient(
+        $fabric-clr,
+        $fabric-clr 5%,
+        $fabric-clr2 5% 10%
+      ),
+      repeating-linear-gradient(
+        90deg,
+        $fabric-clr3,
+        $fabric-clr3 5%,
+        transparent 5% 10%
+      );
+    clip-path: polygon(30% 0%, 90% 0%, 90% 20%, 30% 45%);
+  }
+
+  // box-shadow: 0 $sm-height * 0.15 $sm-clr2;
+  // transform: translateY($sm-height * 1.3) translateX(-$sm-width * 0.15);
 }
