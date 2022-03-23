@@ -10,10 +10,12 @@ import TapeMeasurePinCushion from "../Bookshelf/sewing/tape-measure-pin-cushion"
 import SewingMachine from "../Bookshelf/sewing/sewing-machine";
 import Container from "../Bookshelf/Container";
 import Writing from "../Bookshelf/Writing";
+import Laptop from "../Bookshelf/Laptop";
 
 // Animation Components
 const animations = [
   // { comp: <Books /> },
+  { comp: <Container item={<Laptop />} /> },
   { comp: <Container item={<Writing />} /> },
   { comp: <SewingMachine /> },
   { comp: <TapeMeasurePinCushion /> },

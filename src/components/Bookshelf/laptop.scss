@@ -1,0 +1,115 @@
+@import "./universal_styles.scss";
+
+// Font
+$font-size: 8px;
+$font-family: menlo, monaco;
+
+// Colors
+$font-clr: white;
+$laptop-clr: rgb(61, 61, 61);
+$laptop-clr2: rgb(235, 235, 235);
+$laptop-clr3: rgb(189, 189, 189);
+$screen-clr: rgb(250, 209, 209);
+$screen-clr2: rgb(255, 228, 228);
+$terminal-clr: rgb(63, 63, 63, 0.7);
+$keyboard-clr: rgb(88, 88, 88);
+
+// Measurements
+$terminal-height: 85px;
+$terminal-width: 125px;
+$laptop-height: 125px;
+$laptop-width: 175px;
+$keyboard-height: 14px;
+$keyboard-width: 230px;
+
+.laptop-container {
+  // border: 1px solid yellow;
+}
+
+// Top section includes screen and terminal divs
+.laptop-top {
+  @include center-flex;
+  height: $laptop-height;
+  width: $laptop-width;
+  border-radius: 7px 7px 0 0;
+  background-color: $laptop-clr;
+  box-shadow: 0 0 0 1.5px black, 0 0 0 3px $laptop-clr2, 0 0 9px black;
+  z-index: 0;
+  // Keyboard
+  &::before {
+    height: $keyboard-height;
+    width: $keyboard-width;
+    border-radius: 2px;
+    border-bottom: 3px solid$laptop-clr3;
+    content: "";
+    position: absolute;
+    background-color: $laptop-clr2;
+    transform: translateY(72px);
+    box-shadow: 0px -1px 3px rgb(178, 193, 212);
+  }
+  // keyboard divit thing
+  &::after {
+    content: " ";
+    position: absolute;
+    height: 4px;
+    width: 45px;
+    border-radius: 0 0 1.5px 1.5px;
+    background-color: gray;
+    transform: translateY(66.5px);
+  }
+  // Screen
+  .laptop_top__screen {
+    @include center-flex;
+    height: $laptop-height * 0.86;
+    width: $laptop-width * 0.94;
+    background-image: linear-gradient(45deg, $screen-clr 65%, $screen-clr2 65%);
+    &::before {
+      content: "";
+    }
+    &::after {
+      content: " ";
+    }
+  }
+  // Terminal
+  .laptop_top__terminal {
+    height: $terminal-height;
+    width: $terminal-width;
+    border-radius: 1.5px 1.5px 0 0;
+    background-color: $terminal-clr;
+    border-top: 7px solid rgb(247, 247, 247);
+    &::before {
+      content: "🔴\00a0\00a0\00a0🟡\00a0\00a0\00a0🟢";
+      position: absolute;
+      font-size: 2.5px;
+      transform: translateX(-59px) translateY(-5.5px);
+    }
+    &::after {
+      content: " ";
+    }
+    p {
+      padding: 4%;
+      color: $font-clr;
+      font-size: $font-size;
+      font-family: $font-family;
+      border-right: 1px solid $font-clr;
+      margin: 0;
+      width: 1ch;
+      animation: typing-animation 2s steps(1), blink 0.5s infinite alternate;
+      animation: typing-animation 2s steps(1);
+      // overflow: hidden;
+      // white-space: nowrap;
+    }
+  }
+}
+
+// Keyframes
+@keyframes typing-animation {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

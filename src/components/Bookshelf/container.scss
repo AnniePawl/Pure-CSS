@@ -2,7 +2,10 @@
 
 .container {
   @include center-flex;
+  border: 1px solid gray;
+  position: relative; //dont remove
+  z-index: -10; //dont remove
   height: 500px;
   width: 500px;
-  background-color: #eaf4ff;
+  background-color: #eaf3ff;
 }
