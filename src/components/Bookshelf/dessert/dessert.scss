@@ -1,0 +1,58 @@
+@import "../universal_styles.scss";
+
+$glass-height: 95px;
+$glass-width: 95px;
+$stand-clr: rgb(187, 208, 255);
+$glass-outline: 1.5px solid #ffffff;
+$glass-clr: radial-gradient(transparent 0 55%, #ffffffb6);
+
+$stand-base-height: 20px;
+$stand-base-width: 15px;
+
+.dessert-container {
+  @include center-flex;
+  flex-direction: column;
+}
+.dessert-stand-top {
+  display: flex;
+  justify-content: center;
+  height: $glass-height;
+  width: $glass-width;
+  background: $glass-clr;
+  border-top: $glass-outline;
+  border-left: $glass-outline;
+  border-radius: 45% 45% 0 0;
+  // stand knob
+  &::before {
+    content: "";
+    z-index: 10;
+    border-radius: 50%;
+    height: $glass-width * 0.25;
+    width: $glass-width * 0.25;
+    border-top: $glass-outline;
+    border-left: $glass-outline;
+    background: $glass-clr;
+    transform: translateY(-$glass-height * 0.24);
+  }
+  //stand base-top
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: $glass-width * 1.25;
+    height: $glass-width * 0.2;
+    border-radius: 50%;
+    background-color: $stand-clr;
+    transform: translateY($glass-height * 0.89);
+  }
+}
+
+// stand
+.dessert-stand-base {
+  display: flex;
+  align-content: center;
+  height: $stand-base-height;
+  width: $stand-base-width;
+  background-color: $stand-clr;
+  transform: translateY($glass-width * 0.1);
+}

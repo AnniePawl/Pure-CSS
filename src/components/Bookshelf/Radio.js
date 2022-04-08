@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./radio.scss";
 
-function Radio() {
+function Radio(props) {
+  const { cn } = props;
   const [station, setStation] = useState(105.9);
   return (
-    <div className="radio-container">
+    <div className={`radio-container ${cn}`}>
       <div className="radio-top"></div>
       <div className="radio-bottom">
         <div className="radio-display">

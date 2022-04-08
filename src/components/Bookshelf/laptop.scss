@@ -87,17 +87,18 @@ $keyboard-width: 230px;
       content: " ";
     }
     p {
-      padding: 4%;
+      animation: blink 0.5s;
       color: $font-clr;
       font-size: $font-size;
       font-family: $font-family;
       border-right: 1px solid $font-clr;
       margin: 0;
-      width: 1ch;
-      animation: typing-animation 2s steps(1), blink 0.5s infinite alternate;
+      // width: 1ch;
+      // animation: typing-animation 2s steps(1), blink 0.5s infinite alternate;
       animation: typing-animation 2s steps(1);
-      // overflow: hidden;
-      // white-space: nowrap;
+      overflow: hidden;
+      text-align: left;
+      white-space: nowrap;
     }
   }
 }

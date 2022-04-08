@@ -11,10 +11,13 @@ import SewingMachine from "../Bookshelf/sewing/sewing-machine";
 import Container from "../Bookshelf/Container";
 import Writing from "../Bookshelf/Writing";
 import Laptop from "../Bookshelf/Laptop";
+import Dessert from "../Bookshelf/dessert/Dessert";
 
 // Animation Components
 const animations = [
   // { comp: <Books /> },
+  { comp: <Container item={<Dessert />} /> },
+  { comp: <Container item={<Radio cn={"pink-radio"} />} /> },
   { comp: <Container item={<Laptop />} /> },
   { comp: <Container item={<Writing />} /> },
   { comp: <SewingMachine /> },
