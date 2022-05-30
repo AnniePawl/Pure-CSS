@@ -1,0 +1,80 @@
+@import './universal_styles.scss';
+
+$frame-clr:#5796e9;
+$frame-clr2:#ffdfe9;
+$frame-clr3:#7cb5ff;
+$sphere-clr:#fff6c0;
+$sphere-clr2:#f9e572;
+
+$frame-height:100px;
+$frame-width: 150px;
+
+.frame {
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height:$frame-height;
+	width: $frame-width;
+	border-radius:10px 10px 0 0 ;
+	box-shadow:0 0 0 1.5px $frame-clr, 0 0 0 5px $frame-clr2, 0 0 0 6.5px $frame-clr;
+	&::before, &::after{
+		display:flex;
+		height:$frame-height*.1;
+		width:$frame-width*.15;
+		border:1.5px solid $frame-clr;
+		border-radius: 2px;
+		background-color: $frame-clr2;
+
+	}
+	&::before{
+		transform: translateX(-$frame-width*.09) translateY($frame-width * .01);
+	
+	}
+	&::after{
+		transform: translateX($frame-width*.09) translateY($frame-width * .01);
+	
+
+	}
+}
+
+
+.sphere {
+	height:$frame-width *.15;
+	width:$frame-width *.15;
+	border:1.5px solid $frame-clr;
+	background-image:linear-gradient(to right,$sphere-clr 0 50%, $sphere-clr2 0 100%);
+	border-radius: 50%;
+	transform: translateY(-15px);
+	&::before{
+		display: flex;
+		height:$frame-height*.65;
+		width:1.5px;
+		background-color: $frame-clr;
+		transform: translateX($frame-width *.055) translateY(-$frame-height*.65);
+	}
+
+}
+
+.base {
+	@include center-flex;
+	height:$frame-height*.15;
+	width: $frame-width * 1.35;
+	border-radius: 4px 4px 0 0 ;
+	background-image:linear-gradient($frame-clr3 0 70%, $frame-clr 70%);
+	&::before {
+		// display: flex;
+		// width:$frame-width*.5;
+		// content:"Newton's Cradle";
+		// font-size:8px;
+		// color:$frame-clr;
+		// border:2px solid $frame-clr2;
+		// background-color: white;
+	}
+}
+
+.newtonsCradle {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

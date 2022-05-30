@@ -1,0 +1,61 @@
+@import "../universal_styles.scss";
+
+// Measurements
+$pot-height: 40px;
+$pot-width: 70px;
+$leaf-height: 65px;
+$leaf-width: 20px;
+// Colors
+$pot-clr: rgb(255, 192, 236);
+$pot-clr2: rgb(255, 169, 234);
+$leaf-clr: rgb(122, 255, 122);
+$leaf-clr2: rgb(87, 202, 87);
+$leaf-clr3: rgb(105, 182, 105);
+
+.plant-pot {
+  height: $pot-height;
+  width: $pot-width;
+  border-radius: 0 0 20% 20%;
+  background: linear-gradient(to right, $pot-clr 0 50%, $pot-clr2 50%);
+}
+
+.plant-leaf {
+  // transform: translateY($pot-height);
+  position: absolute;
+  // border: $test-border;
+  background: linear-gradient(110deg, $leaf-clr 45%, $leaf-clr2 40%);
+  background-size: 20px 9px;
+  height: $leaf-height;
+  width: $leaf-width;
+  border-top-left-radius: 90%;
+  border-bottom-right-radius: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    transform: translateX(-20px) translateY(-3px) rotate(15deg);
+    background: linear-gradient(110deg, $leaf-clr 45%, $leaf-clr3 40%);
+    background-size: 20px 9px;
+    height: $leaf-height;
+    width: $leaf-width;
+    border-top-left-radius: 90%;
+    border-bottom-right-radius: 100%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translateX(-26px) translateY(-9px) rotate(30deg);
+    // border: $test-border;
+    background: linear-gradient(110deg, $leaf-clr 45%, $leaf-clr2 40%);
+    background-size: 20px 9px;
+    height: $leaf-height;
+    width: $leaf-width;
+    border-top-left-radius: 90%;
+    border-bottom-right-radius: 100%;
+  }
+}
+
+// .plant-leaf2 {
+//   height: 100px;
+//   width: 20px;
+//   background-color: green;
+// }

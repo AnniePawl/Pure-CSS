@@ -12,10 +12,16 @@ import Container from "../Bookshelf/Container";
 import Writing from "../Bookshelf/Writing";
 import Laptop from "../Bookshelf/Laptop";
 import Dessert from "../Bookshelf/dessert/Dessert";
+import Plant from "../Bookshelf/plant/Plant";
+import DigitalClock from "../Bookshelf/DigitalClock";
+import NewtonsCradle from "../Bookshelf/NewtonsCradle";
 
 // Animation Components
 const animations = [
   // { comp: <Books /> },
+  { comp: <Container item={<NewtonsCradle />} /> },
+  { comp: <Container item={<DigitalClock />} /> },
+  { comp: <Container item={<Plant />} /> },
   { comp: <Container item={<Dessert />} /> },
   { comp: <Container item={<Radio cn={"pink-radio"} />} /> },
   { comp: <Container item={<Laptop />} /> },

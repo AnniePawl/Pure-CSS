@@ -4,12 +4,14 @@ $glass-height: 80px;
 $glass-width: 95px;
 $dessert-height: 27px;
 $dessert-width: 55px;
-$dessert-clr: #fdf1c7;
-$dessert-clr2: #cebdb3;
-$dessert-clr3: #ffd6e3;
+$wall-clr: #eaf4ff;
+$dessert-clr: #feffb0;
+$dessert-clr2: #83766d;
+$dessert-clr3: #ffdaf3;
 $dessert-clr4: #83766d;
-$dessert-clr5: #c7bbff;
-$dessert-clr6: #cefaed;
+$dessert-clr5: #ffffff;
+$dessert-clr6: #a39184;
+$dessert-clr7: #feffb0;
 $stand-clr: #8cbaff;
 $stand-clr2: #74a6f0;
 $glass-outline: 1.5px solid #ffffff;
@@ -19,11 +21,11 @@ $stand-base-height: 20px;
 $stand-base-width: 15px;
 
 .dessert-container {
+  // border: $test-border;
   @include center-flex;
   flex-direction: column;
 }
 .dessert-stand-top {
-  position: relative;
   display: flex;
   justify-content: center;
   height: $glass-height;
@@ -32,7 +34,6 @@ $stand-base-width: 15px;
   border-top: $glass-outline;
   border-left: $glass-outline;
   border-right: $glass-outline;
-
   border-radius: 45% 45% 0 0;
   // stand knob
   &::before {
@@ -55,13 +56,12 @@ $stand-base-width: 15px;
     width: $glass-width * 1.25;
     height: $glass-width * 0.2;
     border-radius: 50%;
-
     background: radial-gradient(
         circle at 50% 95%,
-        $dessert-clr3 30%,
+        $dessert-clr5 30%,
         transparent 26%
       ),
-      radial-gradient(circle at 50% 95%, $dessert-clr3 30%, transparent 26%);
+      radial-gradient(circle at 50% 95%, $dessert-clr5 30%, transparent 26%);
     background-color: $stand-clr;
     background-size: $dessert-width/8;
     transform: translateY($glass-height * 0.86);
@@ -85,8 +85,6 @@ $stand-base-width: 15px;
     background: linear-gradient(to right, $stand-clr 0 50%, $stand-clr2 50%);
     transform: translateY($stand-base-height) translateX(-$stand-base-width / 2);
     border-radius: 25px 25px 0 0;
-  }
-  &::after {
   }
 }
 
@@ -113,6 +111,24 @@ $stand-base-width: 15px;
 
   background-size: $dessert-width/2 $dessert-width/2;
   background-position: 0 0, $dessert-width/4 $dessert-width/4;
+  // &::before {
+  //   content: "";
+  //   display: flex;
+  //   // border-radius: 20% 20% 0 0;
+  //   width: $dessert-width;
+  //   height: $dessert-height/2;
+  //   background: radial-gradient(
+  //     circle at 50% 50%,
+  //     $dessert-clr5 35%,
+  //     $dessert-clr6 30%
+  //   );
+  //   background-size: $dessert-width/8;
+
+  //   // radial-gradient(#c4dcd1 40%);
+  //   // background-size: 0 0 10px 10px;
+  //   // background-repeat: repeat-x;
+  //   transform: translateY(-$dessert-height/2.2);
+  // }
   &::before {
     content: "";
     display: flex;
@@ -120,9 +136,9 @@ $stand-base-width: 15px;
     width: $dessert-width;
     height: $dessert-height/2;
     background: radial-gradient(
-      circle at 50% 50%,
-      $dessert-clr5 35%,
-      $dessert-clr6 30%
+      circle at 50% 0%,
+      $dessert-clr5 25%,
+      $dessert-clr6 26%
     );
     background-size: $dessert-width/8;
 
@@ -148,5 +164,46 @@ $stand-base-width: 15px;
     // background-size: 0 0 10px 10px;
     // background-repeat: repeat-x;
     transform: translateY(-$dessert-height * 1.45);
+  }
+}
+
+.dessert-spiral {
+  // visibility: hidden;
+  animation: spiral 10s;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: $dessert-height * 6;
+  width: $dessert-height * 6;
+  // transform: scale(1.5);
+  z-index: -5;
+  // transform: ;
+  // display: flex;
+  // border: 1px solid blue;
+  background: radial-gradient(transparent, $wall-clr 75%),
+    conic-gradient(
+      $dessert-clr3 0 10%,
+      $dessert-clr7 0 20%,
+      $dessert-clr3 0 30%,
+      $dessert-clr7 0 40%,
+      $dessert-clr3 0 50%,
+      $dessert-clr7 0 60%,
+      $dessert-clr3 0 70%,
+      $dessert-clr7 0 80%,
+      $dessert-clr3 0 90%,
+      $dessert-clr7 0 100%
+    );
+}
+
+// Keyframes
+@keyframes spiral {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.display-container > .container > .dessert-container:hover {
+  .dessert-spiral {
+    visibility: hidden;
   }
 }
