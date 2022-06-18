@@ -1,0 +1,70 @@
+@import './universal_styles.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+$clock-font: 'Kdam Thmor Pro', sans-serif;
+
+//measurements 
+$clock-height:75px;
+$clock-width:150px;
+
+
+//colors
+$clock-clr:#e1c3a7;
+$clock-clr2:hotpink;
+$font-clr:#414141;;
+
+
+.clock-body {
+	@include center-flex;
+	p{
+		@include center-flex;
+		color:$font-clr;
+		height:$clock-height * .6;
+		width:$clock-width *.8;
+		background-color: white;
+	}
+	font-family:$clock-font;
+	display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+	height:$clock-height;
+	width: $clock-width;
+	border-radius: 1px 1px 1px 1px;
+	background-color: $clock-clr;
+	//top button
+	&::before{
+		display:flex;	
+		position: absolute;
+		width:$clock-width;
+		height:$clock-height*.06;
+		// border:$test-border;
+		transform:translateY(-$clock-height*.06);
+		background-image:linear-gradient( to right,  
+		transparent 0 25%, 
+		$clock-clr2 25% 75%, 
+		transparent 75% 100%,
+	
+			
+		)
+	}
+	//legs
+	&::after{
+		position: absolute;	
+		display:flex;	
+	
+		width:$clock-width;
+		height:$clock-height*.1;
+		transform:translateY($clock-height);
+		background-image:linear-gradient( to right,  
+		transparent 0 10%, 
+			$clock-clr 10% 20%,
+			$clock-clr2 20% 23%, 
+			transparent 20% 77%,
+			$clock-clr 77% 87%,
+			$clock-clr2 87% 90%, 
+			transparent 90% 100%,
+		)
+	}
+
+}

@@ -3,6 +3,11 @@ import "./digital-clock.scss";
 
 function DigitalClock() {
   const [time, setTime] = useState(new Date());
+  console.log(time.getHours());
+  if (time.getHours() > 12) {
+    // time = time - 12;
+  }
+  console.log(time);
 
   let refreshClock = () => {
     setTime(new Date());
@@ -39,8 +44,13 @@ function DigitalClock() {
   // timer();
 
   return (
-    <div>
-      <p>{time.toLocaleTimeString()}</p>
+    <div className="clock-body">
+      <div className="clock-screen">
+        <div></div>
+        <div>
+          <p>{time.toLocaleTimeString("en-GB")}</p>
+        </div>
+      </div>
     </div>
   );
 }
